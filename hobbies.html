@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Fikra Asyrafi's hobbies and personal interests — geology, hiking, photography, data science, and more.">
+  <meta name="author" content="Fikra Asyrafi">
+  <title>Hobbies &amp; Interests — Fikra Asyrafi</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Page-specific styles */
+    .hobbies-page-hero {
+      padding: 8rem 0 4rem;
+      background: var(--grad-hero);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hobbies-page-hero .hero-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(99, 210, 219, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(99, 210, 219, 0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 20%, transparent 100%);
+    }
+
+    .hobbies-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--space-md);
+    }
+
+    .hobby-card {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .hobby-emoji {
+      font-size: 2.8rem;
+      line-height: 1;
+    }
+
+    .hobby-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0;
+    }
+
+    .hobby-card p {
+      font-size: 0.88rem;
+      line-height: 1.7;
+    }
+
+    .fun-facts {
+      background: linear-gradient(135deg, rgba(99, 210, 219, 0.06), rgba(123, 108, 246, 0.06));
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-lg) var(--space-xl);
+    }
+
+    .fun-facts-list {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: var(--space-sm);
+      margin-top: var(--space-md);
+    }
+
+    .fun-facts-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      font-size: 0.9rem;
+      color: var(--clr-text-secondary);
+    }
+
+    .fun-facts-list li::before {
+      content: '✦';
+      color: var(--clr-accent-1);
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+
+    @media (max-width: 680px) {
+      .hobbies-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .fun-facts-list {
+        grid-template-columns: 1fr;
+      }
+
+      .fun-facts {
+        padding: var(--space-md);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ══ NAVIGATION ══ -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo" aria-label="Fikra Asyrafi home">FA.</a>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#education">Education</a></li>
+          <li><a href="hobbies.html" class="active">Hobbies</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══ PAGE HERO ══ -->
+  <header class="hobbies-page-hero" aria-label="Hobbies introduction">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="container">
+      <p class="section-label">Beyond Work</p>
+      <h1 style="margin-bottom: 0.75rem;">
+        Hobbies &amp; <span
+          style="background: var(--grad-accent); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Interests</span>
+      </h1>
+      <p style="max-width: 560px; font-size: 1rem; line-height: 1.8;">
+        Outside of data pipelines and geological maps, I find joy in exploration —
+        whether that's scaling a volcanic ridge, capturing a geological formation through a lens,
+        or diving deep into a new programming concept.
+      </p>
+    </div>
+  </header>
+
+  <!-- ══ HOBBIES GRID ══ -->
+  <section class="section" id="hobbies-main" aria-labelledby="hobbies-heading">
+    <div class="container">
+
+      <div class="section-title">
+        <p class="section-label">What I Love</p>
+        <h2 id="hobbies-heading">My Passions</h2>
+        <p>A selection of activities and interests that fuel my curiosity and creativity.</p>
+      </div>
+
+      <div class="hobbies-grid">
+
+        <article class="card hobby-card">
+          <div class="hobby-emoji" aria-hidden="true">&#9975;</div>
+          <h3>Hiking &amp; Field Exploration</h3>
+          <p>
+            Growing up as a geological engineering student gave me a deep appreciation for
+            the Earth's layers — and a love for traversing them on foot. I particularly enjoy
+            hiking around volcanic regions and geological heritage sites across Java.
+          </p>
+          <span class="tag tag-teal">Outdoor</span>
+        </article>
+
+        <article class="card hobby-card">
+          <div class="hobby-emoji" aria-hidden="true">&#128247;</div>
+          <h3>Photography</h3>
+          <p>
+            I'm drawn to landscape and geological photography — capturing the textures of
+            rock formations, the drama of volcanic silhouettes at golden hour, and the
+            quiet geometry of sedimentary layers in cliffs.
+          </p>
+          <span class="tag tag-indigo">Creative</span>
+        </article>
+
+        <article class="card hobby-card">
+          <div class="hobby-emoji" aria-hidden="true">&#128013;</div>
+          <h3>Coding &amp; Data Science</h3>
+          <p>
+            Learning Python through the 100 Days of Code bootcamp unlocked a whole new world.
+            I enjoy building automation scripts, experimenting with data sets, and learning
+            new libraries that turn raw numbers into visual stories.
+          </p>
+          <span class="tag tag-teal">Tech</span>
+        </article>
+
+        <article class="card hobby-card">
+          <div class="hobby-emoji" aria-hidden="true">&#128218;</div>
+          <h3>Reading</h3>
+          <p>
+            My bookshelf spans earth sciences, data analytics, business strategy, and
+            biography. I believe that great ideas live at the intersection of disciplines —
+            and reading widely keeps those connections alive.
+          </p>
+          <span class="tag tag-amber">Learning</span>
+        </article>
+
+        <article class="card hobby-card">
+          <div class="hobby-emoji" aria-hidden="true">&#127752;</div>
+          <h3>Volunteering &amp; Community Events</h3>
+          <p>
+            Organizing campus events at ITB taught me the value of coordination, communication,
+            and showing up for people. I continue to seek volunteer opportunities where I can
+            contribute my organizational skills to community-driven causes.
+          </p>
+          <span class="tag tag-indigo">Community</span>
+        </article>
+
+        <article class="card hobby-card">
+          <div class="hobby-emoji" aria-hidden="true">&#128200;</div>
+          <h3>Business Strategy &amp; Analytics</h3>
+          <p>
+            I'm fascinated by how companies make decisions at scale. I often read case studies,
+            follow market trends, and experiment with Power BI dashboards to understand how
+            data flows from raw input to boardroom insights.
+          </p>
+          <span class="tag tag-amber">Analytics</span>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider" aria-hidden="true"></div>
+
+  <!-- ══ FUN FACTS ══ -->
+  <section class="section" aria-labelledby="funfacts-heading">
+    <div class="container">
+
+      <div class="section-title">
+        <p class="section-label">Quick Bites</p>
+        <h2 id="funfacts-heading">Fun Facts About Me</h2>
+      </div>
+
+      <div class="fun-facts">
+        <ul class="fun-facts-list">
+          <li>I can identify most common rock types by texture alone.</li>
+          <li>My first Python program automated my alarm-clock logic.</li>
+          <li>I've carried a field notebook on every hike since 2021.</li>
+          <li>I once mapped 12 km of terrain on foot in a single day.</li>
+          <li>My Power BI dashboards have been used in actual planning meetings.</li>
+          <li>I completed 5 Udemy bootcamps in under 9 months.</li>
+          <li>I can read topographic maps at a glance — and enjoy it.</li>
+          <li>Photography taught me to see data patterns in landscapes.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider" aria-hidden="true"></div>
+
+  <!-- ══ CONTACT CTA ══ -->
+  <section class="section" id="contact" aria-labelledby="hobbies-contact-heading">
+    <div class="container" style="text-align: center; max-width: 600px;">
+      <p class="section-label" style="justify-content: center;">Get in Touch</p>
+      <h2 id="hobbies-contact-heading">Want to Connect?</h2>
+      <p style="margin-bottom: var(--space-lg); font-size: 1rem;">
+        Whether you share a love of data, the outdoors, or just want to chat —
+        I'd love to hear from you.
+      </p>
+      <div style="display: flex; gap: var(--space-sm); justify-content: center; flex-wrap: wrap;">
+        <a href="contact.html" class="btn btn-primary">&#9993; Contact Page</a>
+        <a href="index.html" class="btn btn-ghost">&#8592; Back to Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">FA.</span>
+        <p class="footer-copy">&copy; 2026 Fikra Asyrafi. All rights reserved.</p>
+        <nav aria-label="Footer navigation">
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Contact Fikra Asyrafi — email, phone, and location information for reaching a geological engineering graduate and data analyst.">
+  <meta name="author" content="Fikra Asyrafi">
+  <title>Contact — Fikra Asyrafi</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .contact-page-hero {
+      padding: 8rem 0 4rem;
+      background: var(--grad-hero);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-page-hero .hero-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(99, 210, 219, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(99, 210, 219, 0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 20%, transparent 100%);
+    }
+
+    .contact-full-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-xl);
+      align-items: start;
+    }
+
+    .contact-info-cards {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+
+    .contact-sidebar {
+      position: sticky;
+      top: 5rem;
+    }
+
+    .availability-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.45rem 1rem;
+      border-radius: 100px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #4ade80;
+      background: rgba(74, 222, 128, 0.1);
+      border: 1px solid rgba(74, 222, 128, 0.25);
+      margin-bottom: var(--space-md);
+    }
+
+    .availability-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #4ade80;
+      animation: pulse-green 2s infinite;
+    }
+
+    @keyframes pulse-green {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.6;
+        transform: scale(1.3);
+      }
+    }
+
+    .profile-summary-card {
+      text-align: center;
+      padding: var(--space-lg);
+    }
+
+    .profile-summary-img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      margin: 0 auto var(--space-sm);
+      border: 3px solid transparent;
+      background: linear-gradient(var(--clr-bg-alt), var(--clr-bg-alt)) padding-box,
+        var(--grad-accent) border-box;
+      object-fit: cover;
+    }
+
+    .profile-summary-card h3 {
+      margin-bottom: 0.25rem;
+    }
+
+    .profile-summary-card p {
+      font-size: 0.85rem;
+    }
+
+    .quick-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: var(--space-md);
+    }
+
+    .quick-link {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.6rem 0.9rem;
+      border-radius: var(--radius-sm);
+      color: var(--clr-text-secondary);
+      font-size: 0.85rem;
+      border: 1px solid var(--clr-border);
+      background: var(--clr-surface);
+      transition: all var(--transition-fast);
+    }
+
+    .quick-link:hover {
+      color: var(--clr-accent-1);
+      border-color: rgba(99, 210, 219, 0.3);
+      background: rgba(99, 210, 219, 0.06);
+      transform: translateX(4px);
+    }
+
+    @media (max-width: 760px) {
+      .contact-full-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-sidebar {
+        position: static;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ══ NAVIGATION ══ -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo" aria-label="Fikra Asyrafi home">FA.</a>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#education">Education</a></li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══ PAGE HERO ══ -->
+  <header class="contact-page-hero" aria-label="Contact page introduction">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="container">
+      <p class="section-label">Let's Talk</p>
+      <h1 style="margin-bottom: 0.75rem;">
+        Get in <span
+          style="background: var(--grad-accent); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Touch</span>
+      </h1>
+      <p style="max-width: 520px; font-size: 1rem; line-height: 1.8;">
+        Whether you have an opportunity, a collaboration idea, or just want to connect —
+        I'm always happy to hear from you. Drop a message through any channel below.
+      </p>
+    </div>
+  </header>
+
+  <!-- ══ MAIN CONTACT CONTENT ══ -->
+  <section class="section" aria-labelledby="contact-main-heading">
+    <div class="container">
+
+      <div class="contact-full-grid">
+
+        <!-- Contact Methods Column -->
+        <div>
+          <div class="section-title">
+            <p class="section-label">Reach Out</p>
+            <h2 id="contact-main-heading">Contact Details</h2>
+            <p>I typically respond within 24 hours during business days.</p>
+          </div>
+
+          <div class="contact-info-cards">
+
+            <a href="mailto:fikra.asyrafi@gmail.com" class="contact-item" id="contact-email-link"
+              aria-label="Send email to Fikra Asyrafi">
+              <div class="contact-icon" aria-hidden="true">&#9993;</div>
+              <div>
+                <h4>Email Address</h4>
+                <p>fikra.asyrafi@gmail.com</p>
+              </div>
+            </a>
+
+            <a href="tel:+6281296842774" class="contact-item" id="contact-phone-link" aria-label="Call Fikra Asyrafi">
+              <div class="contact-icon" aria-hidden="true">&#128222;</div>
+              <div>
+                <h4>Phone / WhatsApp</h4>
+                <p>+62 812 9684 2774</p>
+              </div>
+            </a>
+
+            <div class="contact-item" id="contact-address">
+              <div class="contact-icon" aria-hidden="true">&#128205;</div>
+              <div>
+                <h4>Address</h4>
+                <p>Jalan Mantang No.40, Indonesia</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div style="margin-top: var(--space-lg);">
+            <div class="card"
+              style="background: linear-gradient(135deg, rgba(99,210,219,0.06), rgba(123,108,246,0.06));">
+              <h3 style="margin-bottom: 0.75rem; font-size: 1rem;">&#128336; Response Commitment</h3>
+              <p style="font-size: 0.88rem; line-height: 1.8;">
+                I review my inbox daily and prioritize thoughtful replies. For time-sensitive matters,
+                phone or WhatsApp is your best bet. For professional inquiries or collaboration
+                proposals, email is preferred.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Column -->
+        <aside class="contact-sidebar" aria-label="Profile summary">
+
+          <div class="availability-badge" role="status">
+            <div class="availability-dot" aria-hidden="true"></div>
+            Available for opportunities
+          </div>
+
+          <div class="card profile-summary-card">
+            <img class="profile-summary-img" src="profile.png" alt="Portrait of Fikra Asyrafi">
+            <h3>Fikra Asyrafi</h3>
+            <p>Geological Engineering Graduate</p>
+            <p style="margin-top: 0.25rem;">Data &amp; Analytics Enthusiast</p>
+
+            <div class="quick-links" role="navigation" aria-label="Quick navigation links">
+              <a href="index.html" class="quick-link">&#127968; Back to Portfolio</a>
+              <a href="index.html#skills" class="quick-link">&#9889; View My Skills</a>
+              <a href="index.html#projects" class="quick-link">&#128202; See My Projects</a>
+              <a href="hobbies.html" class="quick-link">&#9975; Hobbies &amp; Interests</a>
+            </div>
+          </div>
+
+          <div class="card" style="margin-top: var(--space-sm);">
+            <h3 style="font-size: 0.9rem; margin-bottom: 0.5rem; color: var(--clr-accent-1);">
+              &#127775; Open to
+            </h3>
+            <ul style="font-size: 0.85rem; color: var(--clr-text-secondary);">
+              <li>Full-time data analyst roles</li>
+              <li>Remote &amp; hybrid positions</li>
+              <li>Research collaborations</li>
+              <li>Freelance analytics projects</li>
+            </ul>
+          </div>
+
+        </aside>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">FA.</span>
+        <p class="footer-copy">&copy; 2026 Fikra Asyrafi. All rights reserved.</p>
+        <nav aria-label="Footer navigation">
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
