@@ -740,6 +740,45 @@ img {
   gap: 0.4rem;
 }
 
+/* ── Project Card Link ── */
+.project-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
+.project-card-link .project-card {
+  position: relative;
+  cursor: pointer;
+}
+
+.project-card-link .project-card::after {
+  content: 'View Project \2192';
+  position: absolute;
+  bottom: var(--space-sm);
+  right: var(--space-md);
+  font-size: 0.72rem;
+  font-weight: 600;
+  font-family: var(--font-heading);
+  color: var(--clr-accent-1);
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity var(--transition-normal), transform var(--transition-normal);
+  letter-spacing: 0.04em;
+}
+
+.project-card-link:hover .project-card::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.project-card-link:focus-visible {
+  outline: 2px solid var(--clr-accent-1);
+  outline-offset: 4px;
+  border-radius: var(--radius-md);
+}
+
 /* ── Certifications ── */
 .certs-grid {
   display: grid;
