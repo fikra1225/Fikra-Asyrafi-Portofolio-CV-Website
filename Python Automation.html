@@ -1,0 +1,1665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Fikra Asyrafi Python & Data Analysis Projects — Perigo Mine EDA, Bio-oil Petrological Geochemical Analysis, and Anthracite Coal Waste Geochemistry using Jupyter Notebook, pandas, and matplotlib.">
+    <meta name="keywords"
+        content="Fikra Asyrafi, Python, EDA, Jupyter Notebook, pandas, matplotlib, geochemistry, Perigo Mine, bio-oil, pyrolysis, petrological analysis, Uinta Basin, San Miguel Mine, coal waste, anthracite, Pennsylvania, Luzerne County, proximate analysis, ultimate analysis, heavy metals, rare earth elements">
+    <meta name="author" content="Fikra Asyrafi">
+    <title>Python Automation - Fikra Asyrafi</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .py-hero {
+            padding: 8rem 0 5rem;
+            background: linear-gradient(135deg, #0a0e1a 0%, #1a140a 50%, #0e0a00 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .py-hero::before {
+            content: '';
+            position: absolute;
+            top: -20%;
+            right: -10%;
+            width: 60%;
+            height: 80%;
+            background: radial-gradient(ellipse, rgba(251, 191, 36, .07) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .py-hero::after {
+            content: '';
+            position: absolute;
+            bottom: -20%;
+            left: -10%;
+            width: 50%;
+            height: 60%;
+            background: radial-gradient(ellipse, rgba(99, 210, 219, .05) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .py-hero-grid {
+            position: absolute;
+            inset: 0;
+            background-image: linear-gradient(rgba(251, 191, 36, .04) 1px, transparent 1px), linear-gradient(90deg, rgba(251, 191, 36, .04) 1px, transparent 1px);
+            background-size: 50px 50px;
+            mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 20%, transparent 100%);
+        }
+
+        .py-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            font-size: .75rem;
+            font-weight: 600;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: #fbbf24;
+            margin-bottom: 1rem;
+            padding: .35rem 1rem;
+            border: 1px solid rgba(251, 191, 36, .25);
+            border-radius: 100px;
+            background: rgba(251, 191, 36, .07);
+        }
+
+        .py-badge::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #fbbf24;
+            animation: pulseY 2s ease-in-out infinite;
+        }
+
+        @keyframes pulseY {
+
+            0%,
+            100% {
+                opacity: 1;
+                box-shadow: 0 0 0 0 rgba(251, 191, 36, .4);
+            }
+
+            50% {
+                opacity: .8;
+                box-shadow: 0 0 0 6px rgba(251, 191, 36, 0);
+            }
+        }
+
+        .py-hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            background: linear-gradient(135deg, #e8edf5 30%, #fbbf24 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+
+        .py-hero-desc {
+            font-size: 1.05rem;
+            color: #8a9bb8;
+            max-width: 600px;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .py-hero-stats {
+            display: flex;
+            gap: 2.5rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .py-stat-num {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #fbbf24;
+            line-height: 1;
+        }
+
+        .py-stat-label {
+            font-size: .72rem;
+            color: #5a6a85;
+            margin-top: .25rem;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+        }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            font-size: .82rem;
+            color: #5a6a85;
+            margin-bottom: 2rem;
+        }
+
+        .breadcrumb a {
+            color: #fbbf24;
+            transition: color .2s;
+        }
+
+        .breadcrumb a:hover {
+            color: #fde68a;
+        }
+
+        .breadcrumb span {
+            color: #3a4a5a;
+        }
+
+        .tools-bar {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .tools-bar-label {
+            font-size: .75rem;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            color: #5a6a85;
+            font-weight: 600;
+        }
+
+        .tool-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: .4rem;
+            padding: .3rem .85rem;
+            border-radius: 100px;
+            font-size: .78rem;
+            font-weight: 600;
+            border: 1px solid;
+        }
+
+        .tc-gold {
+            color: #fbbf24;
+            border-color: rgba(251, 191, 36, .3);
+            background: rgba(251, 191, 36, .07);
+        }
+
+        .tc-cyan {
+            color: #63d2db;
+            border-color: rgba(99, 210, 219, .3);
+            background: rgba(99, 210, 219, .07);
+        }
+
+        .tc-violet {
+            color: #a78bfa;
+            border-color: rgba(167, 139, 250, .3);
+            background: rgba(167, 139, 250, .07);
+        }
+
+        .tc-green {
+            color: #4ade80;
+            border-color: rgba(74, 222, 128, .3);
+            background: rgba(74, 222, 128, .07);
+        }
+
+        .py-section {
+            padding: 5rem 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .py-section-alt {
+            background: #0f1628;
+        }
+
+        .folder-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .folder-title-group {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+        }
+
+        .folder-icon-wrap {
+            width: 60px;
+            height: 60px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, rgba(251, 191, 36, .2), rgba(245, 158, 11, .1));
+            border: 1px solid rgba(251, 191, 36, .25);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            flex-shrink: 0;
+        }
+
+        .folder-title-group h2 {
+            font-size: clamp(1.4rem, 3vw, 2rem);
+            background: linear-gradient(135deg, #e8edf5 30%, #fbbf24 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: .3rem;
+        }
+
+        .folder-subtitle {
+            font-size: .85rem;
+            color: #5a6a85;
+        }
+
+        .folder-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: .4rem;
+            padding: .3rem .9rem;
+            border-radius: 100px;
+            font-size: .72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            background: rgba(251, 191, 36, .1);
+            border: 1px solid rgba(251, 191, 36, .25);
+            color: #fbbf24;
+            white-space: nowrap;
+        }
+
+        .main-preview-wrap {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(251, 191, 36, .2);
+            box-shadow: 0 0 60px rgba(251, 191, 36, .08), 0 20px 60px rgba(0, 0, 0, .5);
+            margin-bottom: 3rem;
+        }
+
+        .main-preview-wrap::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 70%, rgba(10, 14, 26, .8) 100%);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .main-preview-img {
+            width: 100%;
+            display: block;
+        }
+
+        .preview-label {
+            position: absolute;
+            bottom: 1.5rem;
+            left: 1.5rem;
+            z-index: 2;
+        }
+
+        .preview-label-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: .4rem;
+            padding: .4rem 1rem;
+            border-radius: 100px;
+            font-size: .75rem;
+            font-weight: 700;
+            background: rgba(251, 191, 36, .15);
+            border: 1px solid rgba(251, 191, 36, .4);
+            color: #fbbf24;
+            backdrop-filter: blur(8px);
+        }
+
+        .project-overview {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            margin-bottom: 3rem;
+            align-items: start;
+        }
+
+        .overview-text h3 {
+            font-size: 1.05rem;
+            color: #fbbf24;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+        }
+
+        .overview-text p {
+            font-size: .92rem;
+            line-height: 1.85;
+            color: #8a9bb8;
+            margin-bottom: .9rem;
+        }
+
+        .overview-text ul {
+            color: #8a9bb8;
+            font-size: .9rem;
+            padding-left: 1.2rem;
+        }
+
+        .overview-text li {
+            margin-bottom: .5rem;
+            line-height: 1.7;
+        }
+
+        .overview-text li strong {
+            color: #e8edf5;
+        }
+
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .kpi-card {
+            background: linear-gradient(145deg, rgba(255, 255, 255, .04), rgba(255, 255, 255, .01));
+            border: 1px solid rgba(255, 255, 255, .08);
+            border-radius: 14px;
+            padding: 1.2rem 1.4rem;
+            backdrop-filter: blur(12px);
+            transition: border-color .3s, transform .3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .kpi-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(251, 191, 36, .6), transparent);
+        }
+
+        .kpi-card:hover {
+            border-color: rgba(251, 191, 36, .3);
+            transform: translateY(-3px);
+        }
+
+        .kpi-value {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #fbbf24;
+            line-height: 1;
+            margin-bottom: .3rem;
+        }
+
+        .kpi-label {
+            font-size: .75rem;
+            color: #5a6a85;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: .07em;
+        }
+
+        .github-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            padding: 1.8rem 2rem;
+            border-radius: 18px;
+            background: linear-gradient(135deg, rgba(251, 191, 36, .08), rgba(251, 191, 36, .03));
+            border: 1px solid rgba(251, 191, 36, .2);
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .github-card-text h3 {
+            font-size: 1rem;
+            color: #e8edf5;
+            margin-bottom: .4rem;
+        }
+
+        .github-card-text p {
+            font-size: .85rem;
+            color: #5a6a85;
+            margin: 0;
+        }
+
+        .btn-gold {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: #0a0e1a !important;
+            box-shadow: 0 4px 20px rgba(245, 158, 11, .3);
+            font-weight: 700;
+        }
+
+        .btn-gold:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(245, 158, 11, .45);
+        }
+
+        .notebook-sections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.2rem;
+            margin-bottom: 3rem;
+        }
+
+        .nb-card {
+            background: linear-gradient(145deg, rgba(255, 255, 255, .04), rgba(255, 255, 255, .01));
+            border: 1px solid rgba(255, 255, 255, .08);
+            border-radius: 16px;
+            padding: 1.4rem;
+            transition: border-color .3s, transform .3s;
+        }
+
+        .nb-card:hover {
+            border-color: rgba(251, 191, 36, .3);
+            transform: translateY(-3px);
+        }
+
+        .nb-step {
+            font-size: .65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            color: #fbbf24;
+            margin-bottom: .5rem;
+        }
+
+        .nb-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: .95rem;
+            font-weight: 700;
+            color: #e8edf5;
+            margin-bottom: .5rem;
+        }
+
+        .nb-desc {
+            font-size: .8rem;
+            color: #5a6a85;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .nb-icon {
+            font-size: 1.5rem;
+            margin-bottom: .75rem;
+        }
+
+        .code-block-wrap {
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, .1);
+            margin-bottom: 3rem;
+        }
+
+        .code-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: .75rem 1.2rem;
+            background: rgba(255, 255, 255, .04);
+            border-bottom: 1px solid rgba(255, 255, 255, .08);
+        }
+
+        .code-dots {
+            display: flex;
+            gap: .4rem;
+        }
+
+        .code-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .code-dot-red {
+            background: #ff5f57;
+        }
+
+        .code-dot-yellow {
+            background: #ffbd2e;
+        }
+
+        .code-dot-green {
+            background: #28c940;
+        }
+
+        .code-filename {
+            font-size: .75rem;
+            color: #5a6a85;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+        }
+
+        .code-lang {
+            font-size: .65rem;
+            color: #fbbf24;
+            font-weight: 700;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+        }
+
+        pre.code-body {
+            margin: 0;
+            padding: 1.5rem;
+            background: #080c18;
+            font-family: 'Courier New', monospace;
+            font-size: .82rem;
+            line-height: 1.7;
+            overflow-x: auto;
+            color: #e8edf5;
+        }
+
+        .kw {
+            color: #fbbf24;
+        }
+
+        .fn {
+            color: #63d2db;
+        }
+
+        .st {
+            color: #86efac;
+        }
+
+        .cm {
+            color: #5a6a85;
+            font-style: italic;
+        }
+
+        .nb2 {
+            color: #a78bfa;
+        }
+
+        .insights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.2rem;
+            margin-bottom: 3rem;
+        }
+
+        .insight-card {
+            background: linear-gradient(145deg, rgba(255, 255, 255, .04), rgba(255, 255, 255, .01));
+            border: 1px solid rgba(255, 255, 255, .08);
+            border-radius: 16px;
+            padding: 1.4rem;
+            transition: border-color .3s, transform .3s;
+        }
+
+        .insight-card:hover {
+            border-color: rgba(251, 191, 36, .25);
+            transform: translateY(-3px);
+        }
+
+        .insight-icon {
+            font-size: 1.6rem;
+            margin-bottom: .75rem;
+        }
+
+        .insight-card h4 {
+            font-size: .9rem;
+            color: #e8edf5;
+            margin-bottom: .5rem;
+        }
+
+        .insight-card p {
+            font-size: .8rem;
+            color: #5a6a85;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .techniques-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .technique-item {
+            display: flex;
+            align-items: flex-start;
+            gap: .75rem;
+            padding: 1rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, .06);
+            background: rgba(255, 255, 255, .02);
+            transition: border-color .2s;
+        }
+
+        .technique-item:hover {
+            border-color: rgba(251, 191, 36, .2);
+        }
+
+        .technique-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #fbbf24;
+            flex-shrink: 0;
+            margin-top: .35rem;
+        }
+
+        .technique-item h4 {
+            font-size: .82rem;
+            color: #e8edf5;
+            margin-bottom: .2rem;
+        }
+
+        .technique-item p {
+            font-size: .73rem;
+            color: #5a6a85;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .py-cta {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #0a0e1a, #1a140a);
+            border-top: 1px solid rgba(255, 255, 255, .06);
+        }
+
+        .py-cta h2 {
+            font-size: clamp(1.4rem, 3vw, 2rem);
+            background: linear-gradient(135deg, #e8edf5 30%, #fbbf24 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: .75rem;
+        }
+
+        .py-cta p {
+            color: #5a6a85;
+            font-size: .95rem;
+            margin-bottom: 2rem;
+        }
+
+        .py-cta-btns {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .slg {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            font-family: 'Outfit', sans-serif;
+            font-size: .75rem;
+            font-weight: 600;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: #fbbf24;
+            margin-bottom: .75rem;
+        }
+
+        .slg::before {
+            content: '';
+            display: inline-block;
+            width: 24px;
+            height: 2px;
+            background: linear-gradient(90deg, #f59e0b, #fbbf24);
+            border-radius: 2px;
+        }
+
+        .afu {
+            opacity: 0;
+            transform: translateY(24px);
+            animation: fadeU .7s forwards;
+        }
+
+        .afi {
+            opacity: 0;
+            animation: fadeI .7s forwards;
+        }
+
+        @keyframes fadeU {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeI {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .d1 {
+            animation-delay: .1s;
+        }
+
+        .d2 {
+            animation-delay: .25s;
+        }
+
+        .d3 {
+            animation-delay: .4s;
+        }
+
+        .d4 {
+            animation-delay: .55s;
+        }
+
+        @media(max-width:768px) {
+            .project-overview {
+                grid-template-columns: 1fr;
+            }
+
+            .github-card {
+                flex-direction: column;
+            }
+
+            .py-hero-stats {
+                gap: 1.5rem;
+            }
+
+            .folder-header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="site-nav" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-inner">
+                <a href="index.html" class="nav-logo" aria-label="Fikra Asyrafi home">FA.</a>
+                <ul class="nav-links">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#education">Education</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-hero" aria-label="Python Automation Portfolio">
+        <div class="py-hero-grid" aria-hidden="true"></div>
+        <div class="container">
+            <div class="py-badge afu d1">Python Automation &amp; Data Analysis</div>
+            <h1 class="afu d2">Python Projects</h1>
+            <p class="py-hero-desc afu d3">Python scripts, Jupyter Notebooks, and automation workflows that transform
+                raw datasets into scientific insights. Each project combines real-world data with reproducible analysis
+                pipelines.</p>
+            <div class="tools-bar afu d3">
+                <span class="tools-bar-label">Stack:</span>
+                <span class="tool-chip tc-gold">&#128013; Python</span>
+                <span class="tool-chip tc-cyan">&#128202; Pandas &amp; NumPy</span>
+                <span class="tool-chip tc-violet">&#128444; Matplotlib &amp; Seaborn</span>
+                <span class="tool-chip tc-green">&#128209; Jupyter Notebook</span>
+            </div>
+            <div class="py-hero-stats afi d4">
+                <div>
+                    <div class="py-stat-num">3</div>
+                    <div class="py-stat-label">Projects</div>
+                </div>
+                <div>
+                    <div class="py-stat-num">5+</div>
+                    <div class="py-stat-label">Study Sites</div>
+                </div>
+                <div>
+                    <div class="py-stat-num">Geochem</div>
+                    <div class="py-stat-label">Domain</div>
+                </div>
+                <div>
+                    <div class="py-stat-num">USA</div>
+                    <div class="py-stat-label">Region</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <section class="py-section" id="perigo-mine-eda" aria-labelledby="perigo-heading">
+        <div class="container">
+            <div class="folder-header">
+                <div class="folder-title-group">
+                    <div class="folder-icon-wrap" aria-hidden="true">&#9935;</div>
+                    <div>
+                        <p class="slg">Project 01 &mdash; Geochemical EDA</p>
+                        <h2 id="perigo-heading">Perigo Mine EDA</h2>
+                        <p class="folder-subtitle">Jupyter Notebook &middot; Python &middot; Geochemistry &amp;
+                            Environmental Tracers &middot; Colorado 2024</p>
+                    </div>
+                </div>
+                <span class="folder-badge">&#9679; Completed</span>
+            </div>
+
+            <div class="main-preview-wrap afi d1">
+                <img class="main-preview-img" src="perigo_mine_eda.jpg"
+                    alt="Perigo Mine EDA Jupyter Notebook showing scatter plots, correlation heatmap, box plots, tracer time series, and piper diagram"
+                    loading="lazy">
+                <div class="preview-label">
+                    <span class="preview-label-tag">&#128013; Jupyter Notebook &middot; Geochemistry EDA</span>
+                </div>
+            </div>
+
+            <div class="github-card">
+                <div class="github-card-text">
+                    <h3>&#128279; View Full Notebook on GitHub</h3>
+                    <p>Complete Jupyter Notebook with all code, visualizations, and findings &mdash; fully reproducible.
+                    </p>
+                </div>
+                <a href="https://github.com/fikra1225/perigo-mine-eda" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-gold" id="github-perigo-btn">&#128279; Open on GitHub</a>
+            </div>
+
+            <div class="project-overview">
+                <div class="overview-text">
+                    <h3>&#128203; Project Overview</h3>
+                    <p>An <strong style="color:#e8edf5;">Exploratory Data Analysis</strong> of geochemistry and
+                        environmental tracer data collected from groundwater and stream water at the <strong
+                            style="color:#fbbf24;">Perigo Mine Site, Colorado (2024)</strong> &mdash; an abandoned mine
+                        site with active contaminant transport.</p>
+                    <p>This project investigates <strong style="color:#e8edf5;">groundwater&ndash;surface water
+                            interactions</strong>, contaminant pathways, and hydrological processes using Python,
+                        combining geological domain expertise with modern analytical methods.</p>
+                    <ul>
+                        <li><strong>Data Sources:</strong> 5 structured tables (sample sites, water chemistry,
+                            environmental tracers, field parameters)</li>
+                        <li><strong>Analysis:</strong> Statistical summaries, correlation matrices, bivariate plots,
+                            Piper diagram</li>
+                        <li><strong>Comparison:</strong> Groundwater vs. stream water chemical signatures</li>
+                        <li><strong>Tracers:</strong> Environmental isotopes and geochemical indicators</li>
+                        <li><strong>Output:</strong> Reproducible Jupyter Notebook with Matplotlib/Seaborn figures</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3
+                        style="font-size:1rem;color:#fbbf24;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem;">
+                        &#128200; Project Stats</h3>
+                    <div class="kpi-grid">
+                        <div class="kpi-card">
+                            <div class="kpi-value">5</div>
+                            <div class="kpi-label">Data Files</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-value">2</div>
+                            <div class="kpi-label">Water Types</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-value">EDA</div>
+                            <div class="kpi-label">Analysis Type</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-value">2024</div>
+                            <div class="kpi-label">Field Season</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-value">CO</div>
+                            <div class="kpi-label">State, USA</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-value">.ipynb</div>
+                            <div class="kpi-label">Format</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="slg">Notebook Structure</p>
+            <h3 style="font-size:1.15rem;color:#e8edf5;margin-bottom:1.5rem;font-family:'Outfit',sans-serif;">Analysis
+                Pipeline</h3>
+            <div class="notebook-sections">
+                <div class="nb-card" id="nb-import">
+                    <div class="nb-icon">&#128230;</div>
+                    <div class="nb-step">Step 01</div>
+                    <div class="nb-title">Data Import &amp; Cleaning</div>
+                    <p class="nb-desc">Load and merge 5 structured CSV/Excel files. Handle missing values, standardize
+                        units, and validate sample site metadata.</p>
+                </div>
+                <div class="nb-card" id="nb-stats">
+                    <div class="nb-icon">&#128269;</div>
+                    <div class="nb-step">Step 02</div>
+                    <div class="nb-title">Exploratory Statistics</div>
+                    <p class="nb-desc">Descriptive statistics (mean, std, range) for all geochemical parameters split by
+                        water type: groundwater vs stream water.</p>
+                </div>
+                <div class="nb-card" id="nb-viz">
+                    <div class="nb-icon">&#128202;</div>
+                    <div class="nb-step">Step 03</div>
+                    <div class="nb-title">Data Visualization</div>
+                    <p class="nb-desc">Scatter plots (Ca vs Mg, SO4 vs conductivity), box plots, histograms, and time
+                        series of tracer concentrations.</p>
+                </div>
+                <div class="nb-card" id="nb-corr">
+                    <div class="nb-icon">&#128348;</div>
+                    <div class="nb-step">Step 04</div>
+                    <div class="nb-title">Correlation Analysis</div>
+                    <p class="nb-desc">Pearson correlation heatmap across all geochemical parameters to identify
+                        co-varying species and contamination sources.</p>
+                </div>
+                <div class="nb-card" id="nb-piper">
+                    <div class="nb-icon">&#128506;</div>
+                    <div class="nb-step">Step 05</div>
+                    <div class="nb-title">Hydrogeochemical Plots</div>
+                    <p class="nb-desc">Piper diagram (trilinear plot) for water classification, identifying major ion
+                        facies and groundwater mixing relationships.</p>
+                </div>
+                <div class="nb-card" id="nb-findings">
+                    <div class="nb-icon">&#128221;</div>
+                    <div class="nb-step">Step 06</div>
+                    <div class="nb-title">Findings &amp; Interpretation</div>
+                    <p class="nb-desc">Synthesis of geochemical patterns, identification of contamination pathways, and
+                        hydrological process interpretation.</p>
+                </div>
+            </div>
+
+            <p class="slg">Code Preview</p>
+            <h3 style="font-size:1.15rem;color:#e8edf5;margin-bottom:1.5rem;font-family:'Outfit',sans-serif;">Sample
+                &mdash; Correlation Heatmap</h3>
+            <div class="code-block-wrap">
+                <div class="code-header">
+                    <div class="code-dots">
+                        <div class="code-dot code-dot-red"></div>
+                        <div class="code-dot code-dot-yellow"></div>
+                        <div class="code-dot code-dot-green"></div>
+                    </div>
+                    <span class="code-filename">Perigo_Mine_EDA.ipynb</span>
+                    <span class="code-lang">Python</span>
+                </div>
+                <pre class="code-body"><span class="kw">import</span> pandas <span class="kw">as</span> pd
+<span class="kw">import</span> matplotlib.pyplot <span class="kw">as</span> plt
+<span class="kw">import</span> seaborn <span class="kw">as</span> sns
+
+<span class="cm"># Load and merge datasets</span>
+water_chem = pd.<span class="fn">read_csv</span>(<span class="st">'Table2_WaterChemistry.csv'</span>)
+tracers    = pd.<span class="fn">read_csv</span>(<span class="st">'Table3_WaterEnvtTracers.csv'</span>)
+df = water_chem.<span class="fn">merge</span>(tracers, on=<span class="st">'SampleID'</span>)
+
+<span class="cm"># Correlation heatmap of geochemical parameters</span>
+fig, ax = plt.<span class="fn">subplots</span>(figsize=(<span class="nb2">12</span>, <span class="nb2">9</span>))
+corr = df.<span class="fn">select_dtypes</span>(include=<span class="st">'number'</span>).<span class="fn">corr</span>()
+sns.<span class="fn">heatmap</span>(corr, annot=<span class="nb2">True</span>, fmt=<span class="st">'.2f'</span>,
+           cmap=<span class="st">'coolwarm'</span>, center=<span class="nb2">0</span>, ax=ax,
+           linewidths=<span class="nb2">0.5</span>, square=<span class="nb2">True</span>)
+ax.<span class="fn">set_title</span>(<span class="st">'Correlation Heatmap -- Geochemical Parameters'</span>,
+           fontsize=<span class="nb2">14</span>, fontweight=<span class="st">'bold'</span>)
+plt.<span class="fn">tight_layout</span>()
+plt.<span class="fn">show</span>()</pre>
+            </div>
+
+            <p class="slg">Key Findings</p>
+            <h3 style="font-size:1.15rem;color:#e8edf5;margin-bottom:1.5rem;font-family:'Outfit',sans-serif;">Insights
+                from Perigo Mine EDA</h3>
+            <div class="insights-grid">
+                <div class="insight-card" id="insight-gw">
+                    <div class="insight-icon">&#128167;</div>
+                    <h4>Groundwater vs Stream Water</h4>
+                    <p>Distinct chemical signatures between water types, indicative of different recharge sources, flow
+                        paths, and subsurface residence times.</p>
+                </div>
+                <div class="insight-card" id="insight-so4">
+                    <div class="insight-icon">&#9879;</div>
+                    <h4>Sulfate as Contaminant Tracer</h4>
+                    <p>Elevated SO4 strongly correlates with conductivity, confirming sulfide mineral oxidation as the
+                        primary acid mine drainage pathway.</p>
+                </div>
+                <div class="insight-card" id="insight-camg">
+                    <div class="insight-icon">&#128348;</div>
+                    <h4>Strong Ca-Mg Correlation</h4>
+                    <p>Ca vs Mg scatter plots reveal carbonate mineral dissolution as a dominant weathering process
+                        controlling major ion chemistry at the site.</p>
+                </div>
+                <div class="insight-card" id="insight-tracer">
+                    <div class="insight-icon">&#9749;</div>
+                    <h4>Environmental Tracer Signals</h4>
+                    <p>Tracer data constrains groundwater age and mixing fractions, critical for understanding
+                        contaminant transport timescales from mine to stream.</p>
+                </div>
+                <div class="insight-card" id="insight-piper">
+                    <div class="insight-icon">&#128506;</div>
+                    <h4>Hydrogeochemical Facies</h4>
+                    <p>Piper diagram reveals Ca-SO4 and mixed facies water types, consistent with acid mine
+                        drainage-influenced groundwater chemistry.</p>
+                </div>
+                <div class="insight-card" id="insight-repro">
+                    <div class="insight-icon">&#9851;</div>
+                    <h4>Reproducible Pipeline</h4>
+                    <p>The full workflow from raw CSV data to publication-quality figures is documented in a single
+                        Jupyter Notebook for complete reproducibility.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- PROJECT FOLDER 02: Bio-oil Geochemical Analysis -->
+    <section class="py-section" id="bio-oil-geochemical" aria-labelledby="bio-oil-heading">
+        <div class="container">
+
+            <div class="folder-header">
+                <div class="folder-title-group">
+                    <div class="folder-icon-wrap" aria-hidden="true"
+                        style="background:linear-gradient(135deg,rgba(167,139,250,.2),rgba(139,92,246,.1));border-color:rgba(167,139,250,.25);">
+                        &#128300;</div>
+                    <div>
+                        <p class="slg" style="color:#a78bfa;">Project 02 &mdash; Petrological &amp; Geochemical Analysis
+                        </p>
+                        <h2 id="bio-oil-heading"
+                            style="background:linear-gradient(135deg,#e8edf5 30%,#a78bfa 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">
+                            Bio-oil Distillation Residues<br>vs Natural Solid Hydrocarbons</h2>
+                        <p class="folder-subtitle">Jupyter Notebook &middot; Python &middot; Petrological &amp;
+                            Geochemical Analysis &middot; Utah &amp; Texas, USA</p>
+                    </div>
+                </div>
+                <span class="folder-badge"
+                    style="background:rgba(167,139,250,.1);border-color:rgba(167,139,250,.25);color:#a78bfa;">&#9679;
+                    Completed</span>
+            </div>
+
+            <!-- Main Preview -->
+            <div class="main-preview-wrap afi d1"
+                style="border-color:rgba(167,139,250,.2);box-shadow:0 0 60px rgba(167,139,250,.08),0 20px 60px rgba(0,0,0,.5);">
+                <img class="main-preview-img" src="bio_oil_analysis.jpg"
+                    alt="Bio-oil vs Natural Solid Hydrocarbons Jupyter Notebook showing Van Krevelen diagram, ternary plot, proximate analysis, calorific plot, correlation heatmap, and elemental analysis"
+                    loading="lazy">
+                <div class="preview-label">
+                    <span class="preview-label-tag"
+                        style="background:rgba(167,139,250,.15);border-color:rgba(167,139,250,.4);color:#a78bfa;">&#128013;
+                        Jupyter Notebook &middot; Petrological &amp; Geochemical Analysis</span>
+                </div>
+            </div>
+
+            <!-- GitHub CTA -->
+            <div class="github-card"
+                style="background:linear-gradient(135deg,rgba(167,139,250,.08),rgba(167,139,250,.03));border-color:rgba(167,139,250,.2);">
+                <div class="github-card-text">
+                    <h3>&#128279; View Full Notebook on GitHub</h3>
+                    <p>Complete Jupyter Notebook with all petrological and geochemical analysis code, figures, and
+                        interpretation.</p>
+                </div>
+                <a href="https://github.com/fikra1225/pyrolysis-bio-oil-geochemical-analysis" target="_blank"
+                    rel="noopener noreferrer" class="btn" id="github-bioil-btn"
+                    style="background:linear-gradient(135deg,#8b5cf6,#7c3aed);color:#fff;box-shadow:0 4px 20px rgba(139,92,246,.3);font-weight:700;"
+                    aria-label="View Bio-oil Geochemical Analysis on GitHub">&#128279; Open on GitHub</a>
+            </div>
+
+            <!-- Project Overview + KPIs -->
+            <div class="project-overview">
+                <div class="overview-text">
+                    <h3 style="color:#a78bfa;">&#128203; Project Overview</h3>
+                    <p>A comprehensive <strong style="color:#e8edf5;">petrological and geochemical analysis</strong>
+                        comparing fast pyrolysis <strong style="color:#a78bfa;">bio-oil distillation residues</strong>
+                        with naturally formed solid fossil fuels &mdash; natural solid hydrocarbons and coal &mdash;
+                        collected from two major US study sites.</p>
+                    <p>This project applies Python data science tools to characterize the elemental composition,
+                        proximate analysis, and geochemical properties of organic materials, bridging the gap between
+                        bio-energy products and conventional fossil fuel benchmarks.</p>
+                    <ul>
+                        <li><strong>Study Sites:</strong> Uinta Basin, Utah, USA &amp; San Miguel Mine, Texas, USA</li>
+                        <li><strong>Sample Types:</strong> Bio-oil distillation residues, natural solid hydrocarbons,
+                            coal</li>
+                        <li><strong>Analysis:</strong> Van Krevelen diagram, proximate &amp; ultimate analysis,
+                            calorific value comparison</li>
+                        <li><strong>Visualizations:</strong> Ternary plots, correlation heatmaps, elemental bar charts
+                        </li>
+                        <li><strong>Output:</strong> Reproducible Jupyter Notebook with Matplotlib/Seaborn scientific
+                            figures</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3
+                        style="font-size:1rem;color:#a78bfa;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem;">
+                        &#128200; Project Stats</h3>
+                    <div class="kpi-grid">
+                        <div class="kpi-card" style="--kpi-accent:rgba(167,139,250,.6);">
+                            <div class="kpi-value" style="color:#a78bfa;">3</div>
+                            <div class="kpi-label">Sample Types</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-value" style="color:#a78bfa;">2</div>
+                            <div class="kpi-label">Study Sites</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-value" style="color:#a78bfa;">Van K.</div>
+                            <div class="kpi-label">Key Diagram</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-value" style="color:#a78bfa;">UT+TX</div>
+                            <div class="kpi-label">US States</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-value" style="color:#a78bfa;">Petro</div>
+                            <div class="kpi-label">Domain</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-value" style="color:#a78bfa;">.ipynb</div>
+                            <div class="kpi-label">Format</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notebook Sections -->
+            <p class="slg" style="color:#a78bfa;">Notebook Structure</p>
+            <h3 style="font-size:1.15rem;color:#e8edf5;margin-bottom:1.5rem;font-family:'Outfit',sans-serif;">Analysis
+                Pipeline</h3>
+            <div class="notebook-sections">
+                <div class="nb-card" id="nb2-import" style="border-color:rgba(167,139,250,.12);">
+                    <div class="nb-icon">&#128230;</div>
+                    <div class="nb-step" style="color:#a78bfa;">Step 01</div>
+                    <div class="nb-title">Data Loading &amp; Preprocessing</div>
+                    <p class="nb-desc">Import petrological and geochemical datasets. Clean, validate, and standardize
+                        proximate/ultimate analysis values and elemental composition data.</p>
+                </div>
+                <div class="nb-card" id="nb2-vankrev" style="border-color:rgba(167,139,250,.12);">
+                    <div class="nb-icon">&#128506;</div>
+                    <div class="nb-step" style="color:#a78bfa;">Step 02</div>
+                    <div class="nb-title">Van Krevelen Diagram</div>
+                    <p class="nb-desc">Plot H/C vs O/C atomic ratios for all sample types to classify organic matter and
+                        compare bio-oil residues against natural hydrocarbons and coal benchmarks.</p>
+                </div>
+                <div class="nb-card" id="nb2-prox" style="border-color:rgba(167,139,250,.12);">
+                    <div class="nb-icon">&#128202;</div>
+                    <div class="nb-step" style="color:#a78bfa;">Step 03</div>
+                    <div class="nb-title">Proximate Analysis</div>
+                    <p class="nb-desc">Compare moisture, ash, volatile matter, and fixed carbon content across bio-oil
+                        residues, natural solid hydrocarbons, and coal using box plots and bar charts.</p>
+                </div>
+                <div class="nb-card" id="nb2-elem" style="border-color:rgba(167,139,250,.12);">
+                    <div class="nb-icon">&#9878;</div>
+                    <div class="nb-step" style="color:#a78bfa;">Step 04</div>
+                    <div class="nb-title">Ultimate (Elemental) Analysis</div>
+                    <p class="nb-desc">Visualize C, H, N, S, O elemental composition differences between Uinta Basin
+                        (Utah) and San Miguel Mine (Texas) sample groups using grouped bar charts.</p>
+                </div>
+                <div class="nb-card" id="nb2-calor" style="border-color:rgba(167,139,250,.12);">
+                    <div class="nb-icon">&#128293;</div>
+                    <div class="nb-step" style="color:#a78bfa;">Step 05</div>
+                    <div class="nb-title">Calorific Value Analysis</div>
+                    <p class="nb-desc">Scatter plot of calorific value vs carbon content to evaluate energy density
+                        relationships between bio-oil residues and reference fossil fuel materials.</p>
+                </div>
+                <div class="nb-card" id="nb2-corr" style="border-color:rgba(167,139,250,.12);">
+                    <div class="nb-icon">&#128348;</div>
+                    <div class="nb-step" style="color:#a78bfa;">Step 06</div>
+                    <div class="nb-title">Geochemical Correlations &amp; Insights</div>
+                    <p class="nb-desc">Correlation heatmap and ternary C-H-O plot to identify geochemical relationships
+                        and distinguish the chemical fingerprints of each material class.</p>
+                </div>
+            </div>
+
+            <!-- Code Snippet -->
+            <p class="slg" style="color:#a78bfa;">Code Preview</p>
+            <h3 style="font-size:1.15rem;color:#e8edf5;margin-bottom:1.5rem;font-family:'Outfit',sans-serif;">Sample
+                &mdash; Van Krevelen Diagram</h3>
+            <div class="code-block-wrap">
+                <div class="code-header">
+                    <div class="code-dots">
+                        <div class="code-dot code-dot-red"></div>
+                        <div class="code-dot code-dot-yellow"></div>
+                        <div class="code-dot code-dot-green"></div>
+                    </div>
+                    <span class="code-filename">Petrological_Analysis.ipynb</span>
+                    <span class="code-lang" style="color:#a78bfa;">Python</span>
+                </div>
+                <pre class="code-body"><span class="kw">import</span> pandas <span class="kw">as</span> pd
+<span class="kw">import</span> matplotlib.pyplot <span class="kw">as</span> plt
+
+<span class="cm"># Load geochemical dataset</span>
+dataset = pd.<span class="fn">read_excel</span>(<span class="st">'geochemical_data.xlsx'</span>)
+
+<span class="cm"># Compute atomic H/C and O/C ratios for Van Krevelen diagram</span>
+dataset[<span class="st">'H_C'</span>] = (dataset[<span class="st">'H_wt'</span>] / <span class="nb2">1.008</span>) / (dataset[<span class="st">'C_wt'</span>] / <span class="nb2">12.011</span>)
+dataset[<span class="st">'O_C'</span>] = (dataset[<span class="st">'O_wt'</span>] / <span class="nb2">15.999</span>) / (dataset[<span class="st">'C_wt'</span>] / <span class="nb2">12.011</span>)
+
+<span class="cm"># Plot Van Krevelen diagram</span>
+fig, ax = plt.<span class="fn">subplots</span>(figsize=(<span class="nb2">9</span>, <span class="nb2">6</span>))
+<span class="kw">for</span> sample_type, group <span class="kw">in</span> dataset.<span class="fn">groupby</span>(<span class="st">'Sample_Type'</span>):
+    ax.<span class="fn">scatter</span>(group[<span class="st">'O_C'</span>], group[<span class="st">'H_C'</span>],
+               label=sample_type, alpha=<span class="nb2">0.75</span>, s=<span class="nb2">60</span>)
+
+ax.<span class="fn">set_xlabel</span>(<span class="st">'O/C Atomic Ratio'</span>)
+ax.<span class="fn">set_ylabel</span>(<span class="st">'H/C Atomic Ratio'</span>)
+ax.<span class="fn">set_title</span>(<span class="st">'Van Krevelen Diagram -- Bio-oil vs Natural Solid Fuels'</span>)
+ax.<span class="fn">legend</span>()
+plt.<span class="fn">tight_layout</span>()
+plt.<span class="fn">show</span>()</pre>
+            </div>
+
+            <!-- Key Insights -->
+            <p class="slg" style="color:#a78bfa;">Key Findings</p>
+            <h3 style="font-size:1.15rem;color:#e8edf5;margin-bottom:1.5rem;font-family:'Outfit',sans-serif;">Insights
+                from the Analysis</h3>
+            <div class="insights-grid">
+                <div class="insight-card" id="insight2-vankrev" style="border-color:rgba(167,139,250,.12);">
+                    <div class="insight-icon">&#128506;</div>
+                    <h4>Distinct Van Krevelen Clusters</h4>
+                    <p>Bio-oil distillation residues occupy a distinct H/C vs O/C region separate from natural solid
+                        hydrocarbons, reflecting their unique pyrolysis-derived organic chemistry.</p>
+                </div>
+                <div class="insight-card" id="insight2-prox" style="border-color:rgba(167,139,250,.12);">
+                    <div class="insight-icon">&#128200;</div>
+                    <h4>Proximate Analysis Contrast</h4>
+                    <p>Bio-oil residues show markedly higher volatile matter and lower fixed carbon compared to coal,
+                        indicating their thermally labile character and biogenic origin.</p>
+                </div>
+                <div class="insight-card" id="insight2-sites" style="border-color:rgba(167,139,250,.12);">
+                    <div class="insight-icon">&#128205;</div>
+                    <h4>Site-Specific Signatures</h4>
+                    <p>Uinta Basin (Utah) and San Miguel Mine (Texas) samples display characteristic elemental
+                        differences, reflecting distinct depositional environments and thermal maturity.</p>
+                </div>
+                <div class="insight-card" id="insight2-calor" style="border-color:rgba(167,139,250,.12);">
+                    <div class="insight-icon">&#128293;</div>
+                    <h4>Calorific Value Range</h4>
+                    <p>Strong positive correlation between carbon content and calorific value across all sample types,
+                        validating carbon as the primary energy carrier in both fossil and bio-derived materials.</p>
+                </div>
+                <div class="insight-card" id="insight2-elem" style="border-color:rgba(167,139,250,.12);">
+                    <div class="insight-icon">&#9878;</div>
+                    <h4>Elemental Composition Overlap</h4>
+                    <p>Surprising chemical similarities between bio-oil residues and natural solid hydrocarbons in C and
+                        H content suggest potential for valorization as solid fuel substitutes.</p>
+                </div>
+                <div class="insight-card" id="insight2-repro" style="border-color:rgba(167,139,250,.12);">
+                    <div class="insight-icon">&#9851;</div>
+                    <h4>Reproducible Workflow</h4>
+                    <p>All analyses from raw Excel data to publication-quality scientific figures are captured in a
+                        single documented Jupyter Notebook, fully reproducible by any researcher.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- PROJECT FOLDER 03: Coal Waste Geochemical Analysis -->
+    <section class="py-section" id="coal-waste-geochemical" aria-labelledby="coal-waste-heading">
+        <div class="container">
+
+            <div class="folder-header">
+                <div class="folder-title-group">
+                    <div class="folder-icon-wrap" aria-hidden="true"
+                        style="background:linear-gradient(135deg,rgba(52,211,153,.2),rgba(16,185,129,.1));border-color:rgba(52,211,153,.25);">&#9925;</div>
+                    <div>
+                        <p class="slg" style="color:#34d399;">Project 03 &mdash; Geochemical &amp; Petrographic Analysis
+                        </p>
+                        <h2 id="coal-waste-heading"
+                            style="background:linear-gradient(135deg,#e8edf5 30%,#34d399 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">
+                            Coal Waste Geochemistry<br>Historic Anthracite Mining, Pennsylvania</h2>
+                        <p class="folder-subtitle">Jupyter Notebook &middot; Python &middot; Geochemical &amp;
+                            Petrographic Analysis &middot; Luzerne County, Pennsylvania, USA &middot; 2024</p>
+                    </div>
+                </div>
+                <span class="folder-badge"
+                    style="background:rgba(52,211,153,.1);border-color:rgba(52,211,153,.25);color:#34d399;">&#9679;
+                    Completed</span>
+            </div>
+
+            <!-- Main Preview -->
+            <div class="main-preview-wrap afi d1"
+                style="border-color:rgba(52,211,153,.2);box-shadow:0 0 60px rgba(52,211,153,.08),0 20px 60px rgba(0,0,0,.5);">
+                <img class="main-preview-img" src="coal_waste_analysis.jpg"
+                    alt="Coal Waste Geochemical Analysis Jupyter Notebook showing sample location map, proximate analysis, elemental composition, heavy metal concentrations, rare earth elements, and float-sink separation"
+                    loading="lazy"
+                    onerror="this.style.display='none';this.parentElement.querySelector('.cw-fallback').style.display='flex';">
+                <div class="cw-fallback" style="display:none;align-items:center;justify-content:center;min-height:280px;background:linear-gradient(135deg,rgba(52,211,153,.06),rgba(16,185,129,.03));flex-direction:column;gap:1rem;">
+                    <div style="font-size:3.5rem;">&#9925;</div>
+                    <p style="color:#34d399;font-weight:700;font-size:1.1rem;font-family:'Outfit',sans-serif;">Coal Waste Geochemical Analysis</p>
+                    <p style="color:#5a6a85;font-size:.85rem;">Luzerne County, Pennsylvania &mdash; 2024</p>
+                </div>
+                <div class="preview-label">
+                    <span class="preview-label-tag"
+                        style="background:rgba(52,211,153,.15);border-color:rgba(52,211,153,.4);color:#34d399;">&#128013;
+                        Jupyter Notebook &middot; Geochemical &amp; Petrographic Analysis</span>
+                </div>
+            </div>
+
+            <!-- GitHub CTA -->
+            <div class="github-card"
+                style="background:linear-gradient(135deg,rgba(52,211,153,.08),rgba(52,211,153,.03));border-color:rgba(52,211,153,.2);">
+                <div class="github-card-text">
+                    <h3>&#128279; View Full Notebook on GitHub</h3>
+                    <p>Complete Jupyter Notebook with geochemical analysis, heavy metal screening, REE profiling, and
+                        float-sink separation data &mdash; fully reproducible.</p>
+                </div>
+                <a href="https://github.com/fikra1225/coal-waste-geochemical-analysis" target="_blank"
+                    rel="noopener noreferrer" class="btn" id="github-coalwaste-btn"
+                    style="background:linear-gradient(135deg,#10b981,#059669);color:#fff;box-shadow:0 4px 20px rgba(16,185,129,.3);font-weight:700;"
+                    aria-label="View Coal Waste Geochemical Analysis on GitHub">&#128279; Open on GitHub</a>
+            </div>
+
+            <!-- Project Overview + KPIs -->
+            <div class="project-overview">
+                <div class="overview-text">
+                    <h3 style="color:#34d399;">&#128203; Project Overview</h3>
+                    <p>A comprehensive <strong style="color:#e8edf5;">geochemical and petrographic analysis</strong>
+                        of <strong style="color:#34d399;">coal refuse (culm) samples</strong> collected from a
+                        historic anthracite coal mining region in <strong style="color:#34d399;">Luzerne County,
+                            Pennsylvania (2024)</strong> &mdash; assessing environmental contamination, mineral
+                        chemistry, and legacy remediation effectiveness.</p>
+                    <p>This project applies Python to characterize the proximate, ultimate, and geochemical
+                        properties of coal waste piles, including heavy metal screening, rare earth element
+                        (REE) profiling, and float-sink separation analysis across 9 sample sites with
+                        varying remediation histories.</p>
+                    <ul>
+                        <li><strong>Sample Sites:</strong> 9 coal refuse sites, Luzerne County, Pennsylvania
+                            &mdash; including lime-remediated and untreated areas</li>
+                        <li><strong>Data Tables:</strong> Sample metadata, proximate/ultimate analysis,
+                            multi-element geochemistry (ICP/INAA), float-sink separation</li>
+                        <li><strong>Analysis:</strong> Proximate &amp; ultimate analysis, heavy metal
+                            concentrations (Ni, Cu, Pb, Zn, As), REE profiling, sulfur speciation</li>
+                        <li><strong>Visualizations:</strong> Sample location maps, geochemical scatter plots,
+                            bar charts, heatmaps, float-sink profiles</li>
+                        <li><strong>Output:</strong> Reproducible Jupyter Notebook with Matplotlib/Seaborn
+                            scientific figures and interactive Folium map</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3
+                        style="font-size:1rem;color:#34d399;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem;">
+                        &#128200; Project Stats</h3>
+                    <div class="kpi-grid">
+                        <div class="kpi-card">
+                            <div class="kpi-value" style="color:#34d399;">9</div>
+                            <div class="kpi-label">Sample Sites</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-value" style="color:#34d399;">4</div>
+                            <div class="kpi-label">Data Tables</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-value" style="color:#34d399;">60+</div>
+                            <div class="kpi-label">Parameters</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-value" style="color:#34d399;">REE</div>
+                            <div class="kpi-label">Key Analysis</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-value" style="color:#34d399;">PA</div>
+                            <div class="kpi-label">State, USA</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-value" style="color:#34d399;">.ipynb</div>
+                            <div class="kpi-label">Format</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notebook Sections -->
+            <p class="slg" style="color:#34d399;">Notebook Structure</p>
+            <h3 style="font-size:1.15rem;color:#e8edf5;margin-bottom:1.5rem;font-family:'Outfit',sans-serif;">Analysis
+                Pipeline</h3>
+            <div class="notebook-sections">
+                <div class="nb-card" id="nb3-import" style="border-color:rgba(52,211,153,.12);">
+                    <div class="nb-icon">&#128230;</div>
+                    <div class="nb-step" style="color:#34d399;">Step 01</div>
+                    <div class="nb-title">Data Import &amp; Merging</div>
+                    <p class="nb-desc">Load and merge 4 structured CSV tables (sample metadata, proximate/ultimate
+                        analysis, multi-element geochemistry, float-sink data) by Sample ID.</p>
+                </div>
+                <div class="nb-card" id="nb3-map" style="border-color:rgba(52,211,153,.12);">
+                    <div class="nb-icon">&#128205;</div>
+                    <div class="nb-step" style="color:#34d399;">Step 02</div>
+                    <div class="nb-title">Sample Location Mapping</div>
+                    <p class="nb-desc">Interactive Folium map of 9 coal refuse sites in Luzerne County, PA,
+                        color-coded by remediation status (lime-treated vs untreated).</p>
+                </div>
+                <div class="nb-card" id="nb3-prox" style="border-color:rgba(52,211,153,.12);">
+                    <div class="nb-icon">&#128202;</div>
+                    <div class="nb-step" style="color:#34d399;">Step 03</div>
+                    <div class="nb-title">Proximate &amp; Ultimate Analysis</div>
+                    <p class="nb-desc">Compare ash content, volatile matter, fixed carbon, and heating values
+                        across sites. Plot CHNS elemental composition and sulfur speciation (pyritic,
+                        sulfate, organic).</p>
+                </div>
+                <div class="nb-card" id="nb3-metals" style="border-color:rgba(52,211,153,.12);">
+                    <div class="nb-icon">&#9878;</div>
+                    <div class="nb-step" style="color:#34d399;">Step 04</div>
+                    <div class="nb-title">Heavy Metal Screening</div>
+                    <p class="nb-desc">Analyze Ni, Cu, Pb, Zn, Cd, As concentrations via TD-ICP and INAA.
+                        Compare raw vs. sink fractions and assess exceedances vs. regulatory thresholds.</p>
+                </div>
+                <div class="nb-card" id="nb3-ree" style="border-color:rgba(52,211,153,.12);">
+                    <div class="nb-icon">&#128300;</div>
+                    <div class="nb-step" style="color:#34d399;">Step 05</div>
+                    <div class="nb-title">Rare Earth Element (REE) Profiling</div>
+                    <p class="nb-desc">Plot chondrite-normalized REE patterns (La to Lu) from FUS-MS data to
+                        characterize the geochemical fingerprint of coal refuse and assess REE enrichment
+                        potential.</p>
+                </div>
+                <div class="nb-card" id="nb3-floatsink" style="border-color:rgba(52,211,153,.12);">
+                    <div class="nb-icon">&#128348;</div>
+                    <div class="nb-step" style="color:#34d399;">Step 06</div>
+                    <div class="nb-title">Float-Sink Separation Analysis</div>
+                    <p class="nb-desc">Evaluate washability data (float at SG 1.60 vs. sink) for ash, volatile
+                        matter, sulfur, and heating value &mdash; assessing coal recovery potential from
+                        waste piles.</p>
+                </div>
+            </div>
+
+            <!-- Code Snippet -->
+            <p class="slg" style="color:#34d399;">Code Preview</p>
+            <h3 style="font-size:1.15rem;color:#e8edf5;margin-bottom:1.5rem;font-family:'Outfit',sans-serif;">Sample
+                &mdash; Heavy Metal Bar Chart</h3>
+            <div class="code-block-wrap">
+                <div class="code-header">
+                    <div class="code-dots">
+                        <div class="code-dot code-dot-red"></div>
+                        <div class="code-dot code-dot-yellow"></div>
+                        <div class="code-dot code-dot-green"></div>
+                    </div>
+                    <span class="code-filename">Coal_Waste_Analysis.ipynb</span>
+                    <span class="code-lang" style="color:#34d399;">Python</span>
+                </div>
+                <pre class="code-body"><span class="kw">import</span> pandas <span class="kw">as</span> pd
+<span class="kw">import</span> matplotlib.pyplot <span class="kw">as</span> plt
+<span class="kw">import</span> numpy <span class="kw">as</span> np
+
+<span class="cm"># Load and merge geochemical tables</span>
+meta    = pd.<span class="fn">read_csv</span>(<span class="st">'Table1.csv'</span>)
+prox    = pd.<span class="fn">read_csv</span>(<span class="st">'Table2.csv'</span>)
+geochem = pd.<span class="fn">read_csv</span>(<span class="st">'Table3.csv'</span>)
+df = meta.<span class="fn">merge</span>(prox, on=<span class="st">'SampleID'</span>).<span class="fn">merge</span>(geochem, on=<span class="st">'SampleID'</span>)
+
+<span class="cm"># Heavy metal bar chart (Ni, Cu, Pb, Zn, As)</span>
+metals = [<span class="st">'Ni_TD-ICP_ppm'</span>, <span class="st">'Cu_TD-ICP_ppm'</span>, <span class="st">'Pb_TD-ICP_ppm'</span>,
+           <span class="st">'Zn_TD-ICP_ppm'</span>, <span class="st">'As_INAA_ppm'</span>]
+raw_ws = df[df[<span class="st">'Basis'</span>] == <span class="st">'ws'</span>].<span class="fn">copy</span>()
+
+x = np.<span class="fn">arange</span>(<span class="fn">len</span>(raw_ws))
+fig, ax = plt.<span class="fn">subplots</span>(figsize=(<span class="nb2">13</span>, <span class="nb2">5</span>))
+<span class="kw">for</span> i, metal <span class="kw">in</span> <span class="fn">enumerate</span>(metals):
+    ax.<span class="fn">bar</span>(x + i * <span class="nb2">0.15</span>, raw_ws[metal], width=<span class="nb2">0.14</span>, label=metal.<span class="fn">split</span>(<span class="st">'_'</span>)[<span class="nb2">0</span>])
+ax.<span class="fn">set_xticks</span>(x + <span class="nb2">0.3</span>)
+ax.<span class="fn">set_xticklabels</span>(raw_ws[<span class="st">'SampleID'</span>], rotation=<span class="nb2">45</span>, ha=<span class="st">'right'</span>)
+ax.<span class="fn">set_ylabel</span>(<span class="st">'Concentration (ppm)'</span>)
+ax.<span class="fn">set_title</span>(<span class="st">'Heavy Metal Concentrations in Coal Refuse -- Luzerne Co., PA'</span>)
+ax.<span class="fn">legend</span>()
+plt.<span class="fn">tight_layout</span>()
+plt.<span class="fn">show</span>()</pre>
+            </div>
+
+            <!-- Key Insights -->
+            <p class="slg" style="color:#34d399;">Key Findings</p>
+            <h3 style="font-size:1.15rem;color:#e8edf5;margin-bottom:1.5rem;font-family:'Outfit',sans-serif;">Insights
+                from Coal Waste Analysis</h3>
+            <div class="insights-grid">
+                <div class="insight-card" id="insight3-ash" style="border-color:rgba(52,211,153,.12);">
+                    <div class="insight-icon">&#128293;</div>
+                    <h4>High-Ash Waste Piles</h4>
+                    <p>Most samples exceed 60% ash content (dry basis), confirming these are low-grade coal
+                        refuse culm piles with limited remaining fuel value but significant mineral matrix.</p>
+                </div>
+                <div class="insight-card" id="insight3-sulfur" style="border-color:rgba(52,211,153,.12);">
+                    <div class="insight-icon">&#9879;</div>
+                    <h4>Sulfur Speciation &amp; AMD Risk</h4>
+                    <p>Pyritic sulfur dominates in untreated sites, signaling active acid mine drainage
+                        generation potential; lime-remediated sites show suppressed sulfate mobility and
+                        lower sulfur content.</p>
+                </div>
+                <div class="insight-card" id="insight3-metals" style="border-color:rgba(52,211,153,.12);">
+                    <div class="insight-icon">&#9878;</div>
+                    <h4>Heavy Metal Enrichment</h4>
+                    <p>Elevated Ni, Cu, Zn, and As concentrations in sink fractions relative to float
+                        material, indicating preferential partitioning of heavy metals into the denser,
+                        mineral-rich fraction of the refuse.</p>
+                </div>
+                <div class="insight-card" id="insight3-ree" style="border-color:rgba(52,211,153,.12);">
+                    <div class="insight-icon">&#128300;</div>
+                    <h4>REE Recovery Potential</h4>
+                    <p>Rare earth element concentrations (La, Ce, Nd, Y) in the coal ash fraction suggest
+                        potential economic recovery interest, consistent with growing interest in coal waste
+                        as a critical minerals source.</p>
+                </div>
+                <div class="insight-card" id="insight3-remediation" style="border-color:rgba(52,211,153,.12);">
+                    <div class="insight-icon">&#127807;</div>
+                    <h4>Lime Remediation Contrast</h4>
+                    <p>Sites with historic lime application (circa 2015) show visibly different geochemical
+                        profiles &mdash; higher moisture, lower pyritic sulfur &mdash; demonstrating
+                        measurable remediation effects a decade later.</p>
+                </div>
+                <div class="insight-card" id="insight3-floatsink" style="border-color:rgba(52,211,153,.12);">
+                    <div class="insight-icon">&#128348;</div>
+                    <h4>Washability &amp; Coal Recovery</h4>
+                    <p>Float-sink analysis reveals that certain sites (e.g., NCAQ4, NCAQ9) retain a
+                        recoverable float fraction with heating values exceeding 10,000 BTU/lb, suggesting
+                        economic reprocessing potential for select refuse piles.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <section class="py-section py-section-alt" aria-labelledby="techniques-heading">
+        <div class="container">
+            <div class="section-title">
+                <p class="slg">Under the Hood</p>
+                <h2 id="techniques-heading"
+                    style="background:linear-gradient(135deg,#e8edf5 30%,#fbbf24 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">
+                    Libraries &amp; Techniques</h2>
+                <p>The Python data science tools and methods applied in this project.</p>
+            </div>
+            <div class="techniques-grid">
+                <div class="technique-item">
+                    <div class="technique-dot"></div>
+                    <div>
+                        <h4>Pandas</h4>
+                        <p>Data loading, merging, cleaning, and aggregation across multiple structured CSV and Excel
+                            files.</p>
+                    </div>
+                </div>
+                <div class="technique-item">
+                    <div class="technique-dot"></div>
+                    <div>
+                        <h4>NumPy</h4>
+                        <p>Numerical operations, array manipulations, and statistical calculations on geochemical
+                            parameter arrays.</p>
+                    </div>
+                </div>
+                <div class="technique-item">
+                    <div class="technique-dot"></div>
+                    <div>
+                        <h4>Matplotlib</h4>
+                        <p>Multi-panel figure layouts, scatter plots, time series, box plots, and hydrogeochemical
+                            diagrams.</p>
+                    </div>
+                </div>
+                <div class="technique-item">
+                    <div class="technique-dot"></div>
+                    <div>
+                        <h4>Seaborn</h4>
+                        <p>Correlation heatmaps, statistical distribution plots, and enhanced aesthetic styling for
+                            publication quality.</p>
+                    </div>
+                </div>
+                <div class="technique-item">
+                    <div class="technique-dot"></div>
+                    <div>
+                        <h4>Piper Diagram</h4>
+                        <p>Hydrogeochemical classification of water samples using trilinear plots to identify water type
+                            facies.</p>
+                    </div>
+                </div>
+                <div class="technique-item">
+                    <div class="technique-dot"></div>
+                    <div>
+                        <h4>Descriptive Statistics</h4>
+                        <p>Summary statistics (mean, median, std, IQR) per water type group for all geochemical
+                            parameters.</p>
+                    </div>
+                </div>
+                <div class="technique-item">
+                    <div class="technique-dot"></div>
+                    <div>
+                        <h4>Correlation Analysis</h4>
+                        <p>Pearson correlation matrices to identify co-varying geochemical species and infer mineral
+                            weathering processes.</p>
+                    </div>
+                </div>
+                <div class="technique-item">
+                    <div class="technique-dot"></div>
+                    <div>
+                        <h4>Multi-Table Merge</h4>
+                        <p>Joining 5 datasets across sample site metadata, water chemistry, and environmental tracers by
+                            Sample ID.</p>
+                    </div>
+                </div>
+                <div class="technique-item">
+                    <div class="technique-dot"></div>
+                    <div>
+                        <h4>Jupyter Notebook</h4>
+                        <p>Interactive cell-by-cell analysis with inline visualizations, markdown documentation, and
+                            reproducible execution.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <section class="py-cta" aria-labelledby="py-cta-heading">
+        <div class="container">
+            <p class="slg" style="justify-content:center;">Let's collaborate on your next Python project!</p>
+            <h2 id="py-cta-heading">Interested in my Python work?</h2>
+            <p>I am open to data analyst roles, Python projects, and scientific data collaborations.</p>
+            <div class="py-cta-btns">
+                <a href="https://github.com/fikra1225" target="_blank" rel="noopener noreferrer" class="btn btn-gold"
+                    id="cta-github-btn">&#128279; View GitHub Profile</a>
+                <a href="Services.html" class="btn btn-ghost" id="cta-services-btn">&#128187; My Services</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer" aria-label="Site footer">
+        <div class="container">
+            <div class="footer-inner">
+                <span class="footer-logo">FA.</span>
+                <p class="footer-copy">&copy; 2026 Fikra Asyrafi. All rights reserved.</p>
+                <nav aria-label="Footer navigation">
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="hobbies.html">Hobbies</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

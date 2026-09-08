@@ -1,0 +1,394 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Fikra Asyrafi Excel Portfolio - Two end-to-end Excel projects: Indeed US Salaries (979 records) and US Grocery Gas Prices 2015-2026 (7,814 BLS records).">
+<meta name="keywords" content="Fikra Asyrafi, Excel, pivot table, INDEX MATCH, VLOOKUP, HLOOKUP, VBA, macros, what-if analysis, BLS, regression, data analyst">
+<meta name="author" content="Fikra Asyrafi">
+<title>Excel Analytics Projects - Fikra Asyrafi</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.xl-hero{padding:8rem 0 5rem;background:linear-gradient(135deg,#0a0e1a 0%,#0d1a1c 50%,#0a1620 100%);position:relative;overflow:hidden;}
+.xl-hero::before,.xl-hero::after{content:"";position:absolute;pointer-events:none;}
+.xl-hero::before{top:-20%;right:-10%;width:60%;height:80%;background:radial-gradient(ellipse,rgba(56,189,248,.09) 0%,transparent 70%);}
+.xl-hero::after{bottom:-20%;left:-10%;width:50%;height:60%;background:radial-gradient(ellipse,rgba(52,211,153,.07) 0%,transparent 70%);}
+.xl-hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(56,189,248,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(56,189,248,.04) 1px,transparent 1px);background-size:50px 50px;mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black 20%,transparent 100%);}
+.xl-hero-badge{display:inline-flex;align-items:center;gap:.5rem;font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#38bdf8;margin-bottom:1rem;padding:.35rem 1rem;border:1px solid rgba(56,189,248,.25);border-radius:100px;background:rgba(56,189,248,.07);}
+.xl-hero-badge::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:#38bdf8;animation:pulseB 2s ease-in-out infinite;}
+@keyframes pulseB{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(56,189,248,.4);}50%{opacity:.8;box-shadow:0 0 0 6px rgba(56,189,248,0);}}
+.xl-hero h1{font-size:clamp(2rem,5vw,3.5rem);font-weight:800;background:linear-gradient(135deg,#e8edf5 30%,#38bdf8 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:1rem;}
+.xl-hero-desc{font-size:1.05rem;color:#8a9bb8;max-width:680px;line-height:1.8;margin-bottom:2rem;}
+.hero-dual-stats{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2.5rem;}
+.hero-stat-group{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:1.2rem 1.5rem;display:flex;flex-direction:column;gap:.75rem;}
+.hero-stat-group-label{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#38bdf8;display:flex;align-items:center;gap:.5rem;}
+.hero-stat-group-label::before{content:"";display:inline-block;width:20px;height:2px;background:linear-gradient(90deg,#38bdf8,#4ade80);border-radius:2px;}
+.hero-stat-row{display:flex;gap:2rem;flex-wrap:wrap;}
+.xl-hero-stat-num{font-family:"Outfit",sans-serif;font-size:1.5rem;font-weight:800;color:#38bdf8;line-height:1;}
+.xl-hero-stat-label{font-size:.7rem;color:#5a6a85;margin-top:.2rem;text-transform:uppercase;letter-spacing:.08em;}
+.tab-nav-wrap{background:#0a0e1a;border-bottom:1px solid rgba(255,255,255,.07);position:sticky;top:68px;z-index:90;}
+.tab-nav{display:flex;align-items:stretch;max-width:1200px;margin:0 auto;padding:0 2rem;}
+.tab-btn{display:flex;align-items:center;gap:.6rem;padding:1.1rem 2rem;font-size:.875rem;font-weight:600;color:#5a6a85;background:none;border:none;cursor:pointer;border-bottom:2px solid transparent;transition:color .25s,border-color .25s;white-space:nowrap;}
+.tab-btn:hover{color:#8a9bb8;}
+.tab-btn.active{color:#38bdf8;border-bottom-color:#38bdf8;}
+.tab-btn .tab-count{font-size:.65rem;font-weight:700;padding:.15rem .45rem;border-radius:100px;background:rgba(56,189,248,.12);color:#38bdf8;border:1px solid rgba(56,189,248,.2);}
+.project-panel{display:none;}.project-panel.active{display:block;}
+.xl-section{padding:5rem 0;position:relative;z-index:1;}.xl-section-alt{background:#0f1628;}
+.tools-bar{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:1.5rem;}
+.tools-bar-label{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:#5a6a85;font-weight:600;}
+.tool-chip{display:inline-flex;align-items:center;gap:.4rem;padding:.3rem .85rem;border-radius:100px;font-size:.78rem;font-weight:600;border:1px solid;}
+.tc-blue{color:#38bdf8;border-color:rgba(56,189,248,.3);background:rgba(56,189,248,.07);}
+.tc-green{color:#4ade80;border-color:rgba(74,222,128,.3);background:rgba(74,222,128,.07);}
+.tc-amber{color:#f0a500;border-color:rgba(240,165,0,.3);background:rgba(240,165,0,.07);}
+.tc-violet{color:#a78bfa;border-color:rgba(167,139,250,.3);background:rgba(167,139,250,.07);}
+.folder-header{display:flex;align-items:flex-start;justify-content:space-between;gap:2rem;margin-bottom:3rem;flex-wrap:wrap;}
+.folder-title-group{display:flex;align-items:center;gap:1.2rem;}
+.folder-icon-wrap{width:60px;height:60px;border-radius:16px;background:linear-gradient(135deg,rgba(56,189,248,.2),rgba(52,211,153,.1));border:1px solid rgba(56,189,248,.25);display:flex;align-items:center;justify-content:center;font-size:1.8rem;flex-shrink:0;}
+.folder-title-group h2{font-size:clamp(1.4rem,3vw,2rem);background:linear-gradient(135deg,#e8edf5 30%,#38bdf8 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.3rem;}
+.folder-subtitle{font-size:.85rem;color:#5a6a85;}
+.folder-badge{display:inline-flex;align-items:center;gap:.4rem;padding:.3rem .9rem;border-radius:100px;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.25);color:#38bdf8;white-space:nowrap;}
+.project-overview{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;margin-bottom:3rem;align-items:start;}
+.overview-text h3{font-size:1.05rem;color:#38bdf8;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem;}
+.overview-text p{font-size:.92rem;line-height:1.85;color:#8a9bb8;margin-bottom:.9rem;}
+.overview-text ul{color:#8a9bb8;font-size:.9rem;padding-left:1.2rem;}
+.overview-text li{margin-bottom:.5rem;line-height:1.7;}
+.overview-text li strong{color:#e8edf5;}
+.kpi-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;}
+.kpi-card{background:linear-gradient(145deg,rgba(255,255,255,.04),rgba(255,255,255,.01));border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:1.2rem 1.4rem;backdrop-filter:blur(12px);transition:border-color .3s,transform .3s;position:relative;overflow:hidden;}
+.kpi-card::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,rgba(56,189,248,.6),transparent);}
+.kpi-card:hover{border-color:rgba(56,189,248,.3);transform:translateY(-3px);}
+.kpi-value{font-family:"Outfit",sans-serif;font-size:1.4rem;font-weight:800;color:#38bdf8;line-height:1;margin-bottom:.3rem;}
+.kpi-label{font-size:.75rem;color:#5a6a85;font-weight:600;text-transform:uppercase;letter-spacing:.07em;}
+.pages-section h3{font-size:1rem;color:#38bdf8;margin-bottom:1.5rem;display:flex;align-items:center;gap:.5rem;}
+.sheet-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-bottom:3rem;}
+.sheet-card{background:linear-gradient(145deg,rgba(255,255,255,.04),rgba(255,255,255,.01));border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:1.3rem 1.4rem;transition:border-color .35s,transform .35s,box-shadow .35s;}
+.sheet-card:hover{border-color:rgba(56,189,248,.35);transform:translateY(-5px);box-shadow:0 12px 40px rgba(56,189,248,.12),0 4px 16px rgba(0,0,0,.4);}
+.sheet-card-icon{font-size:1.4rem;margin-bottom:.6rem;}
+.sheet-card-title{font-family:"Outfit",sans-serif;font-size:.9rem;font-weight:700;color:#e8edf5;margin-bottom:.4rem;}
+.sheet-card-desc{font-size:.78rem;color:#5a6a85;line-height:1.6;margin:0;}
+.insights-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.2rem;margin-bottom:3rem;}
+.insight-card{background:linear-gradient(145deg,rgba(255,255,255,.04),rgba(255,255,255,.01));border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:1.4rem;transition:border-color .3s,transform .3s;}
+.insight-card:hover{border-color:rgba(56,189,248,.25);transform:translateY(-3px);}
+.insight-icon{font-size:1.6rem;margin-bottom:.75rem;}
+.insight-card h4{font-size:.9rem;color:#e8edf5;margin-bottom:.5rem;}
+.insight-card p{font-size:.8rem;color:#5a6a85;line-height:1.6;margin:0;}
+.techniques-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;}
+.technique-item{display:flex;align-items:flex-start;gap:.75rem;padding:1rem;border-radius:12px;border:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.02);transition:border-color .2s;}
+.technique-item:hover{border-color:rgba(56,189,248,.2);}
+.technique-dot{width:8px;height:8px;border-radius:50%;background:#38bdf8;flex-shrink:0;margin-top:.35rem;}
+.technique-item h4{font-size:.82rem;color:#e8edf5;margin-bottom:.2rem;}
+.technique-item p{font-size:.73rem;color:#5a6a85;line-height:1.5;margin:0;}
+.xl-note{margin-top:1rem;padding:1rem 1.3rem;border-radius:12px;border:1px solid rgba(240,165,0,.25);background:rgba(240,165,0,.06);font-size:.82rem;color:#c9b98a;line-height:1.7;}
+.xl-note strong{color:#f0a500;}
+.xl-cta{text-align:center;padding:4rem 0;background:linear-gradient(135deg,#0a0e1a,#0d1a1c);border-top:1px solid rgba(255,255,255,.06);}
+.xl-cta h2{font-size:clamp(1.4rem,3vw,2rem);background:linear-gradient(135deg,#e8edf5 30%,#38bdf8 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.75rem;}
+.xl-cta p{color:#5a6a85;font-size:.95rem;margin-bottom:2rem;}
+.xl-cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+.slg{display:inline-flex;align-items:center;gap:.5rem;font-family:"Outfit",sans-serif;font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#38bdf8;margin-bottom:.75rem;}
+.slg::before{content:"";display:inline-block;width:24px;height:2px;background:linear-gradient(90deg,#38bdf8,#4ade80);border-radius:2px;}
+.afu{opacity:0;transform:translateY(24px);animation:fadeU .7s forwards;}
+.afi{opacity:0;animation:fadeI .7s forwards;}
+@keyframes fadeU{to{opacity:1;transform:translateY(0);}}
+@keyframes fadeI{to{opacity:1;}}
+.d1{animation-delay:.1s;}.d2{animation-delay:.25s;}.d3{animation-delay:.4s;}.d4{animation-delay:.55s;}
+.switch-cta-bar{background:rgba(56,189,248,.05);border:1px solid rgba(56,189,248,.15);border-radius:16px;padding:1.5rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;margin-top:4rem;}
+.switch-cta-bar p{font-size:.9rem;color:#8a9bb8;margin:0;}
+.switch-cta-bar p strong{color:#e8edf5;}
+.switch-btn{display:inline-flex;align-items:center;gap:.5rem;padding:.65rem 1.5rem;border-radius:100px;font-size:.82rem;font-weight:600;border:1px solid rgba(56,189,248,.4);color:#38bdf8;background:rgba(56,189,248,.08);cursor:pointer;transition:background .25s,border-color .25s,transform .2s;white-space:nowrap;}
+.switch-btn:hover{background:rgba(56,189,248,.16);border-color:rgba(56,189,248,.6);transform:translateY(-2px);}
+@media(max-width:900px){.hero-dual-stats{grid-template-columns:1fr;}}
+@media(max-width:768px){.project-overview{grid-template-columns:1fr;}.sheet-grid{grid-template-columns:1fr;}.folder-header{flex-direction:column;}.tab-btn{padding:.9rem 1.1rem;font-size:.8rem;}.tab-btn .tab-count{display:none;}}
+</style>
+</head>
+<body>
+<nav class="site-nav" aria-label="Main navigation">
+<div class="container"><div class="nav-inner">
+<a href="index.html" class="nav-logo" aria-label="Fikra Asyrafi home">FA.</a>
+<ul class="nav-links">
+<li><a href="index.html#about">About</a></li>
+<li><a href="index.html#skills">Skills</a></li>
+<li><a href="index.html#experience">Experience</a></li>
+<li><a href="index.html#projects">Projects</a></li>
+<li><a href="index.html#education">Education</a></li>
+<li><a href="hobbies.html">Hobbies</a></li>
+<li><a href="Services.html">Services</a></li>
+<li><a href="index.html#contact">Contact</a></li>
+</ul>
+</div></div>
+</nav>
+
+<header class="xl-hero" aria-label="Excel Analytics Portfolio">
+<div class="xl-hero-grid" aria-hidden="true"></div>
+<div class="container">
+<div class="xl-hero-badge afu d1">Excel Analytics Portfolio</div>
+<h1 class="afu d2">Two Excel Projects &#8212;<br>One Analyst Workflow</h1>
+<p class="xl-hero-desc afu d3">End-to-end Excel workbooks demonstrating a complete data analyst toolkit: scraping &amp; cleaning raw data, normalizing with lookup functions, summarizing with pivot tables, modeling with regression &amp; what-if analysis, and automating repetitive tasks with VBA macros.</p>
+<div class="tools-bar afu d3">
+<span class="tools-bar-label">Stack:</span>
+<span class="tool-chip tc-blue">&#128202; Microsoft Excel</span>
+<span class="tool-chip tc-green">&#128269; INDEX/MATCH</span>
+<span class="tool-chip tc-amber">&#128203; Pivot Tables</span>
+<span class="tool-chip tc-violet">&#9881; VBA / Macros</span>
+<span class="tool-chip tc-amber">&#128201; Linear Regression</span>
+</div>
+<div class="hero-dual-stats afi d4">
+<div class="hero-stat-group">
+<div class="hero-stat-group-label">&#128202; Indeed US Salaries</div>
+<div class="hero-stat-row">
+<div class="xl-hero-stat"><div class="xl-hero-stat-num">979</div><div class="xl-hero-stat-label">Salary Records</div></div>
+<div class="xl-hero-stat"><div class="xl-hero-stat-num">98</div><div class="xl-hero-stat-label">Companies</div></div>
+<div class="xl-hero-stat"><div class="xl-hero-stat-num">$84.2K</div><div class="xl-hero-stat-label">Avg Annual Salary</div></div>
+</div>
+</div>
+<div class="hero-stat-group">
+<div class="hero-stat-group-label">&#127860; US Grocery &amp; Gas Prices</div>
+<div class="hero-stat-row">
+<div class="xl-hero-stat"><div class="xl-hero-stat-num">7,814</div><div class="xl-hero-stat-label">Monthly Records</div></div>
+<div class="xl-hero-stat"><div class="xl-hero-stat-num">74</div><div class="xl-hero-stat-label">Items Tracked</div></div>
+<div class="xl-hero-stat"><div class="xl-hero-stat-num">2015&#8211;2026</div><div class="xl-hero-stat-label">Date Range</div></div>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<div class="section-divider" aria-hidden="true"></div>
+
+<div class="tab-nav-wrap" role="tablist" aria-label="Excel Projects">
+<div class="tab-nav">
+<button class="tab-btn active" id="tab-salary-btn" role="tab" aria-selected="true" aria-controls="panel-salary" onclick="switchTab('salary')">
+<span class="tab-icon">&#128202;</span> Indeed US Salaries <span class="tab-count">979 records</span>
+</button>
+<button class="tab-btn" id="tab-prices-btn" role="tab" aria-selected="false" aria-controls="panel-prices" onclick="switchTab('prices')">
+<span class="tab-icon">&#127860;</span> US Prices Analysis <span class="tab-count">7,814 records</span>
+</button>
+</div>
+</div>
+<!-- PANEL 1: SALARY -->
+<div id="panel-salary" class="project-panel active" role="tabpanel" aria-labelledby="tab-salary-btn">
+<section class="xl-section" id="salary-workbook" aria-labelledby="salary-heading">
+<div class="container">
+<div class="folder-header">
+<div class="folder-title-group">
+<div class="folder-icon-wrap" aria-hidden="true">&#128202;</div>
+<div>
+<p class="slg">Project 01 &mdash; Compensation Analytics</p>
+<h2 id="salary-heading">Indeed Salaries Workbook</h2>
+<p class="folder-subtitle">Excel Workbook &middot; 9 Sheets &middot; Multi-Company Salary Data</p>
+</div>
+</div>
+<span class="folder-badge">&#9679; Completed</span>
+</div>
+<div class="project-overview">
+<div class="overview-text">
+<h3>&#128203; Project Overview</h3>
+<p>This workbook analyzes <strong style="color:#e8edf5;">979 rows</strong> of median salary data scraped from Indeed, spanning <strong style="color:#e8edf5;">98 US companies</strong> and <strong style="color:#e8edf5;">29 job categories</strong>. The goal was to demonstrate a realistic, end-to-end Excel analysis workflow: clean the raw data, normalize pay periods with lookup functions, summarize with pivot tables, run sensitivity and goal-seek analysis on pay raises, and automate reporting with VBA.</p>
+<p>Salaries were originally reported on inconsistent bases &mdash; hourly, weekly, monthly, or yearly &mdash; so a core piece of the project was building a reliable <em style="color:#38bdf8;">Annual Salary</em> figure that makes every role comparable.</p>
+<ul>
+<li><strong>Data Source:</strong> Raw CSV of Indeed salary listings, untouched in an Excel Table</li>
+<li><strong>Normalization:</strong> INDEX/MATCH against a period-to-multiplier lookup table</li>
+<li><strong>Summarization:</strong> Formula-built and native PivotTables by category and company</li>
+<li><strong>Analysis:</strong> Raise sensitivity table, Goal Seek, and Scenario Manager</li>
+<li><strong>Automation:</strong> Three VBA macros for cleaning, reporting, and dashboard refresh</li>
+</ul>
+</div>
+<div>
+<h3 style="font-size:1rem;color:#38bdf8;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem;">&#128200; Key Metrics</h3>
+<div class="kpi-grid">
+<div class="kpi-card"><div class="kpi-value">979</div><div class="kpi-label">Total Records</div></div>
+<div class="kpi-card"><div class="kpi-value">98</div><div class="kpi-label">Companies</div></div>
+<div class="kpi-card"><div class="kpi-value">29</div><div class="kpi-label">Job Categories</div></div>
+<div class="kpi-card"><div class="kpi-value">$84.2K</div><div class="kpi-label">Avg Annual Salary</div></div>
+<div class="kpi-card"><div class="kpi-value">$163K</div><div class="kpi-label">Top Category Avg</div></div>
+<div class="kpi-card"><div class="kpi-value">$213.9K</div><div class="kpi-label">Top Company Avg</div></div>
+<div class="kpi-card"><div class="kpi-value">4</div><div class="kpi-label">Lookup Types Used</div></div>
+<div class="kpi-card"><div class="kpi-value">3</div><div class="kpi-label">VBA Macros</div></div>
+</div>
+</div>
+</div>
+<div class="pages-section">
+<h3>&#128193; Workbook Sheets</h3>
+<div class="sheet-grid">
+<div class="sheet-card"><div class="sheet-card-icon">&#128190;</div><div class="sheet-card-title">Raw_Data</div><p class="sheet-card-desc">The original, untouched CSV of 979 salary listings loaded as a native Excel Table (RawDataTable).</p></div>
+<div class="sheet-card"><div class="sheet-card-icon">&#128337;</div><div class="sheet-card-title">Multiplier_Lookup</div><p class="sheet-card-desc">Reference table mapping HOURLY / WEEKLY / MONTHLY / YEARLY pay periods to an annual multiplier.</p></div>
+<div class="sheet-card"><div class="sheet-card-icon">&#129529;</div><div class="sheet-card-title">Cleaned_Data</div><p class="sheet-card-desc">Raw data plus an AnnualSalary column normalized via INDEX/MATCH, and a composite lookup Key.</p></div>
+<div class="sheet-card"><div class="sheet-card-icon">&#128269;</div><div class="sheet-card-title">Lookup_Exercises</div><p class="sheet-card-desc">Live INDEX/MATCH, VLOOKUP, and HLOOKUP exercises &mdash; pick a company/job from dropdowns and watch results update.</p></div>
+<div class="sheet-card"><div class="sheet-card-icon">&#128203;</div><div class="sheet-card-title">Pivot_Summary</div><p class="sheet-card-desc">A formula-built (SUMIFS/AVERAGEIFS/COUNTIFS) pivot by Category and Company, plus steps for a native PivotTable.</p></div>
+<div class="sheet-card"><div class="sheet-card-icon">&#127919;</div><div class="sheet-card-title">What_If_Analysis</div><p class="sheet-card-desc">Raise-percentage sensitivity table, a Goal Seek setup, and a Scenario Manager comparing raise scenarios.</p></div>
+<div class="sheet-card"><div class="sheet-card-icon">&#128202;</div><div class="sheet-card-title">Dashboard</div><p class="sheet-card-desc">KPI cards, a company-selector dropdown, and charts summarizing salaries by category and company.</p></div>
+<div class="sheet-card"><div class="sheet-card-icon">&#9881;</div><div class="sheet-card-title">VBA_Macros</div><p class="sheet-card-desc">Full VBA source for three macros: clean &amp; convert data, auto-generate a summary report, and refresh the dashboard.</p></div>
+</div>
+</div>
+<p class="slg">Data Insights</p>
+<h3 style="font-size:1.15rem;color:#e8edf5;margin-bottom:1.5rem;font-family:'Outfit',sans-serif;">Key Findings from the Salary Data</h3>
+<div class="insights-grid">
+<div class="insight-card"><div class="insight-icon">&#127942;</div><h4>Highest-Paying Category</h4><p>Arts &amp; Entertainment tops the list at an average of $163,041/year, ahead of IT Operations &amp; Helpdesk ($159,715) and Project Management ($154,863).</p></div>
+<div class="insight-card"><div class="insight-icon">&#127970;</div><h4>Highest-Paying Company</h4><p>Adobe leads company averages at $213,921/year, followed closely by Airbnb ($197,384) and Salesforce ($195,886).</p></div>
+<div class="insight-card"><div class="insight-icon">&#128176;</div><h4>Wide Salary Spread</h4><p>Annual salaries range from around $15,000 in entry-level Management roles up to $423,415 in top Sales positions &mdash; a reminder to always check the full range, not just the average.</p></div>
+<div class="insight-card"><div class="insight-icon">&#128101;</div><h4>Category Weight</h4><p>Retail, Sales, and Management are the most heavily reported categories, together accounting for thousands of individual salary reports in the dataset.</p></div>
+</div>
+<div class="switch-cta-bar">
+<p>Also explore: <strong>US Grocery &amp; Gas Prices Analysis</strong> &#8212; 7,814 BLS records, linear regression, and VBA automation.</p>
+<button class="switch-btn" onclick="switchTab('prices')">&#127860; View Prices Project &#8594;</button>
+</div>
+</div>
+</section>
+<div class="section-divider" aria-hidden="true"></div>
+<section class="xl-section xl-section-alt" aria-labelledby="salary-techniques-heading">
+<div class="container">
+<div class="section-title">
+<p class="slg">Under the Hood</p>
+<h2 id="salary-techniques-heading" style="background:linear-gradient(135deg,#e8edf5 30%,#38bdf8 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Excel Techniques &amp; Functions Applied</h2>
+<p>The formulas, tools, and automation demonstrated across the workbook.</p>
+</div>
+<div class="techniques-grid">
+<div class="technique-item"><div class="technique-dot"></div><div><h4>INDEX/MATCH</h4><p>Exact-match lookups on a combined Company + Job Title key to pull Category and normalize AnnualSalary.</p></div></div>
+<div class="technique-item"><div class="technique-dot"></div><div><h4>VLOOKUP</h4><p>First-row match on Company to retrieve the corresponding Job Title and Category from Raw_Data.</p></div></div>
+<div class="technique-item"><div class="technique-dot"></div><div><h4>HLOOKUP</h4><p>Horizontal lookup on pay period against the Multiplier_Lookup table to fetch the annual multiplier.</p></div></div>
+<div class="technique-item"><div class="technique-dot"></div><div><h4>Formula-Built Pivots</h4><p>SUMIFS, AVERAGEIFS, and COUNTIFS used to build a manual pivot summary by Category and Company.</p></div></div>
+<div class="technique-item"><div class="technique-dot"></div><div><h4>Native PivotTables</h4><p>Step-by-step setup for a refreshable native Excel PivotTable built directly off RawDataTable.</p></div></div>
+<div class="technique-item"><div class="technique-dot"></div><div><h4>Sensitivity Table</h4><p>A raise-percentage vs. new-annual-salary table modeling outcomes from 0% to 20% raises.</p></div></div>
+<div class="technique-item"><div class="technique-dot"></div><div><h4>Goal Seek</h4><p>Solves for the exact raise percentage required to hit a specific target annual salary.</p></div></div>
+<div class="technique-item"><div class="technique-dot"></div><div><h4>Scenario Manager</h4><p>Conservative (2%), Moderate (5%), and Aggressive (10%) raise scenarios saved for quick comparison.</p></div></div>
+<div class="technique-item"><div class="technique-dot"></div><div><h4>Excel Tables &amp; Dropdowns</h4><p>Structured Tables and data-validation dropdowns power the interactive company/job lookup exercises.</p></div></div>
+<div class="technique-item"><div class="technique-dot"></div><div><h4>VBA: CleanAndConvertData</h4><p>Macro that automates cleaning the raw import and converting every salary to an annual basis.</p></div></div>
+<div class="technique-item"><div class="technique-dot"></div><div><h4>VBA: GenerateSummaryReport</h4><p>Macro that auto-builds a summary report of the cleaned dataset with a single click.</p></div></div>
+<div class="technique-item"><div class="technique-dot"></div><div><h4>VBA: RefreshDashboard</h4><p>Macro that rebuilds the KPI cards and charts on the Dashboard sheet from the latest data.</p></div></div>
+</div>
+<div class="xl-note"><strong>Note:</strong> the file is saved as .xlsx, which cannot store runnable macros &mdash; Excel requires the .xlsm format for that. The VBA_Macros sheet contains the complete, ready-to-run source code with steps to activate it (Save As .xlsm, then paste the code into a module via Alt+F11).</div>
+</div>
+</section>
+</div><!-- /panel-salary -->
+<!-- PANEL 2: PRICES -->
+<div id="panel-prices" class="project-panel" role="tabpanel" aria-labelledby="tab-prices-btn">
+<section class="xl-section" id="prices-workbook" aria-labelledby="prices-heading">
+<div class="container">
+<div class="folder-header">
+<div class="folder-title-group">
+<div class="folder-icon-wrap" aria-hidden="true">&#127860;</div>
+<div>
+<p class="slg">Project 02 &mdash; Consumer Price Analytics</p>
+<h2 id="prices-heading">US Prices Workbook</h2>
+<p class="folder-subtitle">Excel Workbook &middot; 6 Sheets &middot; BLS Average Price Data</p>
+</div>
+</div>
+<span class="folder-badge">&#9679; Completed</span>
+</div>
+<div class="project-overview">
+<div class="overview-text">
+<h3>&#128203; Project Overview</h3>
+<p>This workbook tracks <strong style="color:#e8edf5;">7,814 monthly price observations</strong> for <strong style="color:#e8edf5;">74 grocery and energy items</strong> from the <strong style="color:#e8edf5;">US Bureau of Labor Statistics</strong> Average Price Data series, spanning January 2015 through July 2026. The goal was to go beyond a single lookup table and build a small analytics pipeline: a long-format source table, a per-item summary with coverage and trend metrics, a wide-pivoted view for direct item-to-item comparison, an interactive dashboard, and a from-scratch regression model.</p>
+<p>Because BLS discontinues and introduces series over time, a key part of the project was tracking <em style="color:#38bdf8;">is_current</em> status so trend comparisons only run on items with a full, comparable history.</p>
+<ul>
+<li><strong>Data Source:</strong> US BLS Average Price Data (public domain, CC0), untouched in an Excel Table</li>
+<li><strong>Summarization:</strong> Per-item coverage, min/max, and 12-month average % change</li>
+<li><strong>Lookups:</strong> Single-key INDEX/MATCH and a 3-column composite array-match lookup</li>
+<li><strong>Modeling:</strong> SLOPE/INTERCEPT/RSQ regression, sensitivity table, and Goal Seek</li>
+<li><strong>Automation:</strong> Scaffolded VBA macros for category rollups, conditional formatting, and refresh</li>
+</ul>
+</div>
+<div>
+<h3 style="font-size:1rem;color:#38bdf8;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem;">&#128200; Key Metrics</h3>
+<div class="kpi-grid">
+<div class="kpi-card"><div class="kpi-value">7,814</div><div class="kpi-label">Monthly Records</div></div>
+<div class="kpi-card"><div class="kpi-value">74</div><div class="kpi-label">Items Tracked</div></div>
+<div class="kpi-card"><div class="kpi-value">60</div><div class="kpi-label">Currently Published</div></div>
+<div class="kpi-card"><div class="kpi-value">12</div><div class="kpi-label">Categories</div></div>
+<div class="kpi-card"><div class="kpi-value">138</div><div class="kpi-label">Months Covered</div></div>
+<div class="kpi-card"><div class="kpi-value">+96.3%</div><div class="kpi-label">Top Price Increase</div></div>
+<div class="kpi-card"><div class="kpi-value">0.589</div><div class="kpi-label">Gas&#8594;Milk R&#178;</div></div>
+<div class="kpi-card"><div class="kpi-value">3</div><div class="kpi-label">VBA Macro Exercises</div></div>
+</div>
+</div>
+</div>
+<div class="pages-section">
+<h3>&#128193; Workbook Sheets</h3>
+<div class="sheet-grid">
+<div class="sheet-card"><div class="sheet-card-icon">&#128214;</div><div class="sheet-card-title">README</div><p class="sheet-card-desc">Orientation sheet explaining each tab and crediting the US BLS Average Price Data source.</p></div>
+<div class="sheet-card"><div class="sheet-card-icon">&#128190;</div><div class="sheet-card-title">Monthly</div><p class="sheet-card-desc">The full long-format source: 7,814 rows of date, item, category, unit, and price loaded as an Excel Table (tblMonthly).</p></div>
+<div class="sheet-card"><div class="sheet-card-icon">&#128200;</div><div class="sheet-card-title">ItemSummary</div><p class="sheet-card-desc">One row per item (tblItemSummary): coverage window, min/max price, 12-month average % change, and is_current flag.</p></div>
+<div class="sheet-card"><div class="sheet-card-icon">&#128202;</div><div class="sheet-card-title">WideSelected</div><p class="sheet-card-desc">Eight key items (eggs, gas, milk, beef, electricity, coffee, bread, bananas) pivoted wide &mdash; the input for the regression model.</p></div>
+<div class="sheet-card"><div class="sheet-card-icon">&#128269;</div><div class="sheet-card-title">Dashboard</div><p class="sheet-card-desc">An item-name INDEX/MATCH lookup plus a 3-column composite-key (item + year + month) array-match price lookup.</p></div>
+<div class="sheet-card"><div class="sheet-card-icon">&#9881;</div><div class="sheet-card-title">WhatIf_Model</div><p class="sheet-card-desc">Regression of gasoline vs milk price (SLOPE/INTERCEPT/RSQ), a live what-if lever, 8-point sensitivity table, and Goal Seek setup.</p></div>
+</div>
+</div>
+<p class="slg">Data Insights</p>
+<h3 style="font-size:1.15rem;color:#e8edf5;margin-bottom:1.5rem;font-family:'Outfit',sans-serif;">Key Findings from the Price Data</h3>
+<div class="insights-grid">
+<div class="insight-card"><div class="insight-icon">&#9749;</div><h4>Biggest Mover: Coffee</h4><p>Ground roast coffee rose 96.29% on a trailing 12-month average basis &mdash; the largest increase of any tracked item, ahead of frozen orange juice concentrate (+77.93%) and piped utility gas (+77.35%).</p></div>
+<div class="insight-card"><div class="insight-icon">&#128199;</div><h4>Most Stable: Pasta</h4><p>Spaghetti and macaroni moved just +0.15% over the same window &mdash; effectively flat across more than a decade of data, in sharp contrast to volatile categories like Beef and Energy.</p></div>
+<div class="insight-card"><div class="insight-icon">&#9888;</div><h4>Discontinued Series</h4><p>14 of the 74 tracked items (19%) &mdash; including Broccoli and Frankfurters &mdash; were discontinued by BLS mid-series, which is exactly why the is_current flag matters before trusting a trend.</p></div>
+<div class="insight-card"><div class="insight-icon">&#9981;</div><h4>Gas &amp; Milk Move Together</h4><p>A simple linear regression finds gasoline prices explain ~59% of the variation in milk price (R&#178; = 0.589): every $1/gal rise in gas predicts roughly a $0.50/gal rise in milk.</p></div>
+</div>
+<div class="switch-cta-bar">
+<p>Also explore: <strong>Indeed US Salaries Analysis</strong> &#8212; 979 scraped records, Pivot Tables, What-If Analysis, and VBA macros.</p>
+<button class="switch-btn" onclick="switchTab('salary')">&#128202; View Salary Project &#8594;</button>
+</div>
+</div>
+</section>
+<div class="section-divider" aria-hidden="true"></div>
+<section class="xl-section xl-section-alt" aria-labelledby="prices-techniques-heading">
+<div class="container">
+<div class="section-title">
+<p class="slg">Under the Hood</p>
+<h2 id="prices-techniques-heading" style="background:linear-gradient(135deg,#e8edf5 30%,#38bdf8 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Excel Techniques &amp; Functions Applied</h2>
+<p>The formulas, models, and automation demonstrated across the workbook.</p>
+</div>
+<div class="techniques-grid">
+<div class="technique-item"><div class="technique-dot"></div><div><h4>INDEX/MATCH (single key)</h4><p>Looks up category, unit, first/last price, min/max, and % change from ItemSummary by item name.</p></div></div>
+<div class="technique-item"><div class="technique-dot"></div><div><h4>INDEX/MATCH (composite key)</h4><p>An array formula matching item, year, and month simultaneously &mdash; (A=x)*(B=y)*(C=z) &mdash; to pull one exact monthly price.</p></div></div>
+<div class="technique-item"><div class="technique-dot"></div><div><h4>Excel Tables</h4><p>tblMonthly, tblItemSummary, and tblWide keep every formula and lookup range self-expanding and readable.</p></div></div>
+<div class="technique-item"><div class="technique-dot"></div><div><h4>SLOPE / INTERCEPT / RSQ</h4><p>Builds a linear regression of gasoline price against milk price directly from the WideSelected data, no add-ins required.</p></div></div>
+<div class="technique-item"><div class="technique-dot"></div><div><h4>Sensitivity Table</h4><p>Projects predicted milk price across eight gasoline-price scenarios from $2.00 to $5.50 per gallon.</p></div></div>
+<div class="technique-item"><div class="technique-dot"></div><div><h4>Goal Seek</h4><p>Set up to solve for the exact gasoline price that would predict a target $4.50 milk price.</p></div></div>
+<div class="technique-item"><div class="technique-dot"></div><div><h4>Live What-If Lever</h4><p>Editing a single hypothetical gasoline price cell instantly recalculates the predicted milk price.</p></div></div>
+<div class="technique-item"><div class="technique-dot"></div><div><h4>Coverage &amp; Trend Metrics</h4><p>First/last date, min/max price, and 12-month average % change computed per item to flag discontinued series.</p></div></div>
+<div class="technique-item"><div class="technique-dot"></div><div><h4>VBA: ExportCategorySummary</h4><p>Scaffolded macro to prompt for a category, roll up item counts and average % change, and export it to a new sheet.</p></div></div>
+<div class="technique-item"><div class="technique-dot"></div><div><h4>VBA: HighlightPriceChanges</h4><p>Scaffolded macro to color-code every item row by its 12-month % change &mdash; red, amber, or green.</p></div></div>
+<div class="technique-item"><div class="technique-dot"></div><div><h4>VBA: RefreshAll</h4><p>Scaffolded macro to refresh every PivotTable in the workbook and force a full recalculation in one click.</p></div></div>
+</div>
+<div class="xl-note"><strong>Note:</strong> the three VBA macros above are included as structured practice exercises &mdash; each sub is scaffolded with a clear goal and step-by-step TODOs (InputBox prompts, ListObject column lookups, conditional formatting rules, and PivotTable refresh logic) rather than shipped as finished code, as a way of documenting the intended automation design.</div>
+</div>
+</section>
+</div><!-- /panel-prices -->
+<div class="section-divider" aria-hidden="true"></div>
+<section class="xl-cta" aria-labelledby="cta-heading">
+<div class="container">
+<p class="slg" style="justify-content:center;">Let's collaborate on your next data project!</p>
+<h2 id="cta-heading">Interested in my Excel &amp; analytics work?</h2>
+<p>I am open to data analyst roles, Excel/BI projects, and analytical collaborations.</p>
+<div class="xl-cta-btns">
+<a href="Services.html" class="btn btn-ghost" id="cta-services-btn">&#128203; My Services</a>
+</div>
+</div>
+</section>
+<footer class="site-footer" aria-label="Site footer">
+<div class="container"><div class="footer-inner">
+<span class="footer-logo">FA.</span>
+<p class="footer-copy">&copy; 2026 Fikra Asyrafi. All rights reserved.</p>
+<nav aria-label="Footer navigation">
+<ul class="footer-nav">
+<li><a href="index.html">Home</a></li>
+<li><a href="index.html#about">About</a></li>
+<li><a href="Services.html">Services</a></li>
+<li><a href="hobbies.html">Hobbies</a></li>
+<li><a href="index.html#contact">Contact</a></li>
+</ul>
+</nav>
+</div></div>
+</footer>
+<script>
+function switchTab(name){
+document.querySelectorAll(".project-panel").forEach(function(p){p.classList.remove("active");});
+document.querySelectorAll(".tab-btn").forEach(function(b){b.classList.remove("active");b.setAttribute("aria-selected","false");});
+var panel=document.getElementById("panel-"+name);
+var btn=document.getElementById("tab-"+name+"-btn");
+if(panel)panel.classList.add("active");
+if(btn){btn.classList.add("active");btn.setAttribute("aria-selected","true");}
+var tabBar=document.querySelector(".tab-nav-wrap");
+if(tabBar){var offset=tabBar.getBoundingClientRect().top+window.scrollY-80;window.scrollTo({top:offset,behavior:"smooth"});}
+}
+(function(){var hash=window.location.hash.replace("#","");if(hash==="salary"||hash==="prices")switchTab(hash);})();
+</script>
+</body>
+</html>
