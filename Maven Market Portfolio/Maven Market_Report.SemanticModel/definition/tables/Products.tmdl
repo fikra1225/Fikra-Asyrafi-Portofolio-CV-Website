@@ -1,0 +1,138 @@
+table Products
+	excludeFromModelRefresh
+	lineageTag: ee9c9ef4-9415-4311-9587-360e254b59dd
+
+	measure 'Unique Products' = DISTINCTCOUNT(Products[product_name])
+		formatString: 0
+		lineageTag: 93a17023-e074-4044-b4b2-eade0c69f49b
+
+	measure 'Distinct Brands' = DISTINCTCOUNT(Products[product_brand])
+		formatString: 0
+		lineageTag: 58809853-aff1-446d-a674-86aee79312ea
+
+	measure 'Avg Retail Price' = AVERAGE(Products[product_retail_price])
+		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
+		lineageTag: cf1149cc-627a-4e49-8133-0d0038bd8a75
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column product_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 14db9301-4359-4f36-8c4b-b33a74d64c18
+		summarizeBy: none
+		sourceColumn: product_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_brand
+		dataType: string
+		lineageTag: 8e7db3cf-c2ba-4ce6-97aa-ba34636e2446
+		summarizeBy: none
+		sourceColumn: product_brand
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_name
+		dataType: string
+		lineageTag: c6b1dc15-af40-4fb8-bb9d-1450d618b345
+		summarizeBy: none
+		sourceColumn: product_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_sku
+		dataType: string
+		lineageTag: a1702073-9294-4ffb-94a5-e9af07b5dff9
+		summarizeBy: none
+		sourceColumn: product_sku
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_retail_price
+		dataType: double
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 77d332ac-0838-46ea-9636-9df1c53f5c80
+		summarizeBy: sum
+		sourceColumn: product_retail_price
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_cost
+		dataType: double
+		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
+		lineageTag: ace9a31e-eab8-45fa-be0b-f82b6d062379
+		summarizeBy: sum
+		sourceColumn: product_cost
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column product_weight
+		dataType: string
+		lineageTag: 28534a01-4afb-4fc2-85bb-90d2bbd2a787
+		summarizeBy: none
+		sourceColumn: product_weight
+
+		annotation SummarizationSetBy = Automatic
+
+	column recyclable
+		dataType: string
+		lineageTag: 9270045a-9f32-46e1-8b31-b633699ecc4b
+		summarizeBy: none
+		sourceColumn: recyclable
+
+		annotation SummarizationSetBy = Automatic
+
+	column low_fat
+		dataType: string
+		lineageTag: 98a3852b-e09f-41fd-9749-ed9336cfd434
+		summarizeBy: none
+		sourceColumn: low_fat
+
+		annotation SummarizationSetBy = Automatic
+
+	column discount_price
+		dataType: decimal
+		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
+		lineageTag: bdf18cc7-1907-4b63-9a05-4ba38e955b4a
+		summarizeBy: sum
+		sourceColumn: discount_price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column Price_Tier = IF(Products[product_retail_price] > 3, "High", IF(Products[product_retail_price] > 1, "Mid", "Low"))
+		lineageTag: c4fdd6ab-ac80-4bed-ae2b-e555fa266903
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Products = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\Owner\Downloads\Udemy\Power BI\Maven Market\MavenMarket_Products.csv"),[Delimiter=",", Columns=9, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"product_id", Int64.Type}, {"product_retail_price", type number}, {"product_cost", type number}}),
+				    #"Added Custom" = Table.AddColumn(#"Changed Type", "discount_price", each [product_retail_price]*0.9),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Added Custom",{{"discount_price", Currency.Type}}),
+				    #"Rounded Off" = Table.TransformColumns(#"Changed Type1",{{"discount_price", each Number.Round(_, 2), Currency.Type}}),
+				    #"Added Index" = Table.AddIndexColumn(#"Rounded Off", "Index", 0, 1, Int64.Type),
+				    #"Added Index1" = Table.AddIndexColumn(#"Added Index", "Index.1", 0, 1, Int64.Type),
+				    #"Removed Columns" = Table.RemoveColumns(#"Added Index1",{"Index.1", "Index"}),
+				    #"Replaced Value" = Table.ReplaceValue(#"Removed Columns",null,"0",Replacer.ReplaceValue,{"recyclable", "low_fat"}),
+				    #"Replaced Value1" = Table.ReplaceValue(#"Replaced Value","","0",Replacer.ReplaceValue,{"recyclable", "low_fat"}),
+				    #"Replaced Value2" = Table.ReplaceValue(#"Replaced Value1","1","Yes",Replacer.ReplaceText,{"recyclable"}),
+				    #"Replaced Value3" = Table.ReplaceValue(#"Replaced Value2","0","No",Replacer.ReplaceText,{"recyclable"}),
+				    #"Replaced Value4" = Table.ReplaceValue(#"Replaced Value3","Yes","Recyclable",Replacer.ReplaceText,{"recyclable"}),
+				    #"Replaced Value5" = Table.ReplaceValue(#"Replaced Value4","No","Non-Recyclable",Replacer.ReplaceText,{"recyclable"})
+				in
+				    #"Replaced Value5"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

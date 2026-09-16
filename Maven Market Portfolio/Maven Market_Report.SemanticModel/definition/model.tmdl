@@ -1,0 +1,51 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+queryGroup 'Transform File from MavenMarket_Transactions'
+
+	annotation PBI_QueryGroupOrder = 0
+
+queryGroup 'Transform File from MavenMarket_Transactions\Helper Queries'
+
+	annotation PBI_QueryGroupOrder = 0
+
+/// Errors in queries that were loaded on 8/18/2026 10:35:08 AM.
+queryGroup 'Query Errors - 8/18/2026 10:35:08 AM'
+
+	annotation PBI_QueryGroupOrder = 2
+
+queryGroup 'Transform File from MavenMarket_Transactions (2)'
+
+	annotation PBI_QueryGroupOrder = 3
+
+queryGroup 'Transform File from MavenMarket_Transactions (2)\Helper Queries'
+
+	annotation PBI_QueryGroupOrder = 0
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Transactions_Data","Parameter1","Transform Sample File","Sample File","Transform File","Customers","Errors in Transactions_Data","Products","Stores","Regions","Calendar","Return Data","Transaction Data","Sample File (2)","Parameter2","Transform Sample File (2)","Transform File (2)"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table DateTableTemplate_926423f7-776a-41be-ad47-c99d15afd23d
+ref table Customers
+ref table Products
+ref table Stores
+ref table Regions
+ref table Calendar
+ref table LocalDateTable_f67f9007-1ab4-4e2f-b60c-179d10e69c5a
+ref table LocalDateTable_a0311e20-40e6-4cb9-8914-ef1107ae4467
+ref table LocalDateTable_f9fba9d9-f847-4265-b63f-dcf005618c79
+ref table 'Return Data'
+ref table 'Transaction Data'
+ref table LocalDateTable_7586d8d0-ccef-4059-b627-f65d886eef0a
+ref table LocalDateTable_50de8be2-68b7-4cd8-a818-eaaf51b6259e
+
+ref cultureInfo en-US
+

@@ -1,0 +1,131 @@
+expression Parameter1 = #"Sample File" meta [IsParameterQuery=true, BinaryIdentifier=#"Sample File", Type="Binary", IsParameterQueryRequired=true]
+	lineageTag: 32466e49-0378-4c82-9970-276d86b1b022
+	queryGroup: 'Transform File from MavenMarket_Transactions\Helper Queries'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Binary
+
+expression 'Transform Sample File' =
+		let
+		    Source = Csv.Document(Parameter1,[Delimiter=",", Columns=6, Encoding=1252, QuoteStyle=QuoteStyle.None])
+		in
+		    Source
+	lineageTag: 2b57ac41-b3ca-4dfa-be4b-a2487b9822c3
+	queryGroup: 'Transform File from MavenMarket_Transactions'
+
+	annotation PBI_ResultType = Table
+
+expression 'Sample File' =
+		let
+		    Source = Folder.Files("C:\Users\Owner\Downloads\Udemy\Power BI\Maven Market\MavenMarket_Transactions"),
+		    #"C:\Users\Owner\Downloads\Udemy\Power BI\Maven Market\MavenMarket_Transactions\_MavenMarket_Transactions_1998 csv" = Source{[#"Folder Path"="C:\Users\Owner\Downloads\Udemy\Power BI\Maven Market\MavenMarket_Transactions\",Name="MavenMarket_Transactions_1998.csv"]}[Content]
+		in
+		    #"C:\Users\Owner\Downloads\Udemy\Power BI\Maven Market\MavenMarket_Transactions\_MavenMarket_Transactions_1998 csv"
+	lineageTag: 43de70ca-a7f0-430e-bb20-aceb4a5fbe73
+	queryGroup: 'Transform File from MavenMarket_Transactions\Helper Queries'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Binary
+
+expression 'Transform File' =
+		let
+		    Source = (Parameter1 as binary) => let
+		    Source = Csv.Document(Parameter1,[Delimiter=",", Columns=6, Encoding=1252, QuoteStyle=QuoteStyle.None])
+		in
+		    Source
+		in
+		    Source
+	lineageTag: abcdab99-4006-4fc2-a92e-b5e6d463c8b2
+	queryGroup: 'Transform File from MavenMarket_Transactions\Helper Queries'
+
+	annotation PBI_ResultType = Function
+
+expression 'Errors in Transactions_Data' =
+		let
+		Source = Transactions_Data,
+		  #"Detected Type Mismatches" = let
+		    tableWithOnlyPrimitiveTypes = Table.SelectColumns(Source, Table.ColumnsOfType(Source, {type nullable number, type nullable text, type nullable logical, type nullable date, type nullable datetime, type nullable datetimezone, type nullable time, type nullable duration})),
+		    recordTypeFields = Type.RecordFields(Type.TableRow(Value.Type(tableWithOnlyPrimitiveTypes))),
+		    fieldNames = Record.FieldNames(recordTypeFields),
+		    fieldTypes = List.Transform(Record.ToList(recordTypeFields), each [Type]),
+		    pairs = List.Transform(List.Positions(fieldNames), (i) => {fieldNames{i}, (v) => if v = null or Value.Is(v, fieldTypes{i}) then v else error [Message = "The type of the value does not match the type of the column.", Detail = v], fieldTypes{i}})
+		in
+		    Table.TransformColumns(Source, pairs),
+		  #"Added Index" = Table.AddIndexColumn(#"Detected Type Mismatches", "Row Number" ,1),
+		  #"Kept Errors" = Table.SelectRowsWithErrors(#"Added Index", {"transaction_date", "stock_date", "product_id", "customer_id", "store_id", "quantity"}),
+		  #"Reordered Columns" = Table.ReorderColumns(#"Kept Errors", {"Row Number", "transaction_date", "stock_date", "product_id", "customer_id", "store_id", "quantity"})
+		in
+		  #"Reordered Columns"
+	lineageTag: 7c69980a-0db7-4aef-984a-56793d8339a5
+	queryGroup: 'Query Errors - 8/18/2026 10:35:08 AM'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression Parameter2 = #"Sample File (2)" meta [IsParameterQuery=true, BinaryIdentifier=#"Sample File (2)", Type="Binary", IsParameterQueryRequired=true]
+	lineageTag: 0cc5deb5-3335-4811-98c6-32e97725c509
+	queryGroup: 'Transform File from MavenMarket_Transactions (2)\Helper Queries'
+
+	annotation PBI_ResultType = Binary
+
+expression 'Sample File (2)' =
+		let
+		    Source = Folder.Files("C:\Users\Owner\Downloads\Udemy\Power BI\Maven Market\MavenMarket_Transactions"),
+		    Navigation1 = Source{0}[Content]
+		in
+		    Navigation1
+	lineageTag: ab5c011a-86f2-4057-b245-117274ec5ed6
+	queryGroup: 'Transform File from MavenMarket_Transactions (2)\Helper Queries'
+
+	annotation PBI_ResultType = Binary
+
+expression 'Transform Sample File (2)' =
+		let
+		    Source = Csv.Document(Parameter2,[Delimiter=",", Columns=6, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+		    #"Use First Row as Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+		    #"Change Type" = Table.TransformColumnTypes(#"Use First Row as Headers",{{"transaction_date", type date}, {"stock_date", type date}, {"product_id", Int64.Type}, {"customer_id", Int64.Type}, {"store_id", Int64.Type}, {"quantity", Int64.Type}})
+		in
+		    #"Change Type"
+	lineageTag: e1e27e42-3840-46d3-a0ca-91e4b30d3ff9
+	queryGroup: 'Transform File from MavenMarket_Transactions (2)'
+
+	annotation PBI_ResultType = Table
+
+expression 'Transform File (2)' =
+		let
+		    Source = (Parameter2 as binary) => let
+		    Source = Csv.Document(Parameter2,[Delimiter=",", Columns=6, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+		    #"Use First Row as Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+		    #"Change Type" = Table.TransformColumnTypes(#"Use First Row as Headers",{{"transaction_date", type date}, {"stock_date", type date}, {"product_id", Int64.Type}, {"customer_id", Int64.Type}, {"store_id", Int64.Type}, {"quantity", Int64.Type}})
+		in
+		    #"Change Type"
+		in
+		    Source
+	mAttributes: [ FunctionQueryBinding = "{""exemplarFormulaName"":""Transform Sample File (2)""}" ]
+	lineageTag: e4b28b11-c15d-49fc-87b9-3207329f2ae4
+	queryGroup: 'Transform File from MavenMarket_Transactions (2)\Helper Queries'
+
+	annotation PBI_ResultType = Function
+
+expression Transactions_Data =
+		let
+		    Source = Folder.Files("C:\Users\Owner\Downloads\Udemy\Power BI\Maven Market\MavenMarket_Transactions"),
+		    #"Filtered Hidden Files1" = Table.SelectRows(Source, each [Attributes]?[Hidden]? <> true),
+		    #"Invoke Custom Function1" = Table.AddColumn(#"Filtered Hidden Files1", "Transform File", each #"Transform File"([Content])),
+		    #"Renamed Columns1" = Table.RenameColumns(#"Invoke Custom Function1", {"Name", "Source.Name"}),
+		    #"Removed Other Columns1" = Table.SelectColumns(#"Renamed Columns1", {"Source.Name", "Transform File"}),
+		    #"Expanded Table Column1" = Table.ExpandTableColumn(#"Removed Other Columns1", "Transform File", Table.ColumnNames(#"Transform File"(#"Sample File"))),
+		    #"Removed Columns" = Table.RemoveColumns(#"Expanded Table Column1",{"Source.Name"}),
+		    #"Promoted Headers" = Table.PromoteHeaders(#"Removed Columns", [PromoteAllScalars=true]),
+		    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"transaction_date", type date}, {"stock_date", type date}, {"product_id", Int64.Type}, {"customer_id", Int64.Type}, {"store_id", Int64.Type}, {"quantity", Int64.Type}})
+		in
+		    #"Changed Type"
+	lineageTag: 722f753a-57f2-4080-9f57-9bde6224b772
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

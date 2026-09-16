@@ -1,0 +1,126 @@
+table Calendar
+	excludeFromModelRefresh
+	lineageTag: 9a7e5e49-0f60-4e85-a2a7-9381f59e86cb
+
+	column date
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 876bab58-0ac4-4244-b1ba-9152b885f508
+		summarizeBy: none
+		sourceColumn: date
+
+		variation Variation
+			isDefault
+			relationship: be6f9fa7-a657-4f7f-a12a-a6b42f92079d
+			defaultHierarchy: LocalDateTable_f67f9007-1ab4-4e2f-b60c-179d10e69c5a.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Start of Week'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 8b564734-1db2-49e2-b1d8-0cbb1ed9e773
+		summarizeBy: none
+		sourceColumn: Start of Week
+
+		variation Variation
+			isDefault
+			relationship: 3e617801-aba2-450e-a1b1-7fa14604e043
+			defaultHierarchy: LocalDateTable_a0311e20-40e6-4cb9-8914-ef1107ae4467.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Day Name'
+		dataType: string
+		lineageTag: d3ace2b8-edd8-415d-8e36-a9157eb7308a
+		summarizeBy: none
+		sourceColumn: Day Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Start of Month'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: a8e501f1-82f2-43a4-a725-f2dbe4c90856
+		summarizeBy: none
+		sourceColumn: Start of Month
+
+		variation Variation
+			isDefault
+			relationship: 1df51d9d-7b80-4ee7-9e08-6e84fa8f4f38
+			defaultHierarchy: LocalDateTable_f9fba9d9-f847-4265-b63f-dcf005618c79.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Month Name'
+		dataType: string
+		lineageTag: 9ec04c9c-87c9-47bf-aebf-ae8c5e52ce4e
+		summarizeBy: none
+		sourceColumn: Month Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		dataType: int64
+		formatString: 0
+		lineageTag: 2f5bd8f4-93d1-4e58-b412-2e7edbb71f42
+		summarizeBy: sum
+		sourceColumn: Quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: 5756d70f-c4f2-48db-b7b5-939f7776ec68
+		summarizeBy: sum
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column WEEKEND = IF(WEEKDAY(Calendar[date]) IN {1,7}, "Y", "N")
+		lineageTag: 176a95d1-6b61-4997-96a3-9f75dc124770
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'End of Month' = EOMONTH(Calendar[date],0)
+		formatString: General Date
+		lineageTag: 2b5e5a10-3779-4255-8996-a98815cfa932
+		summarizeBy: none
+
+		variation Variation
+			isDefault
+			relationship: 5b1dacda-c0dd-4b37-a2d4-cb5956fd4383
+			defaultHierarchy: LocalDateTable_50de8be2-68b7-4cd8-a818-eaaf51b6259e.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Calendar = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\Owner\Downloads\Udemy\Power BI\Maven Market\MavenMarket_Calendar.csv"),[Delimiter=",", Columns=1, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"date", type date}}),
+				    #"Inserted Start of Week" = Table.AddColumn(#"Changed Type", "Start of Week", each Date.StartOfWeek([date]), type date),
+				    #"Inserted Day Name" = Table.AddColumn(#"Inserted Start of Week", "Day Name", each Date.DayOfWeekName([date]), type text),
+				    #"Inserted Start of Month" = Table.AddColumn(#"Inserted Day Name", "Start of Month", each Date.StartOfMonth([date]), type date),
+				    #"Inserted Month Name" = Table.AddColumn(#"Inserted Start of Month", "Month Name", each Date.MonthName([date]), type text),
+				    #"Inserted Quarter" = Table.AddColumn(#"Inserted Month Name", "Quarter", each Date.QuarterOfYear([date]), Int64.Type),
+				    #"Inserted Year" = Table.AddColumn(#"Inserted Quarter", "Year", each Date.Year([date]), Int64.Type)
+				in
+				    #"Inserted Year"
+
+	changedProperty = Name
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

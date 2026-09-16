@@ -1,0 +1,980 @@
+company,companySlug,category,jobTitle,normalizedJobTitle,medianSalary,medianSalaryText,salaryPeriod,reportedSalaryCount,url,matchedInput
+Walmart,Walmart,Pharmacy,Pharmacy Technician,pharmacy technician,18.71,$18.71,HOURLY,869,https://www.indeed.com/cmp/Walmart/salaries/Pharmacy-Technician,Walmart
+Walmart,Walmart,Pharmacy,Certified Pharmacy Technician,certified pharmacy technician,20.28,$20.28,HOURLY,612,https://www.indeed.com/cmp/Walmart/salaries/Certified-Pharmacy-Technician,Walmart
+Walmart,Walmart,Pharmacy,Pharmacist,pharmacist,49.16,$49.16,HOURLY,8,https://www.indeed.com/cmp/Walmart/salaries/Pharmacist,Walmart
+Walmart,Walmart,Pharmacy,Staff Pharmacist,staff pharmacist,64.3,$64.30,HOURLY,18,https://www.indeed.com/cmp/Walmart/salaries/Staff-Pharmacist,Walmart
+Walmart,Walmart,Pharmacy,Pharmacy Manager,pharmacy manager,49.06,$49.06,HOURLY,3,,Walmart
+Walmart,Walmart,Pharmacy,Pharmacy Assistant,pharmacy assistant,16.12,$16.12,HOURLY,40,https://www.indeed.com/cmp/Walmart/salaries/Pharmacy-Assistant,Walmart
+Walmart,Walmart,Pharmacy,Pharmacy Intern,pharmacy intern,23.75,$23.75,HOURLY,23,https://www.indeed.com/cmp/Walmart/salaries/Pharmacy-Intern,Walmart
+Walmart,Walmart,Pharmacy,Pharmacist in Charge,pharmacist in charge,59.53,$59.53,HOURLY,8,https://www.indeed.com/cmp/Walmart/salaries/Pharmacist-in-Charge,Walmart
+Walmart,Walmart,Pharmacy,Pharmacy Clerk,pharmacy clerk,17.79,$17.79,HOURLY,5,,Walmart
+Walmart,Walmart,Pharmacy,Pharmacy Technician Intern,pharmacy technician intern,17.32,$17.32,HOURLY,1,,Walmart
+Amazon.com,Amazon,Loading and Stocking,Warehouse Worker,warehouse worker,18.49,$18.49,HOURLY,68,https://www.indeed.com/cmp/Amazon.com/salaries/Warehouse-Worker,Amazon
+Amazon.com,Amazon,Loading and Stocking,Warehouse Associate,warehouse associate,19.28,$19.28,HOURLY,196,https://www.indeed.com/cmp/Amazon.com/salaries/Warehouse-Associate,Amazon
+Amazon.com,Amazon,Loading and Stocking,Fulfillment Associate,fulfillment associate,19.21,$19.21,HOURLY,173,https://www.indeed.com/cmp/Amazon.com/salaries/Fulfillment-Associate,Amazon
+Amazon.com,Amazon,Loading and Stocking,Packer,packer,19.19,$19.19,HOURLY,5,,Amazon
+Amazon.com,Amazon,Loading and Stocking,Order Picker,order picker,18.39,$18.39,HOURLY,14,https://www.indeed.com/cmp/Amazon.com/salaries/Order-Picker,Amazon
+Amazon.com,Amazon,Loading and Stocking,Stower,stower,18.07,$18.07,HOURLY,25,https://www.indeed.com/cmp/Amazon.com/salaries/Stower,Amazon
+Amazon.com,Amazon,Loading and Stocking,Package Handler,package handler,18.18,$18.18,HOURLY,9,https://www.indeed.com/cmp/Amazon.com/salaries/Package-Handler,Amazon
+Amazon.com,Amazon,Loading and Stocking,Merchandise Flow Team Member,merchandise flow team member,25.15,$25.15,HOURLY,4,,Amazon
+Amazon.com,Amazon,Loading and Stocking,Sorter,sorter,17.72,$17.72,HOURLY,6,https://www.indeed.com/cmp/Amazon.com/salaries/Sorter,Amazon
+Amazon.com,Amazon,Loading and Stocking,Problem Solver,problem solver,17.1,$17.10,HOURLY,6,https://www.indeed.com/cmp/Amazon.com/salaries/Problem-Solver,Amazon
+McDonald's,McDonald's,Instalación y mantenimiento,Maintenance Person,maintenance person,16.23,$16.23,HOURLY,353,https://www.indeed.com/cmp/McDonald's/salaries/Maintenance-Person,McDonald's
+McDonald's,McDonald's,Instalación y mantenimiento,HVAC Technician,hvac technician,21.35,$21.35,HOURLY,1,,McDonald's
+McDonald's,McDonald's,Instalación y mantenimiento,Maintenance Technician,maintenance technician,18.94,$18.94,HOURLY,18,https://www.indeed.com/cmp/McDonald's/salaries/Maintenance-Technician,McDonald's
+McDonald's,McDonald's,Instalación y mantenimiento,Building Maintenance,building maintenance,20.2,$20.20,HOURLY,113,https://www.indeed.com/cmp/McDonald's/salaries/Building-Maintenance,McDonald's
+McDonald's,McDonald's,Instalación y mantenimiento,Groundskeeper,groundskeeper,13.76,$13.76,HOURLY,19,https://www.indeed.com/cmp/McDonald's/salaries/Groundskeeper,McDonald's
+McDonald's,McDonald's,Instalación y mantenimiento,Equipment Repair Technician,equipment repair technician,26.83,$26.83,HOURLY,19,https://www.indeed.com/cmp/McDonald's/salaries/Equipment-Repair-Technician,McDonald's
+McDonald's,McDonald's,Instalación y mantenimiento,Refrigeration Technician,refrigeration technician,37.03,$37.03,HOURLY,5,,McDonald's
+McDonald's,McDonald's,Instalación y mantenimiento,Facilities Maintenance Technician,facilities maintenance technician,20.09,$20.09,HOURLY,9,https://www.indeed.com/cmp/McDonald's/salaries/Facilities-Maintenance-Technician,McDonald's
+McDonald's,McDonald's,Instalación y mantenimiento,Equipment Technician,equipment technician,26.86,$26.86,HOURLY,5,,McDonald's
+McDonald's,McDonald's,Instalación y mantenimiento,Field Service Technician,field service technician,22,$22.00,HOURLY,5,,McDonald's
+Target,Target,Food Preparation & Service,Barista,barista,16.16,$16.16,HOURLY,57,https://www.indeed.com/cmp/Target/salaries/Barista,Target
+Target,Target,Food Preparation & Service,Food & Beverage Team Leader,food & beverage team leader,29.19,$29.19,HOURLY,21,https://www.indeed.com/cmp/Target/salaries/Food-&-Beverage-Team-Leader,Target
+Target,Target,Food Preparation & Service,Back of House Team Member,back of house team member,10.8,$10.80,HOURLY,32,https://www.indeed.com/cmp/Target/salaries/Back-of-House-Team-Member,Target
+Target,Target,Food Preparation & Service,Service Leader,service leader,28.26,$28.26,HOURLY,19,https://www.indeed.com/cmp/Target/salaries/Service-Leader,Target
+Target,Target,Food Preparation & Service,Food Service Worker,food service worker,16.29,$16.29,HOURLY,10,https://www.indeed.com/cmp/Target/salaries/Food-Service-Worker,Target
+Target,Target,Food Preparation & Service,Deli Associate,deli associate,14.76,$14.76,HOURLY,8,https://www.indeed.com/cmp/Target/salaries/Deli-Associate,Target
+Target,Target,Food Preparation & Service,Food Service Associate,food service associate,16.87,$16.87,HOURLY,7,https://www.indeed.com/cmp/Target/salaries/Food-Service-Associate,Target
+Target,Target,Food Preparation & Service,Director of Food and Beverage,director of food and beverage,17.2,$17.20,HOURLY,4,,Target
+Target,Target,Food Preparation & Service,Bakery Team Leader,bakery team leader,23.05,$23.05,HOURLY,2,,Target
+Target,Target,Food Preparation & Service,Kitchen Team Member,kitchen team member,98502,"$98,502",YEARLY,1,,Target
+Starbucks,Starbucks,Retail,Store Manager,store manager,72109,"$72,109",YEARLY,96,https://www.indeed.com/cmp/Starbucks/salaries/Store-Manager,Starbucks
+Starbucks,Starbucks,Retail,Assistant Store Manager,assistant store manager,51921,"$51,921",YEARLY,16,https://www.indeed.com/cmp/Starbucks/salaries/Assistant-Store-Manager,Starbucks
+Starbucks,Starbucks,Retail,Cashier,cashier,14.65,$14.65,HOURLY,6,https://www.indeed.com/cmp/Starbucks/salaries/Cashier,Starbucks
+Starbucks,Starbucks,Retail,Retail Assistant Manager,retail assistant manager,17.96,$17.96,HOURLY,5,,Starbucks
+Starbucks,Starbucks,Retail,Retail Store Manager,retail store manager,60529,"$60,529",YEARLY,14,https://www.indeed.com/cmp/Starbucks/salaries/Retail-Store-Manager,Starbucks
+Starbucks,Starbucks,Retail,Retail Sales Associate,retail sales associate,68333,"$68,333",YEARLY,2,,Starbucks
+Starbucks,Starbucks,Retail,Customer Service Associate / Cashier,customer service associate / cashier,16.65,$16.65,HOURLY,5,,Starbucks
+Starbucks,Starbucks,Retail,Stocking Associate,stocking associate,19.9,$19.90,HOURLY,3,,Starbucks
+Starbucks,Starbucks,Retail,Store Director,store director,64809,"$64,809",YEARLY,1,,Starbucks
+Starbucks,Starbucks,Retail,Produce Manager,produce manager,18.97,$18.97,HOURLY,1,,Starbucks
+The Home Depot,The-Home-Depot,Management,Manager,manager,114214,"$114,214",YEARLY,7,https://www.indeed.com/cmp/The-Home-Depot/salaries/Manager,The Home Depot
+The Home Depot,The-Home-Depot,Management,Supervisor,supervisor,60587,"$60,587",YEARLY,7,https://www.indeed.com/cmp/The-Home-Depot/salaries/Supervisor,The Home Depot
+The Home Depot,The-Home-Depot,Management,Operations Manager,operations manager,83227,"$83,227",YEARLY,7,https://www.indeed.com/cmp/The-Home-Depot/salaries/Operations-Manager,The Home Depot
+The Home Depot,The-Home-Depot,Management,Senior Manager,senior manager,165505,"$165,505",YEARLY,11,https://www.indeed.com/cmp/The-Home-Depot/salaries/Senior-Manager,The Home Depot
+The Home Depot,The-Home-Depot,Management,Director,director,191558,"$191,558",YEARLY,5,,The Home Depot
+The Home Depot,The-Home-Depot,Management,Assistant Manager,assistant manager,69671,"$69,671",YEARLY,6,https://www.indeed.com/cmp/The-Home-Depot/salaries/Assistant-Manager,The Home Depot
+The Home Depot,The-Home-Depot,Management,Area Supervisor,area supervisor,66066,"$66,066",YEARLY,13,https://www.indeed.com/cmp/The-Home-Depot/salaries/Area-Supervisor,The Home Depot
+The Home Depot,The-Home-Depot,Management,Project Leader,project leader,104584,"$104,584",YEARLY,6,https://www.indeed.com/cmp/The-Home-Depot/salaries/Project-Leader,The Home Depot
+The Home Depot,The-Home-Depot,Management,Call Center Supervisor,call center supervisor,62197,"$62,197",YEARLY,5,,The Home Depot
+The Home Depot,The-Home-Depot,Management,Logistics Manager,logistics manager,108749,"$108,749",YEARLY,6,https://www.indeed.com/cmp/The-Home-Depot/salaries/Logistics-Manager,The Home Depot
+Walgreens,Walgreens,Loading and Stocking,Fulfillment Associate,fulfillment associate,18.26,$18.26,HOURLY,77,https://www.indeed.com/cmp/Walgreens/salaries/Fulfillment-Associate,Walgreens
+Walgreens,Walgreens,Loading and Stocking,Warehouse Worker,warehouse worker,15.54,$15.54,HOURLY,22,https://www.indeed.com/cmp/Walgreens/salaries/Warehouse-Worker,Walgreens
+Walgreens,Walgreens,Loading and Stocking,Packer,packer,15.67,$15.67,HOURLY,24,https://www.indeed.com/cmp/Walgreens/salaries/Packer,Walgreens
+Walgreens,Walgreens,Loading and Stocking,Warehouse Associate,warehouse associate,16.1,$16.10,HOURLY,27,https://www.indeed.com/cmp/Walgreens/salaries/Warehouse-Associate,Walgreens
+Walgreens,Walgreens,Loading and Stocking,Order Filler,order filler,16.31,$16.31,HOURLY,27,https://www.indeed.com/cmp/Walgreens/salaries/Order-Filler,Walgreens
+Walgreens,Walgreens,Loading and Stocking,Package Handler,package handler,15.49,$15.49,HOURLY,11,https://www.indeed.com/cmp/Walgreens/salaries/Package-Handler,Walgreens
+Walgreens,Walgreens,Loading and Stocking,Warehouse Specialist,warehouse specialist,15.9,$15.90,HOURLY,9,https://www.indeed.com/cmp/Walgreens/salaries/Warehouse-Specialist,Walgreens
+Walgreens,Walgreens,Loading and Stocking,Distribution Center Supervisor,distribution center supervisor,74900,"$74,900",YEARLY,6,https://www.indeed.com/cmp/Walgreens/salaries/Distribution-Center-Supervisor,Walgreens
+Walgreens,Walgreens,Loading and Stocking,Distribution Associate,distribution associate,15.45,$15.45,HOURLY,12,https://www.indeed.com/cmp/Walgreens/salaries/Distribution-Associate,Walgreens
+Walgreens,Walgreens,Loading and Stocking,Warehouse Lead,warehouse lead,23.39,$23.39,HOURLY,19,https://www.indeed.com/cmp/Walgreens/salaries/Warehouse-Lead,Walgreens
+CVS Health,CVS-Health,Retail,Retail Sales Associate,retail sales associate,16.19,$16.19,HOURLY,339,https://www.indeed.com/cmp/CVS-Health/salaries/Retail-Sales-Associate,CVS Health
+CVS Health,CVS-Health,Retail,Store Manager,store manager,23.31,$23.31,HOURLY,199,https://www.indeed.com/cmp/CVS-Health/salaries/Store-Manager,CVS Health
+CVS Health,CVS-Health,Retail,Retail Store Manager,retail store manager,23.17,$23.17,HOURLY,123,https://www.indeed.com/cmp/CVS-Health/salaries/Retail-Store-Manager,CVS Health
+CVS Health,CVS-Health,Retail,Beauty Sales Consultant,beauty sales consultant,21.12,$21.12,HOURLY,228,https://www.indeed.com/cmp/CVS-Health/salaries/Beauty-Sales-Consultant,CVS Health
+CVS Health,CVS-Health,Retail,Cashier,cashier,17.86,$17.86,HOURLY,60,https://www.indeed.com/cmp/CVS-Health/salaries/Cashier,CVS Health
+CVS Health,CVS-Health,Retail,Beauty Consultant,beauty consultant,20.93,$20.93,HOURLY,105,https://www.indeed.com/cmp/CVS-Health/salaries/Beauty-Consultant,CVS Health
+CVS Health,CVS-Health,Retail,Cashier/Sales,cashier/sales,14.67,$14.67,HOURLY,13,https://www.indeed.com/cmp/CVS-Health/salaries/Cashier-Sales,CVS Health
+CVS Health,CVS-Health,Retail,Beauty Advisor,beauty advisor,17.52,$17.52,HOURLY,58,https://www.indeed.com/cmp/CVS-Health/salaries/Beauty-Advisor,CVS Health
+CVS Health,CVS-Health,Retail,Customer Service Associate / Cashier,customer service associate / cashier,14.85,$14.85,HOURLY,18,https://www.indeed.com/cmp/CVS-Health/salaries/Customer-Service-Associate---Cashier,CVS Health
+CVS Health,CVS-Health,Retail,Overnight Associate,overnight associate,15.89,$15.89,HOURLY,6,https://www.indeed.com/cmp/CVS-Health/salaries/Overnight-Associate,CVS Health
+FedEx,FedEx,Installation & Maintenance,Senior Vehicle Technician,senior vehicle technician,37.65,$37.65,HOURLY,110,https://www.indeed.com/cmp/FedEx/salaries/Senior-Vehicle-Technician,FedEx
+FedEx,FedEx,Installation & Maintenance,Maintenance Technician,maintenance technician,29.05,$29.05,HOURLY,48,https://www.indeed.com/cmp/FedEx/salaries/Maintenance-Technician,FedEx
+FedEx,FedEx,Installation & Maintenance,Diesel Mechanic,diesel mechanic,35.73,$35.73,HOURLY,19,https://www.indeed.com/cmp/FedEx/salaries/Diesel-Mechanic,FedEx
+FedEx,FedEx,Installation & Maintenance,Senior Maintenance Person,senior maintenance person,30.11,$30.11,HOURLY,72,https://www.indeed.com/cmp/FedEx/salaries/Senior-Maintenance-Person,FedEx
+FedEx,FedEx,Installation & Maintenance,Technician,technician,36.63,$36.63,HOURLY,10,https://www.indeed.com/cmp/FedEx/salaries/Technician,FedEx
+FedEx,FedEx,Installation & Maintenance,Automotive Mechanic,automotive mechanic,36.18,$36.18,HOURLY,7,https://www.indeed.com/cmp/FedEx/salaries/Automotive-Mechanic,FedEx
+FedEx,FedEx,Installation & Maintenance,Vehicle Technician,vehicle technician,37.2,$37.20,HOURLY,7,https://www.indeed.com/cmp/FedEx/salaries/Vehicle-Technician,FedEx
+FedEx,FedEx,Installation & Maintenance,Senior Maintenance Technician,senior maintenance technician,30.2,$30.20,HOURLY,14,https://www.indeed.com/cmp/FedEx/salaries/Senior-Maintenance-Technician,FedEx
+FedEx,FedEx,Installation & Maintenance,Maintenance Tech II,maintenance tech ii,27.74,$27.74,HOURLY,16,https://www.indeed.com/cmp/FedEx/salaries/Maintenance-Tech-II,FedEx
+FedEx,FedEx,Installation & Maintenance,Maintenance Tech III,maintenance tech iii,29,$29.00,HOURLY,14,https://www.indeed.com/cmp/FedEx/salaries/Maintenance-Tech-III,FedEx
+Google,Google,Sales,Account Manager,account manager,121230,"$121,230",YEARLY,9,https://www.indeed.com/cmp/Google/salaries/Account-Manager,Google
+Google,Google,Sales,Account Strategist,account strategist,98101,"$98,101",YEARLY,10,https://www.indeed.com/cmp/Google/salaries/Account-Strategist,Google
+Google,Google,Sales,Account Executive,account executive,199325,"$199,325",YEARLY,6,https://www.indeed.com/cmp/Google/salaries/Account-Executive,Google
+Google,Google,Sales,Sales Associate,sales associate,85042,"$85,042",YEARLY,5,,Google
+Google,Google,Sales,Sales,sales,110602,"$110,602",YEARLY,9,https://www.indeed.com/cmp/Google/salaries/Sales,Google
+Google,Google,Sales,Solutions Engineer,solutions engineer,145282,"$145,282",YEARLY,6,https://www.indeed.com/cmp/Google/salaries/Solutions-Engineer,Google
+Google,Google,Sales,Sales Representative,sales representative,79264,"$79,264",YEARLY,9,https://www.indeed.com/cmp/Google/salaries/Sales-Representative,Google
+Google,Google,Sales,Partnership Manager,partnership manager,163802,"$163,802",YEARLY,6,https://www.indeed.com/cmp/Google/salaries/Partnership-Manager,Google
+Google,Google,Sales,Sales Manager,sales manager,173782,"$173,782",YEARLY,10,https://www.indeed.com/cmp/Google/salaries/Sales-Manager,Google
+Google,Google,Sales,Senior Account Manager,senior account manager,129480,"$129,480",YEARLY,11,https://www.indeed.com/cmp/Google/salaries/Senior-Account-Manager,Google
+Apple,Apple,Sales,Home Solutions Advisor,home solutions advisor,16.46,$16.46,HOURLY,361,https://www.indeed.com/cmp/Apple/salaries/Home-Solutions-Advisor,Apple
+Apple,Apple,Sales,Sales Associate,sales associate,23.3,$23.30,HOURLY,6,https://www.indeed.com/cmp/Apple/salaries/Sales-Associate,Apple
+Apple,Apple,Sales,Sales Specialist,sales specialist,22.62,$22.62,HOURLY,16,https://www.indeed.com/cmp/Apple/salaries/Sales-Specialist,Apple
+Apple,Apple,Sales,Product Specialist,product specialist,21.47,$21.47,HOURLY,11,https://www.indeed.com/cmp/Apple/salaries/Product-Specialist,Apple
+Apple,Apple,Sales,Sales,sales,20.06,$20.06,HOURLY,6,https://www.indeed.com/cmp/Apple/salaries/Sales,Apple
+Apple,Apple,Sales,Account Manager,account manager,97514,"$97,514",YEARLY,5,,Apple
+Apple,Apple,Sales,Account Executive,account executive,135173,"$135,173",YEARLY,7,https://www.indeed.com/cmp/Apple/salaries/Account-Executive,Apple
+Apple,Apple,Sales,Sales Representative,sales representative,66910,"$66,910",YEARLY,10,https://www.indeed.com/cmp/Apple/salaries/Sales-Representative,Apple
+Apple,Apple,Sales,Solutions Engineer,solutions engineer,220157,"$220,157",YEARLY,6,https://www.indeed.com/cmp/Apple/salaries/Solutions-Engineer,Apple
+Apple,Apple,Sales,Inside Sales Account Executive,inside sales account executive,66227,"$66,227",YEARLY,6,https://www.indeed.com/cmp/Apple/salaries/Inside-Sales-Account-Executive,Apple
+Microsoft,Microsoft,Sales,Account Executive,account executive,123495,"$123,495",YEARLY,14,https://www.indeed.com/cmp/Microsoft/salaries/Account-Executive,Microsoft
+Microsoft,Microsoft,Sales,Account Manager,account manager,139354,"$139,354",YEARLY,7,https://www.indeed.com/cmp/Microsoft/salaries/Account-Manager,Microsoft
+Microsoft,Microsoft,Sales,Digital Marketing Sales Representative,digital marketing sales representative,64210,"$64,210",YEARLY,14,https://www.indeed.com/cmp/Microsoft/salaries/Digital-Marketing-Sales-Representative,Microsoft
+Microsoft,Microsoft,Sales,Partnership Manager,partnership manager,158588,"$158,588",YEARLY,6,https://www.indeed.com/cmp/Microsoft/salaries/Partnership-Manager,Microsoft
+Microsoft,Microsoft,Sales,Sales Associate,sales associate,75784,"$75,784",YEARLY,11,https://www.indeed.com/cmp/Microsoft/salaries/Sales-Associate,Microsoft
+Microsoft,Microsoft,Sales,Sales,sales,97282,"$97,282",YEARLY,9,https://www.indeed.com/cmp/Microsoft/salaries/Sales,Microsoft
+Microsoft,Microsoft,Sales,Solution Specialist,solution specialist,145153,"$145,153",YEARLY,9,https://www.indeed.com/cmp/Microsoft/salaries/Solution-Specialist,Microsoft
+Microsoft,Microsoft,Sales,Sales Specialist,sales specialist,124960,"$124,960",YEARLY,5,,Microsoft
+Microsoft,Microsoft,Sales,Sales Representative,sales representative,67043,"$67,043",YEARLY,10,https://www.indeed.com/cmp/Microsoft/salaries/Sales-Representative,Microsoft
+Microsoft,Microsoft,Sales,Sales Manager,sales manager,155584,"$155,584",YEARLY,7,https://www.indeed.com/cmp/Microsoft/salaries/Sales-Manager,Microsoft
+Meta,Meta,IT Operations & Helpdesk,Data Center Engineer,data center engineer,186317,"$186,317",YEARLY,30,https://www.indeed.com/cmp/Meta/salaries/Data-Center-Engineer,Meta
+Meta,Meta,IT Operations & Helpdesk,Network Engineer,network engineer,168609,"$168,609",YEARLY,11,https://www.indeed.com/cmp/Meta/salaries/Network-Engineer,Meta
+Meta,Meta,IT Operations & Helpdesk,Data Center Lead,data center lead,228480,"$228,480",YEARLY,10,https://www.indeed.com/cmp/Meta/salaries/Data-Center-Lead,Meta
+Meta,Meta,IT Operations & Helpdesk,Data Center Technician,data center technician,26.66,$26.66,HOURLY,5,,Meta
+Meta,Meta,Administrative Assistance,Administrative Specialist,administrative specialist,48.54,$48.54,HOURLY,24,https://www.indeed.com/cmp/Meta/salaries/Administrative-Specialist,Meta
+Meta,Meta,Administrative Assistance,Administration Executive,administration executive,57.48,$57.48,HOURLY,9,https://www.indeed.com/cmp/Meta/salaries/Administration-Executive,Meta
+Meta,Meta,Administrative Assistance,Site Coordinator,site coordinator,34.65,$34.65,HOURLY,1,,Meta
+Meta,Meta,Administrative Assistance,Center Manager,center manager,201224,"$201,224",YEARLY,1,,Meta
+Meta,Meta,Administrative Assistance,Administrative Assistant,administrative assistant,41,$41.00,HOURLY,1,,Meta
+Meta,Meta,Project Management,Program Manager,program manager,126647,"$126,647",YEARLY,20,https://www.indeed.com/cmp/Meta/salaries/Program-Manager,Meta
+Netflix,Netflix,Administrative Assistance,Administrative Assistant,administrative assistant,94193,"$94,193",YEARLY,6,https://www.indeed.com/cmp/Netflix/salaries/Administrative-Assistant,Netflix
+Netflix,Netflix,Administrative Assistance,Executive Assistant,executive assistant,123559,"$123,559",YEARLY,7,https://www.indeed.com/cmp/Netflix/salaries/Executive-Assistant,Netflix
+Netflix,Netflix,Administrative Assistance,Production Assistant,production assistant,19.86,$19.86,HOURLY,8,https://www.indeed.com/cmp/Netflix/salaries/Production-Assistant,Netflix
+Netflix,Netflix,Administrative Assistance,Operations Associate,operations associate,121334,"$121,334",YEARLY,3,,Netflix
+Netflix,Netflix,Administrative Assistance,Talent Coordinator,talent coordinator,29.85,$29.85,HOURLY,1,,Netflix
+Netflix,Netflix,Administrative Assistance,Contract Coordinator,contract coordinator,57.93,$57.93,HOURLY,1,,Netflix
+Netflix,Netflix,Marketing,Associate Creative Director,associate creative director,78684,"$78,684",YEARLY,9,https://www.indeed.com/cmp/Netflix/salaries/Associate-Creative-Director,Netflix
+Netflix,Netflix,Marketing,Marketing Coordinator,marketing coordinator,108362,"$108,362",YEARLY,3,,Netflix
+Netflix,Netflix,Marketing,Director of Marketing,director of marketing,272049,"$272,049",YEARLY,4,,Netflix
+Netflix,Netflix,Marketing,Marketing Manager,marketing manager,269508,"$269,508",YEARLY,3,,Netflix
+Tesla,Tesla,Software Development,Software Engineer,software engineer,144614,"$144,614",YEARLY,30,https://www.indeed.com/cmp/Tesla/salaries/Software-Engineer,Tesla
+Tesla,Tesla,Software Development,Technical Program Manager,technical program manager,140062,"$140,062",YEARLY,12,https://www.indeed.com/cmp/Tesla/salaries/Technical-Program-Manager,Tesla
+Tesla,Tesla,Software Development,Senior Software Engineer,senior software engineer,182045,"$182,045",YEARLY,38,https://www.indeed.com/cmp/Tesla/salaries/Senior-Software-Engineer,Tesla
+Tesla,Tesla,Software Development,Software Engineer Intern,software engineer intern,49.07,$49.07,HOURLY,14,https://www.indeed.com/cmp/Tesla/salaries/Software-Engineer-Intern,Tesla
+Tesla,Tesla,Software Development,Data Engineer,data engineer,114333,"$114,333",YEARLY,5,,Tesla
+Tesla,Tesla,Software Development,Product Manager,product manager,123785,"$123,785",YEARLY,5,,Tesla
+Tesla,Tesla,Software Development,Staff Software Engineer,staff software engineer,226707,"$226,707",YEARLY,6,https://www.indeed.com/cmp/Tesla/salaries/Staff-Software-Engineer,Tesla
+Tesla,Tesla,Software Development,Firmware Engineer,firmware engineer,179918,"$179,918",YEARLY,5,,Tesla
+Tesla,Tesla,Software Development,Software Integration Engineer,software integration engineer,152904,"$152,904",YEARLY,11,https://www.indeed.com/cmp/Tesla/salaries/Software-Integration-Engineer,Tesla
+Tesla,Tesla,Software Development,Senior Product Manager,senior product manager,153537,"$153,537",YEARLY,7,https://www.indeed.com/cmp/Tesla/salaries/Senior-Product-Manager,Tesla
+Bank of America,Bank-of-America,Software Development,Software Engineer,software engineer,102813,"$102,813",YEARLY,21,https://www.indeed.com/cmp/Bank-of-America/salaries/Software-Engineer,Bank of America
+Bank of America,Bank-of-America,Software Development,Senior Software Engineer,senior software engineer,126602,"$126,602",YEARLY,29,https://www.indeed.com/cmp/Bank-of-America/salaries/Senior-Software-Engineer,Bank of America
+Bank of America,Bank-of-America,Software Development,Scrum Master,scrum master,118317,"$118,317",YEARLY,5,,Bank of America
+Bank of America,Bank-of-America,Software Development,Product Manager,product manager,126320,"$126,320",YEARLY,8,https://www.indeed.com/cmp/Bank-of-America/salaries/Product-Manager,Bank of America
+Bank of America,Bank-of-America,Software Development,Data Engineer,data engineer,112283,"$112,283",YEARLY,16,https://www.indeed.com/cmp/Bank-of-America/salaries/Data-Engineer,Bank of America
+Bank of America,Bank-of-America,Software Development,Product Owner,product owner,124726,"$124,726",YEARLY,8,https://www.indeed.com/cmp/Bank-of-America/salaries/Product-Owner,Bank of America
+Bank of America,Bank-of-America,Software Development,Software Engineer Intern,software engineer intern,37.27,$37.27,HOURLY,5,,Bank of America
+Bank of America,Bank-of-America,Software Development,Release Engineer,release engineer,139919,"$139,919",YEARLY,5,,Bank of America
+Bank of America,Bank-of-America,Software Development,Programmer Analyst,programmer analyst,86408,"$86,408",YEARLY,13,https://www.indeed.com/cmp/Bank-of-America/salaries/Programmer-Analyst,Bank of America
+Bank of America,Bank-of-America,Software Development,Technology Lead,technology lead,141232,"$141,232",YEARLY,9,https://www.indeed.com/cmp/Bank-of-America/salaries/Technology-Lead,Bank of America
+Wells Fargo,Wells-Fargo,Software Development,Software Engineer,software engineer,119723,"$119,723",YEARLY,67,https://www.indeed.com/cmp/Wells-Fargo/salaries/Software-Engineer,Wells Fargo
+Wells Fargo,Wells-Fargo,Software Development,Senior Software Engineer,senior software engineer,123758,"$123,758",YEARLY,18,https://www.indeed.com/cmp/Wells-Fargo/salaries/Senior-Software-Engineer,Wells Fargo
+Wells Fargo,Wells-Fargo,Software Development,Product Manager,product manager,129301,"$129,301",YEARLY,9,https://www.indeed.com/cmp/Wells-Fargo/salaries/Product-Manager,Wells Fargo
+Wells Fargo,Wells-Fargo,Software Development,Infrastructure Engineer,infrastructure engineer,123985,"$123,985",YEARLY,7,https://www.indeed.com/cmp/Wells-Fargo/salaries/Infrastructure-Engineer,Wells Fargo
+Wells Fargo,Wells-Fargo,Software Development,Senior Product Manager,senior product manager,152720,"$152,720",YEARLY,7,https://www.indeed.com/cmp/Wells-Fargo/salaries/Senior-Product-Manager,Wells Fargo
+Wells Fargo,Wells-Fargo,Software Development,Data Engineer,data engineer,123703,"$123,703",YEARLY,15,https://www.indeed.com/cmp/Wells-Fargo/salaries/Data-Engineer,Wells Fargo
+Wells Fargo,Wells-Fargo,Software Development,Lead Product Manager,lead product manager,186216,"$186,216",YEARLY,5,,Wells Fargo
+Wells Fargo,Wells-Fargo,Software Development,Scrum Master,scrum master,111022,"$111,022",YEARLY,19,https://www.indeed.com/cmp/Wells-Fargo/salaries/Scrum-Master,Wells Fargo
+Wells Fargo,Wells-Fargo,Software Development,Senior Scrum Master,senior scrum master,122756,"$122,756",YEARLY,9,https://www.indeed.com/cmp/Wells-Fargo/salaries/Senior-Scrum-Master,Wells Fargo
+Wells Fargo,Wells-Fargo,Software Development,Software Engineer Intern,software engineer intern,48,$48.00,HOURLY,10,https://www.indeed.com/cmp/Wells-Fargo/salaries/Software-Engineer-Intern,Wells Fargo
+JPMorganChase,JPMorgan-Chase,Banking & Finance,Relationship Banker,relationship banker,26.99,$26.99,HOURLY,40,https://www.indeed.com/cmp/Jpmorganchase-2/salaries/Relationship-Banker,JPMorgan Chase
+JPMorganChase,JPMorgan-Chase,Banking & Finance,Banker,banker,25.03,$25.03,HOURLY,63,https://www.indeed.com/cmp/Jpmorganchase-2/salaries/Banker,JPMorgan Chase
+JPMorganChase,JPMorgan-Chase,Banking & Finance,Private Banker,private banker,27.81,$27.81,HOURLY,26,https://www.indeed.com/cmp/Jpmorganchase-2/salaries/Private-Banker,JPMorgan Chase
+JPMorganChase,JPMorgan-Chase,Banking & Finance,Fraud Analyst,fraud analyst,21.11,$21.11,HOURLY,3,,JPMorgan Chase
+JPMorganChase,JPMorgan-Chase,Banking & Finance,Investment Banking Analyst,investment banking analyst,132247,"$132,247",YEARLY,20,https://www.indeed.com/cmp/Jpmorganchase-2/salaries/Investment-Banking-Analyst,JPMorgan Chase
+JPMorganChase,JPMorgan-Chase,Banking & Finance,Bank Clerk,bank clerk,20.28,$20.28,HOURLY,10,https://www.indeed.com/cmp/Jpmorganchase-2/salaries/Bank-Clerk,JPMorgan Chase
+JPMorganChase,JPMorgan-Chase,Banking & Finance,Risk Analyst,risk analyst,75476,"$75,476",YEARLY,8,https://www.indeed.com/cmp/Jpmorganchase-2/salaries/Risk-Analyst,JPMorgan Chase
+JPMorganChase,JPMorgan-Chase,Banking & Finance,Financial Advisor,financial advisor,72930,"$72,930",YEARLY,9,https://www.indeed.com/cmp/Jpmorganchase-2/salaries/Financial-Advisor,JPMorgan Chase
+JPMorganChase,JPMorgan-Chase,Banking & Finance,Anti Money Laundering Analyst,anti money laundering analyst,60417,"$60,417",YEARLY,20,https://www.indeed.com/cmp/Jpmorganchase-2/salaries/Anti-Money-Laundering-Analyst,JPMorgan Chase
+JPMorganChase,JPMorgan-Chase,Banking & Finance,Banking Associate,banking associate,125400,"$125,400",YEARLY,16,https://www.indeed.com/cmp/Jpmorganchase-2/salaries/Banking-Associate,JPMorgan Chase
+PwC,PwC,Software Development,Software Architect,software architect,154255,"$154,255",YEARLY,57,https://www.indeed.com/cmp/Pwc/salaries/Software-Architect,PwC
+PwC,PwC,Software Development,Digital Assurance & Transparency Associate,digital assurance & transparency associate,88527,"$88,527",YEARLY,6,https://www.indeed.com/cmp/Pwc/salaries/Digital-Assurance-&-Transparency-Associate,PwC
+PwC,PwC,Software Development,Cloud Consultant,cloud consultant,157119,"$157,119",YEARLY,35,https://www.indeed.com/cmp/Pwc/salaries/Cloud-Consultant,PwC
+PwC,PwC,Software Development,Software Engineer,software engineer,87250,"$87,250",YEARLY,24,https://www.indeed.com/cmp/Pwc/salaries/Software-Engineer,PwC
+PwC,PwC,Software Development,Digital Assurance & Transparency Intern,digital assurance & transparency intern,33.59,$33.59,HOURLY,8,https://www.indeed.com/cmp/Pwc/salaries/Digital-Assurance-&-Transparency-Intern,PwC
+PwC,PwC,Software Development,Technical Lead,technical lead,133605,"$133,605",YEARLY,19,https://www.indeed.com/cmp/Pwc/salaries/Technical-Lead,PwC
+PwC,PwC,Software Development,Senior Software Engineer,senior software engineer,120744,"$120,744",YEARLY,14,https://www.indeed.com/cmp/Pwc/salaries/Senior-Software-Engineer,PwC
+PwC,PwC,Software Development,Python Developer,python developer,94902,"$94,902",YEARLY,10,https://www.indeed.com/cmp/Pwc/salaries/Python-Developer,PwC
+PwC,PwC,Software Development,Solution Architect,solution architect,150869,"$150,869",YEARLY,6,https://www.indeed.com/cmp/Pwc/salaries/Solution-Architect,PwC
+PwC,PwC,Software Development,Scrum Master,scrum master,127307,"$127,307",YEARLY,5,,PwC
+EY,EY,Information Design & Documentation,Technology Consultant,technology consultant,196121,"$196,121",YEARLY,111,https://www.indeed.com/cmp/Ey/salaries/Technology-Consultant,EY
+EY,EY,Information Design & Documentation,SAP Consultant,sap consultant,185025,"$185,025",YEARLY,397,https://www.indeed.com/cmp/Ey/salaries/SAP-Consultant,EY
+EY,EY,Information Design & Documentation,Senior Technology Consultant,senior technology consultant,146004,"$146,004",YEARLY,18,https://www.indeed.com/cmp/Ey/salaries/Senior-Technology-Consultant,EY
+EY,EY,Information Design & Documentation,Data Consultant,data consultant,130337,"$130,337",YEARLY,79,https://www.indeed.com/cmp/Ey/salaries/Data-Consultant,EY
+EY,EY,Information Design & Documentation,Cybersecurity Consultant,cybersecurity consultant,90563,"$90,563",YEARLY,29,https://www.indeed.com/cmp/Ey/salaries/Cybersecurity-Consultant,EY
+EY,EY,Information Design & Documentation,SAP Lead,sap lead,240303,"$240,303",YEARLY,95,https://www.indeed.com/cmp/Ey/salaries/SAP-Lead,EY
+EY,EY,Information Design & Documentation,Senior Business Process Analyst,senior business process analyst,103732,"$103,732",YEARLY,27,https://www.indeed.com/cmp/Ey/salaries/Senior-Business-Process-Analyst,EY
+EY,EY,Information Design & Documentation,CyberSecurity Lead,cybersecurity lead,112363,"$112,363",YEARLY,24,https://www.indeed.com/cmp/Ey/salaries/CyberSecurity-Lead,EY
+EY,EY,Information Design & Documentation,Senior Technology Analyst,senior technology analyst,103732,"$103,732",YEARLY,21,https://www.indeed.com/cmp/Ey/salaries/Senior-Technology-Analyst,EY
+EY,EY,Information Design & Documentation,Oracle Consultant,oracle consultant,149033,"$149,033",YEARLY,18,https://www.indeed.com/cmp/Ey/salaries/Oracle-Consultant,EY
+KPMG,KPMG,Banking & Finance,Audit Manager,audit manager,127757,"$127,757",YEARLY,20,https://www.indeed.com/cmp/Kpmg-0828bc85/salaries/Audit-Manager,KPMG
+KPMG,KPMG,Banking & Finance,Wealth Advisory Manager,wealth advisory manager,194315,"$194,315",YEARLY,13,https://www.indeed.com/cmp/Kpmg-0828bc85/salaries/Wealth-Advisory-Manager,KPMG
+KPMG,KPMG,Banking & Finance,Risk Associate,risk associate,80101,"$80,101",YEARLY,8,https://www.indeed.com/cmp/Kpmg-0828bc85/salaries/Risk-Associate,KPMG
+KPMG,KPMG,Banking & Finance,Senior Audit Manager,senior audit manager,165631,"$165,631",YEARLY,3,,KPMG
+KPMG,KPMG,Banking & Finance,Risk Manager,risk manager,6765,"$6,765",MONTHLY,3,,KPMG
+KPMG,KPMG,Banking & Finance,Director of Strategy,director of strategy,14052,"$14,052",MONTHLY,3,,KPMG
+KPMG,KPMG,Banking & Finance,Assurance Manager,assurance manager,8605,"$8,605",MONTHLY,3,,KPMG
+KPMG,KPMG,Banking & Finance,Financial Risk Analyst,financial risk analyst,7018,"$7,018",MONTHLY,2,,KPMG
+KPMG,KPMG,Banking & Finance,Financial Consultant,financial consultant,9707,"$9,707",MONTHLY,2,,KPMG
+KPMG,KPMG,Banking & Finance,Esg Research Associate,esg research associate,8893,"$8,893",MONTHLY,2,,KPMG
+Accenture,Accenture,Information Design & Documentation,Technology Analyst,technology analyst,82001,"$82,001",YEARLY,22,https://www.indeed.com/cmp/Accenture/salaries/Technology-Analyst,Accenture
+Accenture,Accenture,Information Design & Documentation,Technology Consultant,technology consultant,126828,"$126,828",YEARLY,16,https://www.indeed.com/cmp/Accenture/salaries/Technology-Consultant,Accenture
+Accenture,Accenture,Information Design & Documentation,Consultant Configuration Analyst,consultant configuration analyst,86265,"$86,265",YEARLY,8,https://www.indeed.com/cmp/Accenture/salaries/Consultant-Configuration-Analyst,Accenture
+Accenture,Accenture,Information Design & Documentation,SAP Consultant,sap consultant,114692,"$114,692",YEARLY,88,https://www.indeed.com/cmp/Accenture/salaries/SAP-Consultant,Accenture
+Accenture,Accenture,Information Design & Documentation,Application Analyst,application analyst,75549,"$75,549",YEARLY,9,https://www.indeed.com/cmp/Accenture/salaries/Application-Analyst,Accenture
+Accenture,Accenture,Information Design & Documentation,Delivery Analyst,delivery analyst,90335,"$90,335",YEARLY,6,https://www.indeed.com/cmp/Accenture/salaries/Delivery-Analyst,Accenture
+Accenture,Accenture,Information Design & Documentation,Oracle Consultant,oracle consultant,115773,"$115,773",YEARLY,24,https://www.indeed.com/cmp/Accenture/salaries/Oracle-Consultant,Accenture
+Accenture,Accenture,Information Design & Documentation,Operations Analyst,operations analyst,51627,"$51,627",YEARLY,9,https://www.indeed.com/cmp/Accenture/salaries/Operations-Analyst,Accenture
+Accenture,Accenture,Information Design & Documentation,Data Consultant,data consultant,116136,"$116,136",YEARLY,6,https://www.indeed.com/cmp/Accenture/salaries/Data-Consultant,Accenture
+Accenture,Accenture,Information Design & Documentation,Quality Assurance Analyst,quality assurance analyst,75000,"$75,000",YEARLY,1,,Accenture
+IBM,IBM,Information Design & Documentation,User Experience Designer,user experience designer,147384,"$147,384",YEARLY,6,https://www.indeed.com/cmp/IBM/salaries/User-Experience-Designer,IBM
+IBM,IBM,Information Design & Documentation,SAP Consultant,sap consultant,57311,"$57,311",YEARLY,6,https://www.indeed.com/cmp/IBM/salaries/SAP-Consultant,IBM
+IBM,IBM,Information Design & Documentation,Oracle Consultant,oracle consultant,97540,"$97,540",YEARLY,25,https://www.indeed.com/cmp/IBM/salaries/Oracle-Consultant,IBM
+IBM,IBM,Information Design & Documentation,User Experience Researcher,user experience researcher,139381,"$139,381",YEARLY,8,https://www.indeed.com/cmp/IBM/salaries/User-Experience-Researcher,IBM
+IBM,IBM,Information Design & Documentation,Product Designer,product designer,97986,"$97,986",YEARLY,13,https://www.indeed.com/cmp/IBM/salaries/Product-Designer,IBM
+IBM,IBM,Information Design & Documentation,Design Engineer,design engineer,106029,"$106,029",YEARLY,7,https://www.indeed.com/cmp/IBM/salaries/Design-Engineer,IBM
+IBM,IBM,Information Design & Documentation,Technical Specialist,technical specialist,115800,"$115,800",YEARLY,13,https://www.indeed.com/cmp/IBM/salaries/Technical-Specialist,IBM
+IBM,IBM,Information Design & Documentation,Senior User Experience Designer,senior user experience designer,182795,"$182,795",YEARLY,8,https://www.indeed.com/cmp/IBM/salaries/Senior-User-Experience-Designer,IBM
+IBM,IBM,Information Design & Documentation,Package Consultant,package consultant,75235,"$75,235",YEARLY,9,https://www.indeed.com/cmp/IBM/salaries/Package-Consultant,IBM
+IBM,IBM,Information Design & Documentation,Technical Consultant,technical consultant,74499,"$74,499",YEARLY,7,https://www.indeed.com/cmp/IBM/salaries/Technical-Consultant,IBM
+Oracle,Oracle,Management,Consultant,consultant,61866,"$61,866",YEARLY,138,https://www.indeed.com/cmp/Oracle/salaries/Consultant,Oracle
+Oracle,Oracle,Management,Director,director,177724,"$177,724",YEARLY,148,https://www.indeed.com/cmp/Oracle/salaries/Director,Oracle
+Oracle,Oracle,Management,Shift Leader,shift leader,135893,"$135,893",YEARLY,103,https://www.indeed.com/cmp/Oracle/salaries/Shift-Leader,Oracle
+Oracle,Oracle,Management,Development Director,development director,208997,"$208,997",YEARLY,215,https://www.indeed.com/cmp/Oracle/salaries/Development-Director,Oracle
+Oracle,Oracle,Management,Senior Consultant,senior consultant,73210,"$73,210",YEARLY,41,https://www.indeed.com/cmp/Oracle/salaries/Senior-Consultant,Oracle
+Oracle,Oracle,Management,Associate Consultant,associate consultant,55306,"$55,306",YEARLY,44,https://www.indeed.com/cmp/Oracle/salaries/Associate-Consultant,Oracle
+Oracle,Oracle,Management,Principal Consultant,principal consultant,112558,"$112,558",YEARLY,108,https://www.indeed.com/cmp/Oracle/salaries/Principal-Consultant,Oracle
+Oracle,Oracle,Management,Senior Principal Consultant,senior principal consultant,122185,"$122,185",YEARLY,144,https://www.indeed.com/cmp/Oracle/salaries/Senior-Principal-Consultant,Oracle
+Oracle,Oracle,Management,Business Development Manager,business development manager,151833,"$151,833",YEARLY,12,https://www.indeed.com/cmp/Oracle/salaries/Business-Development-Manager,Oracle
+Oracle,Oracle,Management,Product Strategy Manager,product strategy manager,170348,"$170,348",YEARLY,108,https://www.indeed.com/cmp/Oracle/salaries/Product-Strategy-Manager,Oracle
+HP,HP,Medical Technician,Surgical Technologist,surgical technologist,49.76,$49.76,HOURLY,4,,HP
+HP,HP,Medical Technician,Sterile Processing Technician,sterile processing technician,27.28,$27.28,HOURLY,7,https://www.indeed.com/cmp/HP/salaries/Sterile-Processing-Technician,HP
+HP,HP,Medical Technician,Phlebotomist,phlebotomist,23.53,$23.53,HOURLY,4,,HP
+HP,HP,Medical Technician,Respiratory Therapist,respiratory therapist,72.12,$72.12,HOURLY,2,,HP
+HP,HP,Medical Technician,Patient Care Technician,patient care technician,24.91,$24.91,HOURLY,3,,HP
+HP,HP,Medical Technician,Certified Medical Assistant,certified medical assistant,23.1,$23.10,HOURLY,2,,HP
+HP,HP,Medical Technician,X-ray Technician,x-ray technician,44.27,$44.27,HOURLY,1,,HP
+HP,HP,Medical Technician,Telemetry Technician,telemetry technician,49.75,$49.75,HOURLY,1,,HP
+HP,HP,Medical Technician,Radiologic Technologist,radiologic technologist,31.64,$31.64,HOURLY,1,,HP
+HP,HP,Medical Technician,Paramedic,paramedic,22.74,$22.74,HOURLY,1,,HP
+Verizon,Verizon,Management,Manager,manager,131928,"$131,928",YEARLY,5,,Verizon
+Verizon,Verizon,Management,Consultant,consultant,94525,"$94,525",YEARLY,8,https://www.indeed.com/cmp/Verizon/salaries/Consultant,Verizon
+Verizon,Verizon,Management,Senior Manager,senior manager,152558,"$152,558",YEARLY,5,,Verizon
+Verizon,Verizon,Management,Director,director,178446,"$178,446",YEARLY,8,https://www.indeed.com/cmp/Verizon/salaries/Director,Verizon
+Verizon,Verizon,Management,Associate Director,associate director,186526,"$186,526",YEARLY,5,,Verizon
+Verizon,Verizon,Management,Solutions Manager,solutions manager,53009,"$53,009",YEARLY,32,https://www.indeed.com/cmp/Verizon/salaries/Solutions-Manager,Verizon
+Verizon,Verizon,Management,General Manager,general manager,71523,"$71,523",YEARLY,26,https://www.indeed.com/cmp/Verizon/salaries/General-Manager,Verizon
+Verizon,Verizon,Management,Assistant Manager,assistant manager,54439,"$54,439",YEARLY,9,https://www.indeed.com/cmp/Verizon/salaries/Assistant-Manager,Verizon
+Verizon,Verizon,Management,Transformation Manager,transformation manager,145968,"$145,968",YEARLY,7,https://www.indeed.com/cmp/Verizon/salaries/Transformation-Manager,Verizon
+Verizon,Verizon,Management,Manager in Training,manager in training,44091,"$44,091",YEARLY,7,https://www.indeed.com/cmp/Verizon/salaries/Manager-in-Training,Verizon
+AT&T,AT&T,Management,Manager in Training,manager in training,51072,"$51,072",YEARLY,2,,AT&T
+AT&T,AT&T,Management,Manager,manager,106504,"$106,504",YEARLY,13,https://www.indeed.com/cmp/AT&T/salaries/Manager,AT&T
+AT&T,AT&T,Management,Associate Director,associate director,155600,"$155,600",YEARLY,26,https://www.indeed.com/cmp/AT&T/salaries/Associate-Director,AT&T
+AT&T,AT&T,Management,Director,director,171309,"$171,309",YEARLY,16,https://www.indeed.com/cmp/AT&T/salaries/Director,AT&T
+AT&T,AT&T,Management,Assistant Manager,assistant manager,58731,"$58,731",YEARLY,10,https://www.indeed.com/cmp/AT&T/salaries/Assistant-Manager,AT&T
+AT&T,AT&T,Management,Commissioner,commissioner,43597,"$43,597",YEARLY,23,https://www.indeed.com/cmp/AT&T/salaries/Commissioner,AT&T
+AT&T,AT&T,Management,Assistant Vice President,assistant vice president,213233,"$213,233",YEARLY,10,https://www.indeed.com/cmp/AT&T/salaries/Assistant-Vice-President,AT&T
+AT&T,AT&T,Management,Shift Leader,shift leader,145904,"$145,904",YEARLY,9,https://www.indeed.com/cmp/AT&T/salaries/Shift-Leader,AT&T
+AT&T,AT&T,Management,Area Manager,area manager,85110,"$85,110",YEARLY,10,https://www.indeed.com/cmp/AT&T/salaries/Area-Manager,AT&T
+AT&T,AT&T,Management,Technical Manager,technical manager,90050,"$90,050",YEARLY,8,https://www.indeed.com/cmp/AT&T/salaries/Technical-Manager,AT&T
+T-Mobile Premium Retailers,T-Mobile,Installation & Maintenance,Mobile Expert,mobile expert,15.64,$15.64,HOURLY,276,https://www.indeed.com/cmp/T--Mobile-Premium-Retailers/salaries/Mobile-Expert,T-Mobile
+T-Mobile Premium Retailers,T-Mobile,Installation & Maintenance,Mobile Phone Technician,mobile phone technician,18.28,$18.28,HOURLY,1,,T-Mobile
+T-Mobile Premium Retailers,T-Mobile,Installation & Maintenance,HVAC Technician,hvac technician,16.42,$16.42,HOURLY,3,,T-Mobile
+T-Mobile Premium Retailers,T-Mobile,Installation & Maintenance,Field Technician,field technician,18.88,$18.88,HOURLY,2,,T-Mobile
+T-Mobile Premium Retailers,T-Mobile,Installation & Maintenance,Wastewater Operator,wastewater operator,35.58,$35.58,HOURLY,1,,T-Mobile
+T-Mobile Premium Retailers,T-Mobile,Installation & Maintenance,Technician,technician,13,$13.00,HOURLY,1,,T-Mobile
+T-Mobile Premium Retailers,T-Mobile,Installation & Maintenance,Sheet Metal Mechanic,sheet metal mechanic,16.74,$16.74,HOURLY,1,,T-Mobile
+T-Mobile Premium Retailers,T-Mobile,Installation & Maintenance,Locator,locator,8,$8.00,HOURLY,1,,T-Mobile
+T-Mobile Premium Retailers,T-Mobile,Management,Commissioner,commissioner,53062,"$53,062",YEARLY,1,,T-Mobile
+T-Mobile Premium Retailers,T-Mobile,Management,Assistant Manager,assistant manager,31668,"$31,668",YEARLY,8,https://www.indeed.com/cmp/T--Mobile-Premium-Retailers/salaries/Assistant-Manager,T-Mobile
+Comcast,Comcast,Marketing,Campaign Manager,campaign manager,54370,"$54,370",YEARLY,43,https://www.indeed.com/cmp/Comcast/salaries/Campaign-Manager,Comcast
+Comcast,Comcast,Marketing,Senior Marketer,senior marketer,112924,"$112,924",YEARLY,6,https://www.indeed.com/cmp/Comcast/salaries/Senior-Marketer,Comcast
+Comcast,Comcast,Marketing,Brand Ambassador,brand ambassador,906,$906,WEEKLY,10,https://www.indeed.com/cmp/Comcast/salaries/Brand-Ambassador,Comcast
+Comcast,Comcast,Marketing,Marketing Specialist,marketing specialist,64605,"$64,605",YEARLY,8,https://www.indeed.com/cmp/Comcast/salaries/Marketing-Specialist,Comcast
+Comcast,Comcast,Marketing,Communications Manager,communications manager,102227,"$102,227",YEARLY,7,https://www.indeed.com/cmp/Comcast/salaries/Communications-Manager,Comcast
+Comcast,Comcast,Marketing,Marketing Manager,marketing manager,109594,"$109,594",YEARLY,5,,Comcast
+Comcast,Comcast,Marketing,Director of Communications,director of communications,163696,"$163,696",YEARLY,8,https://www.indeed.com/cmp/Comcast/salaries/Director-of-Communications,Comcast
+Comcast,Comcast,Marketing,Director of Marketing,director of marketing,134502,"$134,502",YEARLY,7,https://www.indeed.com/cmp/Comcast/salaries/Director-of-Marketing,Comcast
+Comcast,Comcast,Marketing,Marketing Representative,marketing representative,582,$582,WEEKLY,4,,Comcast
+Comcast,Comcast,Marketing,Internal Communications Executive,internal communications executive,107397,"$107,397",YEARLY,4,,Comcast
+The Walt Disney Company,The-Walt-Disney-Company,Food Preparation & Service,Host/Hostess,host/hostess,22.86,$22.86,HOURLY,18,https://www.indeed.com/cmp/The-Walt-Disney-Company/salaries/Host-Hostess,The Walt Disney Company
+The Walt Disney Company,The-Walt-Disney-Company,Food Preparation & Service,Food Service Associate,food service associate,20.84,$20.84,HOURLY,14,https://www.indeed.com/cmp/The-Walt-Disney-Company/salaries/Food-Service-Associate,The Walt Disney Company
+The Walt Disney Company,The-Walt-Disney-Company,Food Preparation & Service,Cook,cook,25.02,$25.02,HOURLY,6,https://www.indeed.com/cmp/The-Walt-Disney-Company/salaries/Cook,The Walt Disney Company
+The Walt Disney Company,The-Walt-Disney-Company,Food Preparation & Service,Server,server,53853,"$53,853",YEARLY,5,,The Walt Disney Company
+The Walt Disney Company,The-Walt-Disney-Company,Food Preparation & Service,Sous Chef,sous chef,25.48,$25.48,HOURLY,8,https://www.indeed.com/cmp/The-Walt-Disney-Company/salaries/Sous-Chef,The Walt Disney Company
+The Walt Disney Company,The-Walt-Disney-Company,Food Preparation & Service,Food Service Worker,food service worker,16.54,$16.54,HOURLY,9,https://www.indeed.com/cmp/The-Walt-Disney-Company/salaries/Food-Service-Worker,The Walt Disney Company
+The Walt Disney Company,The-Walt-Disney-Company,Food Preparation & Service,Pastry Cook,pastry cook,21.03,$21.03,HOURLY,6,https://www.indeed.com/cmp/The-Walt-Disney-Company/salaries/Pastry-Cook,The Walt Disney Company
+The Walt Disney Company,The-Walt-Disney-Company,Food Preparation & Service,Line Cook,line cook,20.03,$20.03,HOURLY,7,https://www.indeed.com/cmp/The-Walt-Disney-Company/salaries/Line-Cook,The Walt Disney Company
+The Walt Disney Company,The-Walt-Disney-Company,Food Preparation & Service,Barista,barista,15.27,$15.27,HOURLY,7,https://www.indeed.com/cmp/The-Walt-Disney-Company/salaries/Barista,The Walt Disney Company
+The Walt Disney Company,The-Walt-Disney-Company,Food Preparation & Service,Assistant Chef,assistant chef,20.99,$20.99,HOURLY,11,https://www.indeed.com/cmp/The-Walt-Disney-Company/salaries/Assistant-Chef,The Walt Disney Company
+Marriott International,Marriott-International,Customer Service,Front Desk Agent,front desk agent,17.05,$17.05,HOURLY,445,https://www.indeed.com/cmp/Marriott-International/salaries/Front-Desk-Agent,Marriott International
+Marriott International,Marriott-International,Customer Service,Guest Service Agent,guest service agent,17.65,$17.65,HOURLY,142,https://www.indeed.com/cmp/Marriott-International/salaries/Guest-Service-Agent,Marriott International
+Marriott International,Marriott-International,Customer Service,Lobby Attendant,lobby attendant,16.93,$16.93,HOURLY,42,https://www.indeed.com/cmp/Marriott-International/salaries/Lobby-Attendant,Marriott International
+Marriott International,Marriott-International,Customer Service,Customer Service Representative,customer service representative,21.53,$21.53,HOURLY,18,https://www.indeed.com/cmp/Marriott-International/salaries/Customer-Service-Representative,Marriott International
+Marriott International,Marriott-International,Customer Service,Parking Attendant,parking attendant,12.5,$12.50,HOURLY,10,https://www.indeed.com/cmp/Marriott-International/salaries/Parking-Attendant,Marriott International
+Marriott International,Marriott-International,Customer Service,Hotel Front Desk Clerk,hotel front desk clerk,16.98,$16.98,HOURLY,5,,Marriott International
+Marriott International,Marriott-International,Customer Service,Reservation Agent,reservation agent,20.88,$20.88,HOURLY,5,,Marriott International
+Marriott International,Marriott-International,Customer Service,Reservationist,reservationist,18.76,$18.76,HOURLY,3,,Marriott International
+Marriott International,Marriott-International,Customer Service,Greeter,greeter,15.14,$15.14,HOURLY,3,,Marriott International
+Marriott International,Marriott-International,Customer Service,Usher,usher,15,$15.00,HOURLY,2,,Marriott International
+Hilton,Hilton,Customer Service,Front Desk Agent,front desk agent,19.01,$19.01,HOURLY,153,https://www.indeed.com/cmp/Hilton/salaries/Front-Desk-Agent,Hilton
+Hilton,Hilton,Customer Service,Guest Service Agent,guest service agent,18.66,$18.66,HOURLY,91,https://www.indeed.com/cmp/Hilton/salaries/Guest-Service-Agent,Hilton
+Hilton,Hilton,Customer Service,Parking Attendant,parking attendant,15.26,$15.26,HOURLY,8,https://www.indeed.com/cmp/Hilton/salaries/Parking-Attendant,Hilton
+Hilton,Hilton,Customer Service,Lobby Attendant,lobby attendant,16.72,$16.72,HOURLY,15,https://www.indeed.com/cmp/Hilton/salaries/Lobby-Attendant,Hilton
+Hilton,Hilton,Customer Service,Reservation Agent,reservation agent,17.84,$17.84,HOURLY,5,,Hilton
+Hilton,Hilton,Customer Service,Greeter,greeter,28.89,$28.89,HOURLY,6,https://www.indeed.com/cmp/Hilton/salaries/Greeter,Hilton
+Hilton,Hilton,Customer Service,Hotel Front Desk Clerk,hotel front desk clerk,14.37,$14.37,HOURLY,6,https://www.indeed.com/cmp/Hilton/salaries/Hotel-Front-Desk-Clerk,Hilton
+Hilton,Hilton,Customer Service,Overnight Customer Service Representative,overnight customer service representative,15.97,$15.97,HOURLY,2,,Hilton
+Hilton,Hilton,Customer Service,Reservationist,reservationist,18,$18.00,HOURLY,1,,Hilton
+Hilton,Hilton,Customer Service,Desktop Support Technician,desktop support technician,79844,"$79,844",YEARLY,1,,Hilton
+Southwest Airlines,Southwest-Airlines,Mathematics,Analyst,analyst,90620,"$90,620",YEARLY,11,https://www.indeed.com/cmp/Southwest-Airlines/salaries/Analyst,Southwest Airlines
+Southwest Airlines,Southwest-Airlines,Mathematics,Senior Analyst,senior analyst,123693,"$123,693",YEARLY,7,https://www.indeed.com/cmp/Southwest-Airlines/salaries/Senior-Analyst,Southwest Airlines
+Southwest Airlines,Southwest-Airlines,Mathematics,Business Analyst,business analyst,105446,"$105,446",YEARLY,7,https://www.indeed.com/cmp/Southwest-Airlines/salaries/Business-Analyst,Southwest Airlines
+Southwest Airlines,Southwest-Airlines,Mathematics,Data Scientist,data scientist,127149,"$127,149",YEARLY,7,https://www.indeed.com/cmp/Southwest-Airlines/salaries/Data-Scientist,Southwest Airlines
+Southwest Airlines,Southwest-Airlines,Mathematics,Associate Analyst,associate analyst,69121,"$69,121",YEARLY,6,https://www.indeed.com/cmp/Southwest-Airlines/salaries/Associate-Analyst,Southwest Airlines
+Southwest Airlines,Southwest-Airlines,Mathematics,Senior Business Analyst,senior business analyst,106902,"$106,902",YEARLY,8,https://www.indeed.com/cmp/Southwest-Airlines/salaries/Senior-Business-Analyst,Southwest Airlines
+Southwest Airlines,Southwest-Airlines,Mathematics,Senior Data Analyst,senior data analyst,100026,"$100,026",YEARLY,7,https://www.indeed.com/cmp/Southwest-Airlines/salaries/Senior-Data-Analyst,Southwest Airlines
+Southwest Airlines,Southwest-Airlines,Mathematics,Data Analyst,data analyst,91221,"$91,221",YEARLY,6,https://www.indeed.com/cmp/Southwest-Airlines/salaries/Data-Analyst,Southwest Airlines
+Southwest Airlines,Southwest-Airlines,Information Design & Documentation,Technology Analyst,technology analyst,87105,"$87,105",YEARLY,6,https://www.indeed.com/cmp/Southwest-Airlines/salaries/Technology-Analyst,Southwest Airlines
+Southwest Airlines,Southwest-Airlines,Information Design & Documentation,Technical Writer,technical writer,65224,"$65,224",YEARLY,5,,Southwest Airlines
+Boeing,Boeing,Production & Manufacturing,Assembler,assembler,25.02,$25.02,HOURLY,74,https://www.indeed.com/cmp/Boeing/salaries/Assembler,Boeing
+Boeing,Boeing,Production & Manufacturing,Fabricator,fabricator,32.04,$32.04,HOURLY,12,https://www.indeed.com/cmp/Boeing/salaries/Fabricator,Boeing
+Boeing,Boeing,Production & Manufacturing,Quality Assurance Inspector,quality assurance inspector,30.18,$30.18,HOURLY,28,https://www.indeed.com/cmp/Boeing/salaries/Quality-Assurance-Inspector,Boeing
+Boeing,Boeing,Production & Manufacturing,Quality Specialist,quality specialist,100843,"$100,843",YEARLY,9,https://www.indeed.com/cmp/Boeing/salaries/Quality-Specialist,Boeing
+Boeing,Boeing,Production & Manufacturing,Manufacturing Associate,manufacturing associate,36.06,$36.06,HOURLY,1,,Boeing
+Boeing,Boeing,Production & Manufacturing,Machinist,machinist,40.98,$40.98,HOURLY,11,https://www.indeed.com/cmp/Boeing/salaries/Machinist,Boeing
+Boeing,Boeing,Production & Manufacturing,Electrical Assembler,electrical assembler,20.95,$20.95,HOURLY,7,https://www.indeed.com/cmp/Boeing/salaries/Electrical-Assembler,Boeing
+Boeing,Boeing,Production & Manufacturing,Tool and Die Maker,tool and die maker,33.87,$33.87,HOURLY,9,https://www.indeed.com/cmp/Boeing/salaries/Tool-and-Die-Maker,Boeing
+Boeing,Boeing,Production & Manufacturing,Mechanical Assembler,mechanical assembler,20.18,$20.18,HOURLY,7,https://www.indeed.com/cmp/Boeing/salaries/Mechanical-Assembler,Boeing
+Boeing,Boeing,Production & Manufacturing,Welder,welder,30.39,$30.39,HOURLY,9,https://www.indeed.com/cmp/Boeing/salaries/Welder,Boeing
+Lockheed Martin,Lockheed-Martin,Installation & Maintenance,Field Engineer,field engineer,105032,"$105,032",YEARLY,40,https://www.indeed.com/cmp/Lockheed-Martin/salaries/Field-Engineer,Lockheed Martin
+Lockheed Martin,Lockheed-Martin,Installation & Maintenance,Mechanic,mechanic,40.81,$40.81,HOURLY,10,https://www.indeed.com/cmp/Lockheed-Martin/salaries/Mechanic,Lockheed Martin
+Lockheed Martin,Lockheed-Martin,Installation & Maintenance,Calibration Technician,calibration technician,41.43,$41.43,HOURLY,7,https://www.indeed.com/cmp/Lockheed-Martin/salaries/Calibration-Technician,Lockheed Martin
+Lockheed Martin,Lockheed-Martin,Installation & Maintenance,Electrician,electrician,39.13,$39.13,HOURLY,7,https://www.indeed.com/cmp/Lockheed-Martin/salaries/Electrician,Lockheed Martin
+Lockheed Martin,Lockheed-Martin,Installation & Maintenance,Maintenance Mechanic,maintenance mechanic,37.38,$37.38,HOURLY,9,https://www.indeed.com/cmp/Lockheed-Martin/salaries/Maintenance-Mechanic,Lockheed Martin
+Lockheed Martin,Lockheed-Martin,Installation & Maintenance,Avionics Technician,avionics technician,29.54,$29.54,HOURLY,7,https://www.indeed.com/cmp/Lockheed-Martin/salaries/Avionics-Technician,Lockheed Martin
+Lockheed Martin,Lockheed-Martin,Installation & Maintenance,Test Technician,test technician,20.98,$20.98,HOURLY,3,,Lockheed Martin
+Lockheed Martin,Lockheed-Martin,Installation & Maintenance,Instrument Technician,instrument technician,54242,"$54,242",YEARLY,10,https://www.indeed.com/cmp/Lockheed-Martin/salaries/Instrument-Technician,Lockheed Martin
+Lockheed Martin,Lockheed-Martin,Installation & Maintenance,Inspector,inspector,38.36,$38.36,HOURLY,6,https://www.indeed.com/cmp/Lockheed-Martin/salaries/Inspector,Lockheed Martin
+Lockheed Martin,Lockheed-Martin,Installation & Maintenance,Senior Maintenance Mechanic,senior maintenance mechanic,38.93,$38.93,HOURLY,9,https://www.indeed.com/cmp/Lockheed-Martin/salaries/Senior-Maintenance-Mechanic,Lockheed Martin
+General Motors (GM),General-Motors,Mathematics,Business Analyst,business analyst,94355,"$94,355",YEARLY,16,https://www.indeed.com/cmp/General-Motors-(gm)-1/salaries/Business-Analyst,General Motors
+General Motors (GM),General-Motors,Mathematics,Analyst,analyst,91418,"$91,418",YEARLY,18,https://www.indeed.com/cmp/General-Motors-(gm)-1/salaries/Analyst,General Motors
+General Motors (GM),General-Motors,Mathematics,Data Scientist,data scientist,103843,"$103,843",YEARLY,8,https://www.indeed.com/cmp/General-Motors-(gm)-1/salaries/Data-Scientist,General Motors
+General Motors (GM),General-Motors,Mathematics,Business Intelligence Developer,business intelligence developer,120217,"$120,217",YEARLY,40,https://www.indeed.com/cmp/General-Motors-(gm)-1/salaries/Business-Intelligence-Developer,General Motors
+General Motors (GM),General-Motors,Mathematics,Senior Analyst,senior analyst,107692,"$107,692",YEARLY,20,https://www.indeed.com/cmp/General-Motors-(gm)-1/salaries/Senior-Analyst,General Motors
+General Motors (GM),General-Motors,Mathematics,Data Analyst,data analyst,106662,"$106,662",YEARLY,10,https://www.indeed.com/cmp/General-Motors-(gm)-1/salaries/Data-Analyst,General Motors
+General Motors (GM),General-Motors,Mathematics,Reporting Analyst,reporting analyst,100891,"$100,891",YEARLY,29,https://www.indeed.com/cmp/General-Motors-(gm)-1/salaries/Reporting-Analyst,General Motors
+General Motors (GM),General-Motors,Mathematics,Senior Data Scientist,senior data scientist,160384,"$160,384",YEARLY,14,https://www.indeed.com/cmp/General-Motors-(gm)-1/salaries/Senior-Data-Scientist,General Motors
+General Motors (GM),General-Motors,Mathematics,Lead Data Scientist,lead data scientist,198469,"$198,469",YEARLY,20,https://www.indeed.com/cmp/General-Motors-(gm)-1/salaries/Lead-Data-Scientist,General Motors
+General Motors (GM),General-Motors,Mathematics,Senior Reporting Analyst,senior reporting analyst,131743,"$131,743",YEARLY,15,https://www.indeed.com/cmp/General-Motors-(gm)-1/salaries/Senior-Reporting-Analyst,General Motors
+Ford Motor Company,Ford-Motor-Company,Management,Manager,manager,147025,"$147,025",YEARLY,7,https://www.indeed.com/cmp/Ford-Motor-Company/salaries/Manager,Ford Motor Company
+Ford Motor Company,Ford-Motor-Company,Management,Supervisor,supervisor,144506,"$144,506",YEARLY,9,https://www.indeed.com/cmp/Ford-Motor-Company/salaries/Supervisor,Ford Motor Company
+Ford Motor Company,Ford-Motor-Company,Management,Zone Manager,zone manager,80463,"$80,463",YEARLY,6,https://www.indeed.com/cmp/Ford-Motor-Company/salaries/Zone-Manager,Ford Motor Company
+Ford Motor Company,Ford-Motor-Company,Management,Director,director,213667,"$213,667",YEARLY,11,https://www.indeed.com/cmp/Ford-Motor-Company/salaries/Director,Ford Motor Company
+Ford Motor Company,Ford-Motor-Company,Management,Manufacturing Specialist,manufacturing specialist,75982,"$75,982",YEARLY,5,,Ford Motor Company
+Ford Motor Company,Ford-Motor-Company,Management,Shift Leader,shift leader,133203,"$133,203",YEARLY,10,https://www.indeed.com/cmp/Ford-Motor-Company/salaries/Shift-Leader,Ford Motor Company
+Ford Motor Company,Ford-Motor-Company,Management,Safety Engineer,safety engineer,104575,"$104,575",YEARLY,8,https://www.indeed.com/cmp/Ford-Motor-Company/salaries/Safety-Engineer,Ford Motor Company
+Ford Motor Company,Ford-Motor-Company,Management,Purchasing Manager,purchasing manager,142652,"$142,652",YEARLY,13,https://www.indeed.com/cmp/Ford-Motor-Company/salaries/Purchasing-Manager,Ford Motor Company
+Ford Motor Company,Ford-Motor-Company,Management,Team Leader,team leader,111032,"$111,032",YEARLY,5,,Ford Motor Company
+Ford Motor Company,Ford-Motor-Company,Management,Senior Manager,senior manager,182081,"$182,081",YEARLY,5,,Ford Motor Company
+NIKE,Nike,Retail,Retail Sales Associate,retail sales associate,102766,"$102,766",YEARLY,15,https://www.indeed.com/cmp/Nike/salaries/Retail-Sales-Associate,Nike
+NIKE,Nike,Retail,Merchant,merchant,128076,"$128,076",YEARLY,8,https://www.indeed.com/cmp/Nike/salaries/Merchant,Nike
+NIKE,Nike,Retail,Merchandise Manager,merchandise manager,98507,"$98,507",YEARLY,9,https://www.indeed.com/cmp/Nike/salaries/Merchandise-Manager,Nike
+NIKE,Nike,Retail,Apparel Associate,apparel associate,166216,"$166,216",YEARLY,5,,Nike
+NIKE,Nike,Retail,Merchandising Director,merchandising director,204603,"$204,603",YEARLY,6,https://www.indeed.com/cmp/Nike/salaries/Merchandising-Director,Nike
+NIKE,Nike,Retail,Merchandiser,merchandiser,114208,"$114,208",YEARLY,6,https://www.indeed.com/cmp/Nike/salaries/Merchandiser,Nike
+NIKE,Nike,Retail,Seasonal Associate,seasonal associate,15.88,$15.88,HOURLY,5,,Nike
+NIKE,Nike,Retail,Senior Retail Sales Associate,senior retail sales associate,117531,"$117,531",YEARLY,1,,Nike
+NIKE,Nike,Retail,Merchandising Specialist,merchandising specialist,69310,"$69,310",YEARLY,4,,Nike
+NIKE,Nike,Retail,Associate Merchant,associate merchant,69152,"$69,152",YEARLY,4,,Nike
+PepsiCo,PepsiCo,Sales,Sales Representative,sales representative,66990,"$66,990",YEARLY,17,https://www.indeed.com/cmp/PepsiCo/salaries/Sales-Representative,PepsiCo
+PepsiCo,PepsiCo,Sales,Sales Associate,sales associate,55187,"$55,187",YEARLY,11,https://www.indeed.com/cmp/PepsiCo/salaries/Sales-Associate,PepsiCo
+PepsiCo,PepsiCo,Sales,Key Account Manager,key account manager,82192,"$82,192",YEARLY,5,,PepsiCo
+PepsiCo,PepsiCo,Sales,Sales Intern,sales intern,23.67,$23.67,HOURLY,15,https://www.indeed.com/cmp/PepsiCo/salaries/Sales-Intern,PepsiCo
+PepsiCo,PepsiCo,Sales,Account Manager,account manager,78068,"$78,068",YEARLY,8,https://www.indeed.com/cmp/PepsiCo/salaries/Account-Manager,PepsiCo
+PepsiCo,PepsiCo,Sales,Sales Manager,sales manager,75817,"$75,817",YEARLY,10,https://www.indeed.com/cmp/PepsiCo/salaries/Sales-Manager,PepsiCo
+PepsiCo,PepsiCo,Sales,Parts Manager,parts manager,64050,"$64,050",YEARLY,5,,PepsiCo
+PepsiCo,PepsiCo,Sales,District Sales Manager,district sales manager,71251,"$71,251",YEARLY,6,https://www.indeed.com/cmp/PepsiCo/salaries/District-Sales-Manager,PepsiCo
+PepsiCo,PepsiCo,Sales,Account Specialist,account specialist,70545,"$70,545",YEARLY,9,https://www.indeed.com/cmp/PepsiCo/salaries/Account-Specialist,PepsiCo
+PepsiCo,PepsiCo,Sales,Sales Coordinator,sales coordinator,44475,"$44,475",YEARLY,4,,PepsiCo
+UnitedHealth Group,UnitedHealth-Group,Customer Service,Customer Service Representative,customer service representative,18.46,$18.46,HOURLY,7,https://www.indeed.com/cmp/UnitedHealth-Group/salaries/Customer-Service-Representative,UnitedHealth Group
+UnitedHealth Group,UnitedHealth-Group,Customer Service,Bilingual Customer Service Associate,bilingual customer service associate,23.53,$23.53,HOURLY,17,https://www.indeed.com/cmp/UnitedHealth-Group/salaries/Bilingual-Customer-Service-Associate,UnitedHealth Group
+UnitedHealth Group,UnitedHealth-Group,Customer Service,Healthcare Customer Service Representative,healthcare customer service representative,22.67,$22.67,HOURLY,5,,UnitedHealth Group
+UnitedHealth Group,UnitedHealth-Group,Customer Service,Customer Advocate,customer advocate,18.98,$18.98,HOURLY,6,https://www.indeed.com/cmp/UnitedHealth-Group/salaries/Customer-Advocate,UnitedHealth Group
+UnitedHealth Group,UnitedHealth-Group,Customer Service,Support Specialist,support specialist,24.04,$24.04,HOURLY,7,https://www.indeed.com/cmp/UnitedHealth-Group/salaries/Support-Specialist,UnitedHealth Group
+UnitedHealth Group,UnitedHealth-Group,Customer Service,Senior Customer Service Representative,senior customer service representative,22.18,$22.18,HOURLY,4,,UnitedHealth Group
+UnitedHealth Group,UnitedHealth-Group,Customer Service,Customer Support Representative,customer support representative,23.21,$23.21,HOURLY,3,,UnitedHealth Group
+UnitedHealth Group,UnitedHealth-Group,Customer Service,Enrollment and Eligibility Representative,enrollment and eligibility representative,23.79,$23.79,HOURLY,2,,UnitedHealth Group
+UnitedHealth Group,UnitedHealth-Group,Customer Service,Sales Support Representative,sales support representative,23.82,$23.82,HOURLY,1,,UnitedHealth Group
+UnitedHealth Group,UnitedHealth-Group,Customer Service,Member Advocate,member advocate,33000,"$33,000",YEARLY,1,,UnitedHealth Group
+Humana,Humana,Mathematics,Business Intelligence Developer,business intelligence developer,91602,"$91,602",YEARLY,129,https://www.indeed.com/cmp/Humana/salaries/Business-Intelligence-Developer,Humana
+Humana,Humana,Mathematics,Senior Data Scientist,senior data scientist,137376,"$137,376",YEARLY,65,https://www.indeed.com/cmp/Humana/salaries/Senior-Data-Scientist,Humana
+Humana,Humana,Mathematics,Business Intelligence Analyst,business intelligence analyst,148568,"$148,568",YEARLY,26,https://www.indeed.com/cmp/Humana/salaries/Business-Intelligence-Analyst,Humana
+Humana,Humana,Mathematics,Data Scientist,data scientist,111761,"$111,761",YEARLY,25,https://www.indeed.com/cmp/Humana/salaries/Data-Scientist,Humana
+Humana,Humana,Mathematics,Analyst,analyst,69283,"$69,283",YEARLY,7,https://www.indeed.com/cmp/Humana/salaries/Analyst,Humana
+Humana,Humana,Mathematics,Lead Data Scientist,lead data scientist,166930,"$166,930",YEARLY,11,https://www.indeed.com/cmp/Humana/salaries/Lead-Data-Scientist,Humana
+Humana,Humana,Mathematics,Management Analyst,management analyst,56911,"$56,911",YEARLY,17,https://www.indeed.com/cmp/Humana/salaries/Management-Analyst,Humana
+Humana,Humana,Mathematics,Anaplan Model Builder,anaplan model builder,94489,"$94,489",YEARLY,17,https://www.indeed.com/cmp/Humana/salaries/Anaplan-Model-Builder,Humana
+Humana,Humana,Mathematics,Senior Reporting Analyst,senior reporting analyst,67595,"$67,595",YEARLY,5,,Humana
+Humana,Humana,Mathematics,Senior Analytics Consultant,senior analytics consultant,91961,"$91,961",YEARLY,12,https://www.indeed.com/cmp/Humana/salaries/Senior-Analytics-Consultant,Humana
+Kaiser Permanente,Kaiser-Permanente,Medical Technician,Medical Assistant,medical assistant,30.47,$30.47,HOURLY,21,https://www.indeed.com/cmp/Kaiser-Permanente/salaries/Medical-Assistant,Kaiser Permanente
+Kaiser Permanente,Kaiser-Permanente,Medical Technician,Radiologist,radiologist,187,$187,HOURLY,16,https://www.indeed.com/cmp/Kaiser-Permanente/salaries/Radiologist,Kaiser Permanente
+Kaiser Permanente,Kaiser-Permanente,Medical Technician,Radiologic Technologist,radiologic technologist,46.3,$46.30,HOURLY,7,https://www.indeed.com/cmp/Kaiser-Permanente/salaries/Radiologic-Technologist,Kaiser Permanente
+Kaiser Permanente,Kaiser-Permanente,Medical Technician,Sonographer,sonographer,54.42,$54.42,HOURLY,5,,Kaiser Permanente
+Kaiser Permanente,Kaiser-Permanente,Medical Technician,CT Technologist,ct technologist,52.5,$52.50,HOURLY,9,https://www.indeed.com/cmp/Kaiser-Permanente/salaries/CT-Technologist,Kaiser Permanente
+Kaiser Permanente,Kaiser-Permanente,Medical Technician,Patient Care Technician,patient care technician,35.75,$35.75,HOURLY,12,https://www.indeed.com/cmp/Kaiser-Permanente/salaries/Patient-Care-Technician,Kaiser Permanente
+Kaiser Permanente,Kaiser-Permanente,Medical Technician,Surgical Technologist,surgical technologist,48.55,$48.55,HOURLY,12,https://www.indeed.com/cmp/Kaiser-Permanente/salaries/Surgical-Technologist,Kaiser Permanente
+Kaiser Permanente,Kaiser-Permanente,Medical Technician,Mammography Technologist,mammography technologist,53.88,$53.88,HOURLY,8,https://www.indeed.com/cmp/Kaiser-Permanente/salaries/Mammography-Technologist,Kaiser Permanente
+Kaiser Permanente,Kaiser-Permanente,Medical Technician,Sterile Processing Technician,sterile processing technician,30.7,$30.70,HOURLY,10,https://www.indeed.com/cmp/Kaiser-Permanente/salaries/Sterile-Processing-Technician,Kaiser Permanente
+Kaiser Permanente,Kaiser-Permanente,Medical Technician,OB Technician,ob technician,37.1,$37.10,HOURLY,11,https://www.indeed.com/cmp/Kaiser-Permanente/salaries/OB-Technician,Kaiser Permanente
+Mayo Clinic,Mayo-Clinic,Community & Social Service,Case Manager,case manager,123651,"$123,651",YEARLY,92,https://www.indeed.com/cmp/Mayo-Clinic/salaries/Case-Manager,Mayo Clinic
+Mayo Clinic,Mayo-Clinic,Community & Social Service,Social Worker,social worker,77504,"$77,504",YEARLY,39,https://www.indeed.com/cmp/Mayo-Clinic/salaries/Social-Worker,Mayo Clinic
+Mayo Clinic,Mayo-Clinic,Community & Social Service,Senior Program Coordinator,senior program coordinator,80271,"$80,271",YEARLY,11,https://www.indeed.com/cmp/Mayo-Clinic/salaries/Senior-Program-Coordinator,Mayo Clinic
+Mayo Clinic,Mayo-Clinic,Community & Social Service,Education Coordinator,education coordinator,61299,"$61,299",YEARLY,5,,Mayo Clinic
+Mayo Clinic,Mayo-Clinic,Community & Social Service,Education Specialist,education specialist,101653,"$101,653",YEARLY,9,https://www.indeed.com/cmp/Mayo-Clinic/salaries/Education-Specialist,Mayo Clinic
+Mayo Clinic,Mayo-Clinic,Community & Social Service,Chaplain,chaplain,60896,"$60,896",YEARLY,6,https://www.indeed.com/cmp/Mayo-Clinic/salaries/Chaplain,Mayo Clinic
+Mayo Clinic,Mayo-Clinic,Community & Social Service,Care Manager,care manager,176537,"$176,537",YEARLY,6,https://www.indeed.com/cmp/Mayo-Clinic/salaries/Care-Manager,Mayo Clinic
+Mayo Clinic,Mayo-Clinic,Community & Social Service,Licensed Professional Counselor,licensed professional counselor,70235,"$70,235",YEARLY,1,,Mayo Clinic
+Mayo Clinic,Mayo-Clinic,Community & Social Service,Social Work Supervisor,social work supervisor,87719,"$87,719",YEARLY,3,,Mayo Clinic
+Mayo Clinic,Mayo-Clinic,Community & Social Service,Program Coordinator,program coordinator,59006,"$59,006",YEARLY,3,,Mayo Clinic
+Cleveland Clinic,Cleveland-Clinic,Scientific Research & Development,Postdoctoral Fellow,postdoctoral fellow,61430,"$61,430",YEARLY,13,https://www.indeed.com/cmp/Cleveland-Clinic/salaries/Postdoctoral-Fellow,Cleveland Clinic
+Cleveland Clinic,Cleveland-Clinic,Scientific Research & Development,Research Coordinator,research coordinator,58949,"$58,949",YEARLY,12,https://www.indeed.com/cmp/Cleveland-Clinic/salaries/Research-Coordinator,Cleveland Clinic
+Cleveland Clinic,Cleveland-Clinic,Scientific Research & Development,Research Associate,research associate,78355,"$78,355",YEARLY,9,https://www.indeed.com/cmp/Cleveland-Clinic/salaries/Research-Associate,Cleveland Clinic
+Cleveland Clinic,Cleveland-Clinic,Scientific Research & Development,Clinical Research Coordinator,clinical research coordinator,45892,"$45,892",YEARLY,4,,Cleveland Clinic
+Cleveland Clinic,Cleveland-Clinic,Scientific Research & Development,Senior Clinical Research Coordinator,senior clinical research coordinator,60810,"$60,810",YEARLY,15,https://www.indeed.com/cmp/Cleveland-Clinic/salaries/Senior-Clinical-Research-Coordinator,Cleveland Clinic
+Cleveland Clinic,Cleveland-Clinic,Scientific Research & Development,Research Assistant,research assistant,37374,"$37,374",YEARLY,6,https://www.indeed.com/cmp/Cleveland-Clinic/salaries/Research-Assistant,Cleveland Clinic
+Cleveland Clinic,Cleveland-Clinic,Scientific Research & Development,Research Technician,research technician,39421,"$39,421",YEARLY,3,,Cleveland Clinic
+Cleveland Clinic,Cleveland-Clinic,Scientific Research & Development,Senior Research Technician,senior research technician,18.84,$18.84,HOURLY,8,https://www.indeed.com/cmp/Cleveland-Clinic/salaries/Senior-Research-Technician,Cleveland Clinic
+Cleveland Clinic,Cleveland-Clinic,Scientific Research & Development,Researcher,researcher,84109,"$84,109",YEARLY,7,https://www.indeed.com/cmp/Cleveland-Clinic/salaries/Researcher,Cleveland Clinic
+Cleveland Clinic,Cleveland-Clinic,Scientific Research & Development,Scientist,scientist,57862,"$57,862",YEARLY,6,https://www.indeed.com/cmp/Cleveland-Clinic/salaries/Scientist,Cleveland Clinic
+Chipotle Mexican Grill,Chipotle-Mexican-Grill,Retail,Cashier,cashier,14.67,$14.67,HOURLY,57,https://www.indeed.com/cmp/Chipotle-Mexican-Grill/salaries/Cashier,Chipotle Mexican Grill
+Chipotle Mexican Grill,Chipotle-Mexican-Grill,Retail,Customer Service Associate / Cashier,customer service associate / cashier,15.24,$15.24,HOURLY,23,https://www.indeed.com/cmp/Chipotle-Mexican-Grill/salaries/Customer-Service-Associate---Cashier,Chipotle Mexican Grill
+Chipotle Mexican Grill,Chipotle-Mexican-Grill,Retail,Service Crew,service crew,15.93,$15.93,HOURLY,31,https://www.indeed.com/cmp/Chipotle-Mexican-Grill/salaries/Service-Crew,Chipotle Mexican Grill
+Chipotle Mexican Grill,Chipotle-Mexican-Grill,Retail,Opener,opener,13.4,$13.40,HOURLY,15,https://www.indeed.com/cmp/Chipotle-Mexican-Grill/salaries/Opener,Chipotle Mexican Grill
+Chipotle Mexican Grill,Chipotle-Mexican-Grill,Retail,Store Manager,store manager,17.65,$17.65,HOURLY,6,https://www.indeed.com/cmp/Chipotle-Mexican-Grill/salaries/Store-Manager,Chipotle Mexican Grill
+Chipotle Mexican Grill,Chipotle-Mexican-Grill,Retail,Overnight Closer,overnight closer,15.61,$15.61,HOURLY,6,https://www.indeed.com/cmp/Chipotle-Mexican-Grill/salaries/Overnight-Closer,Chipotle Mexican Grill
+Chipotle Mexican Grill,Chipotle-Mexican-Grill,Retail,Front End Associate,front end associate,15.16,$15.16,HOURLY,7,https://www.indeed.com/cmp/Chipotle-Mexican-Grill/salaries/Front-End-Associate,Chipotle Mexican Grill
+Chipotle Mexican Grill,Chipotle-Mexican-Grill,Retail,Retail Assistant Manager,retail assistant manager,17.28,$17.28,HOURLY,4,,Chipotle Mexican Grill
+Chipotle Mexican Grill,Chipotle-Mexican-Grill,Retail,Retail Sales Associate,retail sales associate,13.01,$13.01,HOURLY,3,,Chipotle Mexican Grill
+Chipotle Mexican Grill,Chipotle-Mexican-Grill,Human Resources,Human Resources Manager,human resources manager,17.92,$17.92,HOURLY,6,https://www.indeed.com/cmp/Chipotle-Mexican-Grill/salaries/Human-Resources-Manager,Chipotle Mexican Grill
+Subway,Subway,Retail,Store Manager,store manager,17.15,$17.15,HOURLY,76,https://www.indeed.com/cmp/Subway/salaries/Store-Manager,Subway
+Subway,Subway,Retail,Assistant Store Manager,assistant store manager,19.86,$19.86,HOURLY,15,https://www.indeed.com/cmp/Subway/salaries/Assistant-Store-Manager,Subway
+Subway,Subway,Retail,Customer Service Associate / Cashier,customer service associate / cashier,11.18,$11.18,HOURLY,13,https://www.indeed.com/cmp/Subway/salaries/Customer-Service-Associate---Cashier,Subway
+Subway,Subway,Retail,Cashier,cashier,18.11,$18.11,HOURLY,7,https://www.indeed.com/cmp/Subway/salaries/Cashier,Subway
+Subway,Subway,Retail,Opener,opener,14.3,$14.30,HOURLY,6,https://www.indeed.com/cmp/Subway/salaries/Opener,Subway
+Subway,Subway,Retail,Shop Manager,shop manager,23.28,$23.28,HOURLY,6,https://www.indeed.com/cmp/Subway/salaries/Shop-Manager,Subway
+Subway,Subway,Retail,Retail Sales Associate,retail sales associate,15.06,$15.06,HOURLY,8,https://www.indeed.com/cmp/Subway/salaries/Retail-Sales-Associate,Subway
+Subway,Subway,Retail,Shop Assistant,shop assistant,15.97,$15.97,HOURLY,6,https://www.indeed.com/cmp/Subway/salaries/Shop-Assistant,Subway
+Subway,Subway,Retail,Inventory Specialist,inventory specialist,15.82,$15.82,HOURLY,5,,Subway
+Subway,Subway,Customer Service,Member Services Representative,member services representative,12.91,$12.91,HOURLY,13,https://www.indeed.com/cmp/Subway/salaries/Member-Services-Representative,Subway
+Burger King,Burger-King,Installation & Maintenance,Equipment Service Technician,equipment service technician,22.82,$22.82,HOURLY,106,https://www.indeed.com/cmp/Burger-King/salaries/Equipment-Service-Technician,Burger King
+Burger King,Burger-King,Installation & Maintenance,Maintenance Technician,maintenance technician,28.43,$28.43,HOURLY,17,https://www.indeed.com/cmp/Burger-King/salaries/Maintenance-Technician,Burger King
+Burger King,Burger-King,Installation & Maintenance,Repair Technician,repair technician,22.91,$22.91,HOURLY,69,https://www.indeed.com/cmp/Burger-King/salaries/Repair-Technician,Burger King
+Burger King,Burger-King,Installation & Maintenance,Maintenance Person,maintenance person,18.37,$18.37,HOURLY,5,,Burger King
+Burger King,Burger-King,Installation & Maintenance,Road Manager,road manager,16,$16.00,HOURLY,7,https://www.indeed.com/cmp/Burger-King/salaries/Road-Manager,Burger King
+Burger King,Burger-King,Installation & Maintenance,Locator,locator,13.43,$13.43,HOURLY,9,https://www.indeed.com/cmp/Burger-King/salaries/Locator,Burger King
+Burger King,Burger-King,Installation & Maintenance,Facilities Maintenance Technician,facilities maintenance technician,22.36,$22.36,HOURLY,21,https://www.indeed.com/cmp/Burger-King/salaries/Facilities-Maintenance-Technician,Burger King
+Burger King,Burger-King,Installation & Maintenance,General Maintenance,general maintenance,20.49,$20.49,HOURLY,19,https://www.indeed.com/cmp/Burger-King/salaries/General-Maintenance,Burger King
+Burger King,Burger-King,Installation & Maintenance,Field Technician,field technician,74834,"$74,834",YEARLY,7,https://www.indeed.com/cmp/Burger-King/salaries/Field-Technician,Burger King
+Burger King,Burger-King,Installation & Maintenance,Facilities Technician,facilities technician,22.48,$22.48,HOURLY,10,https://www.indeed.com/cmp/Burger-King/salaries/Facilities-Technician,Burger King
+Wendy's,Wendy's,Installation & Maintenance,Maintenance Technician,maintenance technician,28.76,$28.76,HOURLY,194,https://www.indeed.com/cmp/Wendy's/salaries/Maintenance-Technician,Wendy's
+Wendy's,Wendy's,Installation & Maintenance,Refrigeration Technician,refrigeration technician,30.55,$30.55,HOURLY,87,https://www.indeed.com/cmp/Wendy's/salaries/Refrigeration-Technician,Wendy's
+Wendy's,Wendy's,Installation & Maintenance,Maintenance Person,maintenance person,13.21,$13.21,HOURLY,22,https://www.indeed.com/cmp/Wendy's/salaries/Maintenance-Person,Wendy's
+Wendy's,Wendy's,Installation & Maintenance,Facilities Maintenance Technician,facilities maintenance technician,26.06,$26.06,HOURLY,16,https://www.indeed.com/cmp/Wendy's/salaries/Facilities-Maintenance-Technician,Wendy's
+Wendy's,Wendy's,Installation & Maintenance,Locator,locator,11.12,$11.12,HOURLY,10,https://www.indeed.com/cmp/Wendy's/salaries/Locator,Wendy's
+Wendy's,Wendy's,Installation & Maintenance,Road Manager,road manager,14.3,$14.30,HOURLY,16,https://www.indeed.com/cmp/Wendy's/salaries/Road-Manager,Wendy's
+Wendy's,Wendy's,Installation & Maintenance,Maintenance Manager,maintenance manager,18.33,$18.33,HOURLY,14,https://www.indeed.com/cmp/Wendy's/salaries/Maintenance-Manager,Wendy's
+Wendy's,Wendy's,Installation & Maintenance,HVAC Technician,hvac technician,27.8,$27.80,HOURLY,20,https://www.indeed.com/cmp/Wendy's/salaries/HVAC-Technician,Wendy's
+Wendy's,Wendy's,Installation & Maintenance,Facilities Technician,facilities technician,34.82,$34.82,HOURLY,6,https://www.indeed.com/cmp/Wendy's/salaries/Facilities-Technician,Wendy's
+Wendy's,Wendy's,Installation & Maintenance,Technician,technician,22.76,$22.76,HOURLY,12,https://www.indeed.com/cmp/Wendy's/salaries/Technician,Wendy's
+Pizza Hut,Pizza-Hut,Driving,Delivery Driver,delivery driver,14.62,$14.62,HOURLY,1031,https://www.indeed.com/cmp/Pizza-Hut/salaries/Delivery-Driver,Pizza Hut
+Pizza Hut,Pizza-Hut,Driving,Driver,driver,11.89,$11.89,HOURLY,170,https://www.indeed.com/cmp/Pizza-Hut/salaries/Driver,Pizza Hut
+Pizza Hut,Pizza-Hut,Driving,Team Driver,team driver,11.41,$11.41,HOURLY,6,https://www.indeed.com/cmp/Pizza-Hut/salaries/Team-Driver,Pizza Hut
+Pizza Hut,Pizza-Hut,Installation & Maintenance,Senior Facilities Technician,senior facilities technician,26.04,$26.04,HOURLY,22,https://www.indeed.com/cmp/Pizza-Hut/salaries/Senior-Facilities-Technician,Pizza Hut
+Pizza Hut,Pizza-Hut,Installation & Maintenance,Refrigeration Technician,refrigeration technician,25.52,$25.52,HOURLY,39,https://www.indeed.com/cmp/Pizza-Hut/salaries/Refrigeration-Technician,Pizza Hut
+Pizza Hut,Pizza-Hut,Installation & Maintenance,Maintenance Technician,maintenance technician,26.84,$26.84,HOURLY,7,https://www.indeed.com/cmp/Pizza-Hut/salaries/Maintenance-Technician,Pizza Hut
+Pizza Hut,Pizza-Hut,Installation & Maintenance,General Maintenance,general maintenance,17.86,$17.86,HOURLY,11,https://www.indeed.com/cmp/Pizza-Hut/salaries/General-Maintenance,Pizza Hut
+Pizza Hut,Pizza-Hut,Installation & Maintenance,Facilities Technician,facilities technician,24.56,$24.56,HOURLY,6,https://www.indeed.com/cmp/Pizza-Hut/salaries/Facilities-Technician,Pizza Hut
+Pizza Hut,Pizza-Hut,Installation & Maintenance,Locator,locator,16.05,$16.05,HOURLY,6,https://www.indeed.com/cmp/Pizza-Hut/salaries/Locator,Pizza Hut
+Pizza Hut,Pizza-Hut,Installation & Maintenance,Utility Worker,utility worker,10,$10.00,HOURLY,5,,Pizza Hut
+Dunkin',Dunkin',Retail,Store Manager,store manager,17.1,$17.10,HOURLY,36,https://www.indeed.com/cmp/Dunkin'-2cfce9bf/salaries/Store-Manager,Dunkin'
+Dunkin',Dunkin',Retail,Opener,opener,14.49,$14.49,HOURLY,231,https://www.indeed.com/cmp/Dunkin'-2cfce9bf/salaries/Opener,Dunkin'
+Dunkin',Dunkin',Retail,Cashier,cashier,12.99,$12.99,HOURLY,52,https://www.indeed.com/cmp/Dunkin'-2cfce9bf/salaries/Cashier,Dunkin'
+Dunkin',Dunkin',Retail,Encargado/a turno/a,encargado turno,15.9,$15.90,HOURLY,264,https://www.indeed.com/cmp/Dunkin'-2cfce9bf/salaries/Encargado-a-turno-a,Dunkin'
+Dunkin',Dunkin',Retail,Assistant Store Manager,assistant store manager,16.87,$16.87,HOURLY,120,https://www.indeed.com/cmp/Dunkin'-2cfce9bf/salaries/Assistant-Store-Manager,Dunkin'
+Dunkin',Dunkin',Retail,Customer Service Associate / Cashier,customer service associate / cashier,13.66,$13.66,HOURLY,42,https://www.indeed.com/cmp/Dunkin'-2cfce9bf/salaries/Customer-Service-Associate---Cashier,Dunkin'
+Dunkin',Dunkin',Retail,Overnight Closer,overnight closer,15.59,$15.59,HOURLY,9,https://www.indeed.com/cmp/Dunkin'-2cfce9bf/salaries/Overnight-Closer,Dunkin'
+Dunkin',Dunkin',Retail,Retail Sales Associate,retail sales associate,16.04,$16.04,HOURLY,20,https://www.indeed.com/cmp/Dunkin'-2cfce9bf/salaries/Retail-Sales-Associate,Dunkin'
+Dunkin',Dunkin',Retail,Front End Associate,front end associate,15.35,$15.35,HOURLY,7,https://www.indeed.com/cmp/Dunkin'-2cfce9bf/salaries/Front-End-Associate,Dunkin'
+Dunkin',Dunkin',Retail,Overnight Associate,overnight associate,16.8,$16.80,HOURLY,6,https://www.indeed.com/cmp/Dunkin'-2cfce9bf/salaries/Overnight-Associate,Dunkin'
+Best Buy,Best-Buy,Management,Squad Leader,squad leader,20.21,$20.21,HOURLY,14,https://www.indeed.com/cmp/Best-Buy/salaries/Squad-Leader,Best Buy
+Best Buy,Best-Buy,Management,Manager,manager,75097,"$75,097",YEARLY,15,https://www.indeed.com/cmp/Best-Buy/salaries/Manager,Best Buy
+Best Buy,Best-Buy,Management,Director,director,160517,"$160,517",YEARLY,14,https://www.indeed.com/cmp/Best-Buy/salaries/Director,Best Buy
+Best Buy,Best-Buy,Management,Associate Manager,associate manager,93640,"$93,640",YEARLY,7,https://www.indeed.com/cmp/Best-Buy/salaries/Associate-Manager,Best Buy
+Best Buy,Best-Buy,Management,Shift Leader,shift leader,92424,"$92,424",YEARLY,3,,Best Buy
+Best Buy,Best-Buy,Management,Senior Manager,senior manager,140191,"$140,191",YEARLY,7,https://www.indeed.com/cmp/Best-Buy/salaries/Senior-Manager,Best Buy
+Best Buy,Best-Buy,Management,Senior Consultant,senior consultant,60737,"$60,737",YEARLY,6,https://www.indeed.com/cmp/Best-Buy/salaries/Senior-Consultant,Best Buy
+Best Buy,Best-Buy,Management,Consultant,consultant,14.33,$14.33,HOURLY,8,https://www.indeed.com/cmp/Best-Buy/salaries/Consultant,Best Buy
+Best Buy,Best-Buy,Management,Associate Director,associate director,164380,"$164,380",YEARLY,6,https://www.indeed.com/cmp/Best-Buy/salaries/Associate-Director,Best Buy
+Best Buy,Best-Buy,Management,Supervisor,supervisor,20.02,$20.02,HOURLY,5,,Best Buy
+Lowe's Home Improvement,Lowe's,Driving,Truck Driver,truck driver,23.96,$23.96,HOURLY,711,https://www.indeed.com/cmp/Lowe's-Home-Improvement/salaries/Truck-Driver,Lowe's
+Lowe's Home Improvement,Lowe's,Driving,Delivery Driver,delivery driver,19.46,$19.46,HOURLY,10,https://www.indeed.com/cmp/Lowe's-Home-Improvement/salaries/Delivery-Driver,Lowe's
+Lowe's Home Improvement,Lowe's,Driving,Driver,driver,19.62,$19.62,HOURLY,8,https://www.indeed.com/cmp/Lowe's-Home-Improvement/salaries/Driver,Lowe's
+Lowe's Home Improvement,Lowe's,Driving,Local Driver,local driver,22.47,$22.47,HOURLY,6,https://www.indeed.com/cmp/Lowe's-Home-Improvement/salaries/Local-Driver,Lowe's
+Lowe's Home Improvement,Lowe's,Driving,Senior Driver,senior driver,24.68,$24.68,HOURLY,3,,Lowe's
+Lowe's Home Improvement,Lowe's,Driving,Senior Delivery Driver,senior delivery driver,17.86,$17.86,HOURLY,1,,Lowe's
+Lowe's Home Improvement,Lowe's,Driving,Long Haul Driver,long haul driver,19.5,$19.50,HOURLY,1,,Lowe's
+Lowe's Home Improvement,Lowe's,Almacén,Fulfillment Associate,fulfillment associate,17.4,$17.40,HOURLY,89,https://www.indeed.com/cmp/Lowe's-Home-Improvement/salaries/Fulfillment-Associate,Lowe's
+Lowe's Home Improvement,Lowe's,Almacén,Stocker/Receiver,stocker/receiver,17.22,$17.22,HOURLY,130,https://www.indeed.com/cmp/Lowe's-Home-Improvement/salaries/Stocker-Receiver,Lowe's
+Lowe's Home Improvement,Lowe's,Almacén,Warehouse Associate,warehouse associate,17.56,$17.56,HOURLY,21,https://www.indeed.com/cmp/Lowe's-Home-Improvement/salaries/Warehouse-Associate,Lowe's
+Macy's,Macy's,Management,Captain,captain,19.67,$19.67,HOURLY,42,https://www.indeed.com/cmp/Macy's/salaries/Captain,Macy's
+Macy's,Macy's,Management,Manager,manager,63909,"$63,909",YEARLY,38,https://www.indeed.com/cmp/Macy's/salaries/Manager,Macy's
+Macy's,Macy's,Management,Commissioner,commissioner,18.62,$18.62,HOURLY,8,https://www.indeed.com/cmp/Macy's/salaries/Commissioner,Macy's
+Macy's,Macy's,Management,Supervisor,supervisor,22.18,$22.18,HOURLY,8,https://www.indeed.com/cmp/Macy's/salaries/Supervisor,Macy's
+Macy's,Macy's,Management,Operations Manager,operations manager,86020,"$86,020",YEARLY,26,https://www.indeed.com/cmp/Macy's/salaries/Operations-Manager,Macy's
+Macy's,Macy's,Management,Director,director,141629,"$141,629",YEARLY,6,https://www.indeed.com/cmp/Macy's/salaries/Director,Macy's
+Macy's,Macy's,Management,Shift Leader,shift leader,20.1,$20.10,HOURLY,8,https://www.indeed.com/cmp/Macy's/salaries/Shift-Leader,Macy's
+Macy's,Macy's,Management,Operations Lead,operations lead,24.65,$24.65,HOURLY,12,https://www.indeed.com/cmp/Macy's/salaries/Operations-Lead,Macy's
+Macy's,Macy's,Management,Entry Level Manager,entry level manager,17.96,$17.96,HOURLY,6,https://www.indeed.com/cmp/Macy's/salaries/Entry-Level-Manager,Macy's
+Macy's,Macy's,Management,Assistant Supervisor,assistant supervisor,22.21,$22.21,HOURLY,5,,Macy's
+Nordstrom,Nordstrom,Sales,Counter Manager,counter manager,24.35,$24.35,HOURLY,2634,https://www.indeed.com/cmp/Nordstrom/salaries/Counter-Manager,Nordstrom
+Nordstrom,Nordstrom,Sales,Sales Associate,sales associate,16.39,$16.39,HOURLY,34,https://www.indeed.com/cmp/Nordstrom/salaries/Sales-Associate,Nordstrom
+Nordstrom,Nordstrom,Sales,Stylist,stylist,20.65,$20.65,HOURLY,429,https://www.indeed.com/cmp/Nordstrom/salaries/Stylist,Nordstrom
+Nordstrom,Nordstrom,Sales,Sales Manager,sales manager,22.19,$22.19,HOURLY,260,https://www.indeed.com/cmp/Nordstrom/salaries/Sales-Manager,Nordstrom
+Nordstrom,Nordstrom,Sales,Salesperson,salesperson,17.59,$17.59,HOURLY,113,https://www.indeed.com/cmp/Nordstrom/salaries/Salesperson,Nordstrom
+Nordstrom,Nordstrom,Sales,Sales,sales,16.79,$16.79,HOURLY,35,https://www.indeed.com/cmp/Nordstrom/salaries/Sales,Nordstrom
+Nordstrom,Nordstrom,Sales,Stylist Assistant,stylist assistant,23.8,$23.80,HOURLY,55,https://www.indeed.com/cmp/Nordstrom/salaries/Stylist-Assistant,Nordstrom
+Nordstrom,Nordstrom,Sales,Collection Agent,collection agent,14.58,$14.58,HOURLY,12,https://www.indeed.com/cmp/Nordstrom/salaries/Collection-Agent,Nordstrom
+Nordstrom,Nordstrom,Sales,Sales Representative,sales representative,16.73,$16.73,HOURLY,6,https://www.indeed.com/cmp/Nordstrom/salaries/Sales-Representative,Nordstrom
+Nordstrom,Nordstrom,Sales,Fine Jewelry Sales Associate,fine jewelry sales associate,17.22,$17.22,HOURLY,8,https://www.indeed.com/cmp/Nordstrom/salaries/Fine-Jewelry-Sales-Associate,Nordstrom
+Kohl's,Kohl's,Management,Operations Supervisor,operations supervisor,72811,"$72,811",YEARLY,2,,Kohl's
+Kohl's,Kohl's,Management,Sourcing Manager,sourcing manager,71928,"$71,928",YEARLY,8,https://www.indeed.com/cmp/Kohl's/salaries/Sourcing-Manager,Kohl's
+Kohl's,Kohl's,Management,Manager,manager,103066,"$103,066",YEARLY,6,https://www.indeed.com/cmp/Kohl's/salaries/Manager,Kohl's
+Kohl's,Kohl's,Management,Senior Manager,senior manager,129873,"$129,873",YEARLY,8,https://www.indeed.com/cmp/Kohl's/salaries/Senior-Manager,Kohl's
+Kohl's,Kohl's,Management,Area Supervisor,area supervisor,20.41,$20.41,HOURLY,7,https://www.indeed.com/cmp/Kohl's/salaries/Area-Supervisor,Kohl's
+Kohl's,Kohl's,Management,Product Development Manager,product development manager,55373,"$55,373",YEARLY,5,,Kohl's
+Kohl's,Kohl's,Management,Shift Leader,shift leader,82605,"$82,605",YEARLY,4,,Kohl's
+Kohl's,Kohl's,Management,Store Planner,store planner,60445,"$60,445",YEARLY,3,,Kohl's
+Kohl's,Kohl's,Management,Management Trainee,management trainee,49000,"$49,000",YEARLY,2,,Kohl's
+Kohl's,Kohl's,Management,Operations Manager,operations manager,86621,"$86,621",YEARLY,1,,Kohl's
+Dollar Tree,Dollar-Tree,Management,Assistant Manager,assistant manager,14.3,$14.30,HOURLY,6,https://www.indeed.com/cmp/Dollar-Tree/salaries/Assistant-Manager,Dollar Tree
+Dollar Tree,Dollar-Tree,Management,Department Manager,department manager,59802,"$59,802",YEARLY,6,https://www.indeed.com/cmp/Dollar-Tree/salaries/Department-Manager,Dollar Tree
+Dollar Tree,Dollar-Tree,Management,District Manager,district manager,90542,"$90,542",YEARLY,4,,Dollar Tree
+Dollar Tree,Dollar-Tree,Management,Freight Manager,freight manager,15.25,$15.25,HOURLY,3,,Dollar Tree
+Dollar Tree,Dollar-Tree,Management,Director,director,158211,"$158,211",YEARLY,3,,Dollar Tree
+Dollar Tree,Dollar-Tree,Management,Manager,manager,9,$9.00,HOURLY,1,,Dollar Tree
+Dollar Tree,Dollar-Tree,Management,Distribution Manager,distribution manager,30.76,$30.76,HOURLY,1,,Dollar Tree
+Dollar Tree,Dollar-Tree,Management,Associate Manager,associate manager,13.49,$13.49,HOURLY,1,,Dollar Tree
+Dollar Tree,Dollar-Tree,Management,Assistant Operations Manager,assistant operations manager,13.49,$13.49,HOURLY,1,,Dollar Tree
+Dollar Tree,Dollar-Tree,Administrative Assistance,Planner,planner,67305,"$67,305",YEARLY,9,https://www.indeed.com/cmp/Dollar-Tree/salaries/Planner,Dollar Tree
+7-Eleven,7-Eleven,Management,Assistant Manager,assistant manager,17.44,$17.44,HOURLY,113,https://www.indeed.com/cmp/7--eleven/salaries/Assistant-Manager,7-Eleven
+7-Eleven,7-Eleven,Management,Area Manager,area manager,42.69,$42.69,HOURLY,9,https://www.indeed.com/cmp/7--eleven/salaries/Area-Manager,7-Eleven
+7-Eleven,7-Eleven,Management,Management Trainee,management trainee,18.34,$18.34,HOURLY,6,https://www.indeed.com/cmp/7--eleven/salaries/Management-Trainee,7-Eleven
+7-Eleven,7-Eleven,Management,Shift Leader,shift leader,16.59,$16.59,HOURLY,22,https://www.indeed.com/cmp/7--eleven/salaries/Shift-Leader,7-Eleven
+7-Eleven,7-Eleven,Management,Regional Manager,regional manager,95294,"$95,294",YEARLY,10,https://www.indeed.com/cmp/7--eleven/salaries/Regional-Manager,7-Eleven
+7-Eleven,7-Eleven,Management,Area Leader,area leader,33.35,$33.35,HOURLY,2,,7-Eleven
+7-Eleven,7-Eleven,Management,Category Manager,category manager,75395,"$75,395",YEARLY,11,https://www.indeed.com/cmp/7--eleven/salaries/Category-Manager,7-Eleven
+7-Eleven,7-Eleven,Management,Shift Manager,shift manager,15,$15.00,HOURLY,10,https://www.indeed.com/cmp/7--eleven/salaries/Shift-Manager,7-Eleven
+7-Eleven,7-Eleven,Management,Multi-unit Manager,multi-unit manager,116435,"$116,435",YEARLY,12,https://www.indeed.com/cmp/7--eleven/salaries/Multi-unit-Manager,7-Eleven
+7-Eleven,7-Eleven,Management,Manager,manager,16.79,$16.79,HOURLY,1,,7-Eleven
+Wawa,Wawa,Retail,Overnight Associate,overnight associate,17.06,$17.06,HOURLY,106,https://www.indeed.com/cmp/Wawa/salaries/Overnight-Associate,Wawa
+Wawa,Wawa,Retail,Inventory Manager,inventory manager,21.12,$21.12,HOURLY,18,https://www.indeed.com/cmp/Wawa/salaries/Inventory-Manager,Wawa
+Wawa,Wawa,Retail,Merchandise Manager,merchandise manager,21.17,$21.17,HOURLY,11,https://www.indeed.com/cmp/Wawa/salaries/Merchandise-Manager,Wawa
+Wawa,Wawa,Retail,Store Manager,store manager,18.11,$18.11,HOURLY,31,https://www.indeed.com/cmp/Wawa/salaries/Store-Manager,Wawa
+Wawa,Wawa,Retail,Cashier,cashier,14.72,$14.72,HOURLY,11,https://www.indeed.com/cmp/Wawa/salaries/Cashier,Wawa
+Wawa,Wawa,Retail,Customer Service Associate / Cashier,customer service associate / cashier,15.83,$15.83,HOURLY,17,https://www.indeed.com/cmp/Wawa/salaries/Customer-Service-Associate---Cashier,Wawa
+Wawa,Wawa,Retail,Assistant Store Manager,assistant store manager,27.39,$27.39,HOURLY,17,https://www.indeed.com/cmp/Wawa/salaries/Assistant-Store-Manager,Wawa
+Wawa,Wawa,Retail,Retail Sales Associate,retail sales associate,15.18,$15.18,HOURLY,4,,Wawa
+Wawa,Wawa,Retail,Cashier/Sales,cashier/sales,11.54,$11.54,HOURLY,3,,Wawa
+Wawa,Wawa,Food Preparation & Service,Food & Beverage Manager,food & beverage manager,25.7,$25.70,HOURLY,12,https://www.indeed.com/cmp/Wawa/salaries/Food-&-Beverage-Manager,Wawa
+Publix,Publix,Pharmacy,Pharmacy Technician,pharmacy technician,18.15,$18.15,HOURLY,166,https://www.indeed.com/cmp/Publix/salaries/Pharmacy-Technician,Publix
+Publix,Publix,Pharmacy,Pharmacist,pharmacist,62.69,$62.69,HOURLY,4,,Publix
+Publix,Publix,Pharmacy,Certified Pharmacy Technician,certified pharmacy technician,18.61,$18.61,HOURLY,5,,Publix
+Publix,Publix,Pharmacy,Pharmacy Intern,pharmacy intern,16.76,$16.76,HOURLY,16,https://www.indeed.com/cmp/Publix/salaries/Pharmacy-Intern,Publix
+Publix,Publix,Pharmacy,Pharmacy Manager,pharmacy manager,68.67,$68.67,HOURLY,3,,Publix
+Publix,Publix,Installation & Maintenance,Refrigeration Technician,refrigeration technician,33.2,$33.20,HOURLY,9,https://www.indeed.com/cmp/Publix/salaries/Refrigeration-Technician,Publix
+Publix,Publix,Installation & Maintenance,Maintenance Technician,maintenance technician,29.48,$29.48,HOURLY,10,https://www.indeed.com/cmp/Publix/salaries/Maintenance-Technician,Publix
+Publix,Publix,Installation & Maintenance,Quality Assurance Technician,quality assurance technician,23.49,$23.49,HOURLY,8,https://www.indeed.com/cmp/Publix/salaries/Quality-Assurance-Technician,Publix
+Publix,Publix,Installation & Maintenance,Senior Facilities Technician,senior facilities technician,31.77,$31.77,HOURLY,5,,Publix
+Publix,Publix,Installation & Maintenance,Senior Equipment Technician,senior equipment technician,31.49,$31.49,HOURLY,6,https://www.indeed.com/cmp/Publix/salaries/Senior-Equipment-Technician,Publix
+Whole Foods Market,Whole-Foods-Market,Management,Team Leader,team leader,27.52,$27.52,HOURLY,9,https://www.indeed.com/cmp/Whole-Foods-Market/salaries/Team-Leader,Whole Foods Market
+Whole Foods Market,Whole-Foods-Market,Management,Associate Team Leader,associate team leader,24.11,$24.11,HOURLY,9,https://www.indeed.com/cmp/Whole-Foods-Market/salaries/Associate-Team-Leader,Whole Foods Market
+Whole Foods Market,Whole-Foods-Market,Management,Supervisor,supervisor,20.51,$20.51,HOURLY,7,https://www.indeed.com/cmp/Whole-Foods-Market/salaries/Supervisor,Whole Foods Market
+Whole Foods Market,Whole-Foods-Market,Management,Category Manager,category manager,81439,"$81,439",YEARLY,5,,Whole Foods Market
+Whole Foods Market,Whole-Foods-Market,Management,Shift Leader,shift leader,143923,"$143,923",YEARLY,8,https://www.indeed.com/cmp/Whole-Foods-Market/salaries/Shift-Leader,Whole Foods Market
+Whole Foods Market,Whole-Foods-Market,Management,Senior Category Manager,senior category manager,111168,"$111,168",YEARLY,4,,Whole Foods Market
+Whole Foods Market,Whole-Foods-Market,Management,Engineering Team Leader,engineering team leader,63349,"$63,349",YEARLY,3,,Whole Foods Market
+Whole Foods Market,Whole-Foods-Market,Management,Director,director,145515,"$145,515",YEARLY,3,,Whole Foods Market
+Whole Foods Market,Whole-Foods-Market,Management,Manager,manager,15000,"$15,000",YEARLY,1,,Whole Foods Market
+Whole Foods Market,Whole-Foods-Market,Management,Department Manager,department manager,19,$19.00,HOURLY,1,,Whole Foods Market
+Trader Joe's,Trader-Joe's,Administrative Assistance,Operations Assistant,operations assistant,37.42,$37.42,HOURLY,1,,Trader Joe's
+Trader Joe's,Trader-Joe's,Administrative Assistance,Client Services Specialist,client services specialist,28.8,$28.80,HOURLY,1,,Trader Joe's
+Trader Joe's,Trader-Joe's,Administrative Assistance,Administrator,administrator,71446,"$71,446",YEARLY,1,,Trader Joe's
+Trader Joe's,Trader-Joe's,Human Resources,Safety Coordinator,safety coordinator,20.35,$20.35,HOURLY,1,,Trader Joe's
+Trader Joe's,Trader-Joe's,Human Resources,Human Resources Generalist,human resources generalist,87180,"$87,180",YEARLY,1,,Trader Joe's
+Trader Joe's,Trader-Joe's,Human Resources,HRIS Analyst,hris analyst,27.39,$27.39,HOURLY,1,,Trader Joe's
+Trader Joe's,Trader-Joe's,Information Design & Documentation,Senior Systems Analyst,senior systems analyst,142303,"$142,303",YEARLY,1,,Trader Joe's
+Trader Joe's,Trader-Joe's,Information Design & Documentation,Business Systems Analyst,business systems analyst,129904,"$129,904",YEARLY,1,,Trader Joe's
+Trader Joe's,Trader-Joe's,Accounting,Accounting Clerk,accounting clerk,23.28,$23.28,HOURLY,1,,Trader Joe's
+United States Postal Service,United-States-Postal-Service,Installation & Maintenance,Workshop Service Technician,workshop service technician,68761,"$68,761",YEARLY,4,,United States Postal Service
+United States Postal Service,United-States-Postal-Service,Installation & Maintenance,Automotive Technician,automotive technician,64935,"$64,935",YEARLY,32,https://www.indeed.com/cmp/United-States-Postal-Service/salaries/Automotive-Technician,United States Postal Service
+United States Postal Service,United-States-Postal-Service,Installation & Maintenance,Maintenance Mechanic,maintenance mechanic,62248,"$62,248",YEARLY,7,https://www.indeed.com/cmp/United-States-Postal-Service/salaries/Maintenance-Mechanic,United States Postal Service
+United States Postal Service,United-States-Postal-Service,Installation & Maintenance,Electronics Technician,electronics technician,75013,"$75,013",YEARLY,10,https://www.indeed.com/cmp/United-States-Postal-Service/salaries/Electronics-Technician,United States Postal Service
+United States Postal Service,United-States-Postal-Service,Installation & Maintenance,Equipment Mechanic,equipment mechanic,71279,"$71,279",YEARLY,5,,United States Postal Service
+United States Postal Service,United-States-Postal-Service,Installation & Maintenance,Maintenance Person,maintenance person,74772,"$74,772",YEARLY,1,,United States Postal Service
+United States Postal Service,United-States-Postal-Service,Installation & Maintenance,Automotive Mechanic,automotive mechanic,54862,"$54,862",YEARLY,1,,United States Postal Service
+United States Postal Service,United-States-Postal-Service,Installation & Maintenance,Technician,technician,66259,"$66,259",YEARLY,3,,United States Postal Service
+United States Postal Service,United-States-Postal-Service,Installation & Maintenance,Senior Maintenance Person,senior maintenance person,70277,"$70,277",YEARLY,1,,United States Postal Service
+United States Postal Service,United-States-Postal-Service,Administrative Assistance,Postal Clerk,postal clerk,21.75,$21.75,HOURLY,10,https://www.indeed.com/cmp/United-States-Postal-Service/salaries/Postal-Clerk,United States Postal Service
+Enterprise Mobility,Enterprise-Rent-A-Car,Accounting,Staff Accountant,staff accountant,48655,"$48,655",YEARLY,74,https://www.indeed.com/cmp/Enterprise-Mobility-2/salaries/Staff-Accountant,Enterprise Rent-A-Car
+Enterprise Mobility,Enterprise-Rent-A-Car,Accounting,Accounts Payable Coordinator,accounts payable coordinator,34562,"$34,562",YEARLY,12,https://www.indeed.com/cmp/Enterprise-Mobility-2/salaries/Accounts-Payable-Coordinator,Enterprise Rent-A-Car
+Enterprise Mobility,Enterprise-Rent-A-Car,Accounting,Accounting Coordinator,accounting coordinator,41569,"$41,569",YEARLY,5,,Enterprise Rent-A-Car
+Enterprise Mobility,Enterprise-Rent-A-Car,Accounting,Accountant,accountant,57139,"$57,139",YEARLY,15,https://www.indeed.com/cmp/Enterprise-Mobility-2/salaries/Accountant,Enterprise Rent-A-Car
+Enterprise Mobility,Enterprise-Rent-A-Car,Accounting,Accounting Supervisor,accounting supervisor,68976,"$68,976",YEARLY,16,https://www.indeed.com/cmp/Enterprise-Mobility-2/salaries/Accounting-Supervisor,Enterprise Rent-A-Car
+Enterprise Mobility,Enterprise-Rent-A-Car,Accounting,Senior Accountant,senior accountant,54498,"$54,498",YEARLY,13,https://www.indeed.com/cmp/Enterprise-Mobility-2/salaries/Senior-Accountant,Enterprise Rent-A-Car
+Enterprise Mobility,Enterprise-Rent-A-Car,Accounting,Accounting Intern,accounting intern,20.63,$20.63,HOURLY,6,https://www.indeed.com/cmp/Enterprise-Mobility-2/salaries/Accounting-Intern,Enterprise Rent-A-Car
+Enterprise Mobility,Enterprise-Rent-A-Car,Accounting,Senior Staff Accountant,senior staff accountant,62952,"$62,952",YEARLY,4,,Enterprise Rent-A-Car
+Enterprise Mobility,Enterprise-Rent-A-Car,Accounting,Internal Auditor,internal auditor,84793,"$84,793",YEARLY,4,,Enterprise Rent-A-Car
+Enterprise Mobility,Enterprise-Rent-A-Car,Accounting,Accounts Payable Clerk,accounts payable clerk,29350,"$29,350",YEARLY,4,,Enterprise Rent-A-Car
+Hertz,Hertz,Cleaning & Sanitation,Car Wash Attendant,car wash attendant,15.47,$15.47,HOURLY,41,https://www.indeed.com/cmp/Hertz-1/salaries/Car-Wash-Attendant,Hertz
+Hertz,Hertz,Cleaning & Sanitation,Cleaner,cleaner,14.07,$14.07,HOURLY,6,https://www.indeed.com/cmp/Hertz-1/salaries/Cleaner,Hertz
+Hertz,Hertz,Cleaning & Sanitation,Automotive Detailer,automotive detailer,15.91,$15.91,HOURLY,25,https://www.indeed.com/cmp/Hertz-1/salaries/Automotive-Detailer,Hertz
+Hertz,Hertz,Cleaning & Sanitation,Vehicle Care Representative,vehicle care representative,42883,"$42,883",YEARLY,8,https://www.indeed.com/cmp/Hertz-1/salaries/Vehicle-Care-Representative,Hertz
+Hertz,Hertz,Cleaning & Sanitation,Detailer,detailer,12.37,$12.37,HOURLY,2,,Hertz
+Hertz,Hertz,Cleaning & Sanitation,Detallador/a automotriz,detallador automotriz,18.25,$18.25,HOURLY,1,,Hertz
+Hertz,Hertz,Cleaning & Sanitation,Car Detailing,car detailing,18.04,$18.04,HOURLY,1,,Hertz
+Hertz,Hertz,Sales,Sales Consultant,sales consultant,12.7,$12.70,HOURLY,5,,Hertz
+Hertz,Hertz,Sales,Sales Manager,sales manager,17,$17.00,HOURLY,1,,Hertz
+Hertz,Hertz,Sales,Sales Specialist,sales specialist,16.66,$16.66,HOURLY,5,,Hertz
+Uber,Uber,Driving,Driver,driver,20.04,$20.04,HOURLY,35,https://www.indeed.com/cmp/Uber/salaries/Driver,Uber
+Uber,Uber,Driving,Driver (Independent Contractor),driver (independent contractor),24.02,$24.02,HOURLY,17,https://www.indeed.com/cmp/Uber/salaries/Driver-(Independent-Contractor),Uber
+Uber,Uber,Driving,Delivery Driver,delivery driver,19.5,$19.50,HOURLY,23,https://www.indeed.com/cmp/Uber/salaries/Delivery-Driver,Uber
+Uber,Uber,Driving,Independent Contractor,independent contractor,17.68,$17.68,HOURLY,9,https://www.indeed.com/cmp/Uber/salaries/Independent-Contractor,Uber
+Uber,Uber,Driving,Truck Driver,truck driver,13.28,$13.28,HOURLY,3,,Uber
+Uber,Uber,Driving,Courier,courier,19.31,$19.31,HOURLY,3,,Uber
+Uber,Uber,Driving,Transporter,transporter,40000,"$40,000",YEARLY,1,,Uber
+Uber,Uber,Driving,Senior Driver,senior driver,254143,"$254,143",YEARLY,1,,Uber
+Uber,Uber,Driving,Drivers Helper,drivers helper,50000,"$50,000",YEARLY,1,,Uber
+Uber,Uber,Management,Operations Manager,operations manager,108342,"$108,342",YEARLY,9,https://www.indeed.com/cmp/Uber/salaries/Operations-Manager,Uber
+Lyft Drivers,Lyft,Human Resources,Recruiter,recruiter,91467,"$91,467",YEARLY,16,https://www.indeed.com/cmp/Lyft-Drivers-4/salaries/Recruiter,Lyft
+Lyft Drivers,Lyft,Human Resources,Safety Specialist,safety specialist,48173,"$48,173",YEARLY,11,https://www.indeed.com/cmp/Lyft-Drivers-4/salaries/Safety-Specialist,Lyft
+Lyft Drivers,Lyft,Human Resources,Recruiting Coordinator,recruiting coordinator,28.46,$28.46,HOURLY,4,,Lyft
+Lyft Drivers,Lyft,Human Resources,Human Resources Business Partner,human resources business partner,177050,"$177,050",YEARLY,3,,Lyft
+Lyft Drivers,Lyft,Management,Operations Lead,operations lead,81456,"$81,456",YEARLY,10,https://www.indeed.com/cmp/Lyft-Drivers-4/salaries/Operations-Lead,Lyft
+Lyft Drivers,Lyft,Management,Program Leader,program leader,83455,"$83,455",YEARLY,7,https://www.indeed.com/cmp/Lyft-Drivers-4/salaries/Program-Leader,Lyft
+Lyft Drivers,Lyft,Management,Vice President,vice president,369439,"$369,439",YEARLY,4,,Lyft
+Lyft Drivers,Lyft,Management,Director,director,170593,"$170,593",YEARLY,4,,Lyft
+Lyft Drivers,Lyft,Management,Business Development Manager,business development manager,152881,"$152,881",YEARLY,4,,Lyft
+Lyft Drivers,Lyft,Management,Operations Manager,operations manager,111204,"$111,204",YEARLY,3,,Lyft
+Domino's,Domino's,Customer Service,Customer Service Representative,customer service representative,12.19,$12.19,HOURLY,3216,https://www.indeed.com/cmp/Domino's/salaries/Customer-Service-Representative,Domino's
+Domino's,Domino's,Customer Service,Customer Experience Agent,customer experience agent,17.32,$17.32,HOURLY,109,https://www.indeed.com/cmp/Domino's/salaries/Customer-Experience-Agent,Domino's
+Domino's,Domino's,Customer Service,Customer Service Manager,customer service manager,11.68,$11.68,HOURLY,65,https://www.indeed.com/cmp/Domino's/salaries/Customer-Service-Manager,Domino's
+Domino's,Domino's,Customer Service,Customer Representative,customer representative,17.32,$17.32,HOURLY,50,https://www.indeed.com/cmp/Domino's/salaries/Customer-Representative,Domino's
+Domino's,Domino's,Customer Service,Member Services Representative,member services representative,12.07,$12.07,HOURLY,5,,Domino's
+Domino's,Domino's,Customer Service,Entry Level Customer Service Representative,entry level customer service representative,11.81,$11.81,HOURLY,5,,Domino's
+Domino's,Domino's,Customer Service,Senior Customer Service Representative,senior customer service representative,11.19,$11.19,HOURLY,2,,Domino's
+Domino's,Domino's,Customer Service,Counter Person,counter person,15.52,$15.52,HOURLY,2,,Domino's
+Domino's,Domino's,Customer Service,Customer Service Team Lead,customer service team lead,64809,"$64,809",YEARLY,1,,Domino's
+Domino's,Domino's,Food Preparation & Service,Pizza Cook,pizza cook,13.98,$13.98,HOURLY,939,https://www.indeed.com/cmp/Domino's/salaries/Pizza-Cook,Domino's
+DoorDash,DoorDash,Loading and Stocking,Warehouse Associate,warehouse associate,15.49,$15.49,HOURLY,293,https://www.indeed.com/cmp/Doordash/salaries/Warehouse-Associate,DoorDash
+DoorDash,DoorDash,Loading and Stocking,Fulfillment Associate,fulfillment associate,111244,"$111,244",YEARLY,10,https://www.indeed.com/cmp/Doordash/salaries/Fulfillment-Associate,DoorDash
+DoorDash,DoorDash,Loading and Stocking,Seasonal Warehouse Associate,seasonal warehouse associate,16.48,$16.48,HOURLY,20,https://www.indeed.com/cmp/Doordash/salaries/Seasonal-Warehouse-Associate,DoorDash
+DoorDash,DoorDash,Loading and Stocking,Fulfillment Manager,fulfillment manager,90940,"$90,940",YEARLY,15,https://www.indeed.com/cmp/Doordash/salaries/Fulfillment-Manager,DoorDash
+DoorDash,DoorDash,Loading and Stocking,Stocker,stocker,22.91,$22.91,HOURLY,4,,DoorDash
+DoorDash,DoorDash,Loading and Stocking,Inventory Associate,inventory associate,92708,"$92,708",YEARLY,5,,DoorDash
+DoorDash,DoorDash,Loading and Stocking,Warehouse Operations,warehouse operations,32.33,$32.33,HOURLY,1,,DoorDash
+DoorDash,DoorDash,Loading and Stocking,Warehouse General Manager,warehouse general manager,89455,"$89,455",YEARLY,2,,DoorDash
+DoorDash,DoorDash,Loading and Stocking,Warehouse Operations Manager,warehouse operations manager,181536,"$181,536",YEARLY,1,,DoorDash
+DoorDash,DoorDash,Software Development,Software Engineer,software engineer,170152,"$170,152",YEARLY,80,https://www.indeed.com/cmp/Doordash/salaries/Software-Engineer,DoorDash
+PayPal,PayPal,Sales,Account Executive,account executive,64093,"$64,093",YEARLY,10,https://www.indeed.com/cmp/Paypal/salaries/Account-Executive,PayPal
+PayPal,PayPal,Sales,Solution Specialist,solution specialist,38647,"$38,647",YEARLY,10,https://www.indeed.com/cmp/Paypal/salaries/Solution-Specialist,PayPal
+PayPal,PayPal,Sales,Collection Agent,collection agent,52309,"$52,309",YEARLY,7,https://www.indeed.com/cmp/Paypal/salaries/Collection-Agent,PayPal
+PayPal,PayPal,Sales,Technical Account Manager,technical account manager,146614,"$146,614",YEARLY,4,,PayPal
+PayPal,PayPal,Sales,Senior Account Manager,senior account manager,222400,"$222,400",YEARLY,3,,PayPal
+PayPal,PayPal,Sales,Solutions Engineer,solutions engineer,101132,"$101,132",YEARLY,2,,PayPal
+PayPal,PayPal,Sales,Enterprise Account Manager,enterprise account manager,288169,"$288,169",YEARLY,2,,PayPal
+PayPal,PayPal,Sales,Collection Manager,collection manager,88793,"$88,793",YEARLY,2,,PayPal
+PayPal,PayPal,Sales,Vendor,vendor,200514,"$200,514",YEARLY,1,,PayPal
+PayPal,PayPal,Sales,Senior Sales Director,senior sales director,423415,"$423,415",YEARLY,1,,PayPal
+Airbnb,Airbnb,Management,Senior Manager,senior manager,222382,"$222,382",YEARLY,6,https://www.indeed.com/cmp/Airbnb/salaries/Senior-Manager,Airbnb
+Airbnb,Airbnb,Management,Manager,manager,179512,"$179,512",YEARLY,6,https://www.indeed.com/cmp/Airbnb/salaries/Manager,Airbnb
+Airbnb,Airbnb,Management,Director,director,308137,"$308,137",YEARLY,3,,Airbnb
+Airbnb,Airbnb,Management,Shift Leader,shift leader,16949,"$16,949",MONTHLY,1,,Airbnb
+Airbnb,Airbnb,Management,Operations Lead,operations lead,17788,"$17,788",MONTHLY,1,,Airbnb
+Airbnb,Airbnb,Project Management,Program Manager,program manager,168937,"$168,937",YEARLY,7,https://www.indeed.com/cmp/Airbnb/salaries/Program-Manager,Airbnb
+Airbnb,Airbnb,Project Management,Senior Program Manager,senior program manager,169006,"$169,006",YEARLY,6,https://www.indeed.com/cmp/Airbnb/salaries/Senior-Program-Manager,Airbnb
+Airbnb,Airbnb,Mathematics,Data Scientist,data scientist,210356,"$210,356",YEARLY,8,https://www.indeed.com/cmp/Airbnb/salaries/Data-Scientist,Airbnb
+Airbnb,Airbnb,Mathematics,Data Analyst,data analyst,135622,"$135,622",YEARLY,3,,Airbnb
+Airbnb,Airbnb,Arts & Entertainment,Designer,designer,163041,"$163,041",YEARLY,6,https://www.indeed.com/cmp/Airbnb/salaries/Designer,Airbnb
+Panera Bread,Panera-Bread,Retail,Customer Service Associate / Cashier,customer service associate / cashier,14.34,$14.34,HOURLY,183,https://www.indeed.com/cmp/Panera-Bread/salaries/Customer-Service-Associate---Cashier,Panera Bread
+Panera Bread,Panera-Bread,Retail,Cashier,cashier,14.65,$14.65,HOURLY,36,https://www.indeed.com/cmp/Panera-Bread/salaries/Cashier,Panera Bread
+Panera Bread,Panera-Bread,Retail,Retail Sales Associate,retail sales associate,16.76,$16.76,HOURLY,133,https://www.indeed.com/cmp/Panera-Bread/salaries/Retail-Sales-Associate,Panera Bread
+Panera Bread,Panera-Bread,Retail,Opener,opener,11.04,$11.04,HOURLY,157,https://www.indeed.com/cmp/Panera-Bread/salaries/Opener,Panera Bread
+Panera Bread,Panera-Bread,Retail,Cashier/Sales,cashier/sales,12.07,$12.07,HOURLY,16,https://www.indeed.com/cmp/Panera-Bread/salaries/Cashier-Sales,Panera Bread
+Panera Bread,Panera-Bread,Retail,Retail Team Leader,retail team leader,13.63,$13.63,HOURLY,46,https://www.indeed.com/cmp/Panera-Bread/salaries/Retail-Team-Leader,Panera Bread
+Panera Bread,Panera-Bread,Retail,Overnight Closer,overnight closer,12.41,$12.41,HOURLY,22,https://www.indeed.com/cmp/Panera-Bread/salaries/Overnight-Closer,Panera Bread
+Panera Bread,Panera-Bread,Retail,Lead Cashier,lead cashier,15.97,$15.97,HOURLY,22,https://www.indeed.com/cmp/Panera-Bread/salaries/Lead-Cashier,Panera Bread
+Panera Bread,Panera-Bread,Retail,Cashier/Stocker,cashier/stocker,15.14,$15.14,HOURLY,9,https://www.indeed.com/cmp/Panera-Bread/salaries/Cashier-Stocker,Panera Bread
+Panera Bread,Panera-Bread,Retail,Checker,checker,16.59,$16.59,HOURLY,7,https://www.indeed.com/cmp/Panera-Bread/salaries/Checker,Panera Bread
+Chick-fil-A Restaurants,Chick-fil-A,Venta al por menor,Cashier,cashier,14.66,$14.66,HOURLY,1846,https://www.indeed.com/cmp/Chick--fil--a-Restaurants/salaries/Cashier,Chick-fil-A
+Chick-fil-A Restaurants,Chick-fil-A,Venta al por menor,Customer Service Associate / Cashier,customer service associate / cashier,13.98,$13.98,HOURLY,35,https://www.indeed.com/cmp/Chick--fil--a-Restaurants/salaries/Customer-Service-Associate---Cashier,Chick-fil-A
+Chick-fil-A Restaurants,Chick-fil-A,Venta al por menor,Store Manager,store manager,20.62,$20.62,HOURLY,23,https://www.indeed.com/cmp/Chick--fil--a-Restaurants/salaries/Store-Manager,Chick-fil-A
+Chick-fil-A Restaurants,Chick-fil-A,Venta al por menor,Encargado/a turno/a,encargado turno,18.6,$18.60,HOURLY,100,https://www.indeed.com/cmp/Chick--fil--a-Restaurants/salaries/Encargado-a-turno-a,Chick-fil-A
+Chick-fil-A Restaurants,Chick-fil-A,Venta al por menor,Inventory Specialist,inventory specialist,15.33,$15.33,HOURLY,48,https://www.indeed.com/cmp/Chick--fil--a-Restaurants/salaries/Inventory-Specialist,Chick-fil-A
+Chick-fil-A Restaurants,Chick-fil-A,Venta al por menor,Inventory Manager,inventory manager,18.33,$18.33,HOURLY,14,https://www.indeed.com/cmp/Chick--fil--a-Restaurants/salaries/Inventory-Manager,Chick-fil-A
+Chick-fil-A Restaurants,Chick-fil-A,Venta al por menor,Seasonal Associate,seasonal associate,13.4,$13.40,HOURLY,12,https://www.indeed.com/cmp/Chick--fil--a-Restaurants/salaries/Seasonal-Associate,Chick-fil-A
+Chick-fil-A Restaurants,Chick-fil-A,Venta al por menor,Retail Sales Associate,retail sales associate,16.75,$16.75,HOURLY,36,https://www.indeed.com/cmp/Chick--fil--a-Restaurants/salaries/Retail-Sales-Associate,Chick-fil-A
+Chick-fil-A Restaurants,Chick-fil-A,Venta al por menor,Opener,opener,15.97,$15.97,HOURLY,17,https://www.indeed.com/cmp/Chick--fil--a-Restaurants/salaries/Opener,Chick-fil-A
+Chick-fil-A Restaurants,Chick-fil-A,Driving,Delivery Driver,delivery driver,13.35,$13.35,HOURLY,500,https://www.indeed.com/cmp/Chick--fil--a-Restaurants/salaries/Delivery-Driver,Chick-fil-A
+Costco Wholesale,Costco-Wholesale,Food Preparation & Service,Meat Carver,meat carver,25.68,$25.68,HOURLY,12,https://www.indeed.com/cmp/Costco-Wholesale/salaries/Meat-Carver,Costco Wholesale
+Costco Wholesale,Costco-Wholesale,Food Preparation & Service,Cake Decorator,cake decorator,23.97,$23.97,HOURLY,6,https://www.indeed.com/cmp/Costco-Wholesale/salaries/Cake-Decorator,Costco Wholesale
+Costco Wholesale,Costco-Wholesale,Food Preparation & Service,Deli Associate,deli associate,21.89,$21.89,HOURLY,5,,Costco Wholesale
+Costco Wholesale,Costco-Wholesale,Food Preparation & Service,Food Service Worker,food service worker,19.67,$19.67,HOURLY,6,https://www.indeed.com/cmp/Costco-Wholesale/salaries/Food-Service-Worker,Costco Wholesale
+Costco Wholesale,Costco-Wholesale,Food Preparation & Service,Food Service Associate,food service associate,20.42,$20.42,HOURLY,6,https://www.indeed.com/cmp/Costco-Wholesale/salaries/Food-Service-Associate,Costco Wholesale
+Costco Wholesale,Costco-Wholesale,Food Preparation & Service,Baker,baker,28.68,$28.68,HOURLY,6,https://www.indeed.com/cmp/Costco-Wholesale/salaries/Baker,Costco Wholesale
+Costco Wholesale,Costco-Wholesale,Food Preparation & Service,Bakery Manager,bakery manager,92196,"$92,196",YEARLY,5,,Costco Wholesale
+Costco Wholesale,Costco-Wholesale,Food Preparation & Service,Meat Wrapper,meat wrapper,22.18,$22.18,HOURLY,5,,Costco Wholesale
+Costco Wholesale,Costco-Wholesale,Food Preparation & Service,Bakery Assistant,bakery assistant,17.97,$17.97,HOURLY,2,,Costco Wholesale
+Costco Wholesale,Costco-Wholesale,Food Preparation & Service,Sushi Chef,sushi chef,24.62,$24.62,HOURLY,2,,Costco Wholesale
+Kroger,Kroger,Management,Shift Leader,shift leader,82563,"$82,563",YEARLY,3,,Kroger
+Kroger,Kroger,Management,Department Leader,department leader,19.96,$19.96,HOURLY,16,https://www.indeed.com/cmp/Kroger-54356a75/salaries/Department-Leader,Kroger
+Kroger,Kroger,Management,Assistant Manager,assistant manager,66443,"$66,443",YEARLY,10,https://www.indeed.com/cmp/Kroger-54356a75/salaries/Assistant-Manager,Kroger
+Kroger,Kroger,Management,Manager,manager,66458,"$66,458",YEARLY,5,,Kroger
+Kroger,Kroger,Management,Category Manager,category manager,85468,"$85,468",YEARLY,22,https://www.indeed.com/cmp/Kroger-54356a75/salaries/Category-Manager,Kroger
+Kroger,Kroger,Management,General Manager,general manager,52020,"$52,020",YEARLY,1,,Kroger
+Kroger,Kroger,Management,Manager in Training,manager in training,40891,"$40,891",YEARLY,1,,Kroger
+Kroger,Kroger,Management,Manufacturing Specialist,manufacturing specialist,20.86,$20.86,HOURLY,26,https://www.indeed.com/cmp/Kroger-54356a75/salaries/Manufacturing-Specialist,Kroger
+Kroger,Kroger,Management,Operations Lead,operations lead,74007,"$74,007",YEARLY,35,https://www.indeed.com/cmp/Kroger-54356a75/salaries/Operations-Lead,Kroger
+Kroger,Kroger,Management,Manager On Duty,manager on duty,16.48,$16.48,HOURLY,18,https://www.indeed.com/cmp/Kroger-54356a75/salaries/Manager-On-Duty,Kroger
+UPS,UPS,Driving,Delivery Driver,delivery driver,21.06,$21.06,HOURLY,291,https://www.indeed.com/cmp/UPS/salaries/Delivery-Driver,UPS
+UPS,UPS,Driving,Driver,driver,23.55,$23.55,HOURLY,72,https://www.indeed.com/cmp/UPS/salaries/Driver,UPS
+UPS,UPS,Driving,Drivers Helper,drivers helper,17.81,$17.81,HOURLY,16,https://www.indeed.com/cmp/UPS/salaries/Drivers-Helper,UPS
+UPS,UPS,Driving,Courier,courier,12.46,$12.46,HOURLY,137,https://www.indeed.com/cmp/UPS/salaries/Courier,UPS
+UPS,UPS,Driving,Tractor Trailer Driver,tractor trailer driver,29.61,$29.61,HOURLY,17,https://www.indeed.com/cmp/UPS/salaries/Tractor-Trailer-Driver,UPS
+UPS,UPS,Driving,Truck Driver,truck driver,29.44,$29.44,HOURLY,8,https://www.indeed.com/cmp/UPS/salaries/Truck-Driver,UPS
+UPS,UPS,Driving,Owner Operator Driver,owner operator driver,3930,"$3,930",WEEKLY,10,https://www.indeed.com/cmp/UPS/salaries/Owner-Operator-Driver,UPS
+UPS,UPS,Driving,Independent Contractor,independent contractor,14.91,$14.91,HOURLY,5,,UPS
+UPS,UPS,Driving,Local Driver,local driver,18.97,$18.97,HOURLY,2,,UPS
+UPS,UPS,Driving,Driver (Independent Contractor),driver (independent contractor),10,$10.00,HOURLY,4,,UPS
+Citi,Citi,Software Development,Software Engineer,software engineer,100272,"$100,272",YEARLY,14,https://www.indeed.com/cmp/Citi/salaries/Software-Engineer,Citi
+Citi,Citi,Software Development,Programmer Analyst,programmer analyst,87493,"$87,493",YEARLY,41,https://www.indeed.com/cmp/Citi/salaries/Programmer-Analyst,Citi
+Citi,Citi,Software Development,Technical Lead,technical lead,150477,"$150,477",YEARLY,11,https://www.indeed.com/cmp/Citi/salaries/Technical-Lead,Citi
+Citi,Citi,Software Development,Senior Software Engineer,senior software engineer,125537,"$125,537",YEARLY,10,https://www.indeed.com/cmp/Citi/salaries/Senior-Software-Engineer,Citi
+Citi,Citi,Software Development,Product Manager,product manager,130179,"$130,179",YEARLY,9,https://www.indeed.com/cmp/Citi/salaries/Product-Manager,Citi
+Citi,Citi,Software Development,Senior Programmer Analyst,senior programmer analyst,138406,"$138,406",YEARLY,9,https://www.indeed.com/cmp/Citi/salaries/Senior-Programmer-Analyst,Citi
+Citi,Citi,Software Development,Application Developer,application developer,109440,"$109,440",YEARLY,7,https://www.indeed.com/cmp/Citi/salaries/Application-Developer,Citi
+Citi,Citi,Software Development,Software Engineering Manager,software engineering manager,159535,"$159,535",YEARLY,8,https://www.indeed.com/cmp/Citi/salaries/Software-Engineering-Manager,Citi
+Citi,Citi,Software Development,Developer,developer,138051,"$138,051",YEARLY,10,https://www.indeed.com/cmp/Citi/salaries/Developer,Citi
+Citi,Citi,Software Development,Data Engineer,data engineer,111233,"$111,233",YEARLY,7,https://www.indeed.com/cmp/Citi/salaries/Data-Engineer,Citi
+Goldman Sachs,Goldman-Sachs,Accounting,Financial Analyst,financial analyst,84718,"$84,718",YEARLY,21,https://www.indeed.com/cmp/Goldman-Sachs/salaries/Financial-Analyst,Goldman Sachs
+Goldman Sachs,Goldman-Sachs,Accounting,Internal Auditor,internal auditor,128679,"$128,679",YEARLY,39,https://www.indeed.com/cmp/Goldman-Sachs/salaries/Internal-Auditor,Goldman Sachs
+Goldman Sachs,Goldman-Sachs,Accounting,Controller,controller,92082,"$92,082",YEARLY,20,https://www.indeed.com/cmp/Goldman-Sachs/salaries/Controller,Goldman Sachs
+Goldman Sachs,Goldman-Sachs,Accounting,Credit Analyst,credit analyst,87887,"$87,887",YEARLY,12,https://www.indeed.com/cmp/Goldman-Sachs/salaries/Credit-Analyst,Goldman Sachs
+Goldman Sachs,Goldman-Sachs,Accounting,Senior Financial Analyst,senior financial analyst,71494,"$71,494",YEARLY,8,https://www.indeed.com/cmp/Goldman-Sachs/salaries/Senior-Financial-Analyst,Goldman Sachs
+Goldman Sachs,Goldman-Sachs,Accounting,Finance Associate,finance associate,143073,"$143,073",YEARLY,9,https://www.indeed.com/cmp/Goldman-Sachs/salaries/Finance-Associate,Goldman Sachs
+Goldman Sachs,Goldman-Sachs,Accounting,Accounting Clerk,accounting clerk,98286,"$98,286",YEARLY,8,https://www.indeed.com/cmp/Goldman-Sachs/salaries/Accounting-Clerk,Goldman Sachs
+Goldman Sachs,Goldman-Sachs,Accounting,Financial Controller,financial controller,52441,"$52,441",YEARLY,4,,Goldman Sachs
+Goldman Sachs,Goldman-Sachs,Accounting,Billing Analyst,billing analyst,64244,"$64,244",YEARLY,4,,Goldman Sachs
+Goldman Sachs,Goldman-Sachs,Accounting,Treasury Analyst,treasury analyst,60408,"$60,408",YEARLY,3,,Goldman Sachs
+Dell Technologies,Dell-Technologies,Management,Senior Advisor,senior advisor,139742,"$139,742",YEARLY,21,https://www.indeed.com/cmp/Dell-Technologies/salaries/Senior-Advisor,Dell Technologies
+Dell Technologies,Dell-Technologies,Management,Consultant,consultant,142541,"$142,541",YEARLY,12,https://www.indeed.com/cmp/Dell-Technologies/salaries/Consultant,Dell Technologies
+Dell Technologies,Dell-Technologies,Management,Director,director,211341,"$211,341",YEARLY,15,https://www.indeed.com/cmp/Dell-Technologies/salaries/Director,Dell Technologies
+Dell Technologies,Dell-Technologies,Management,Senior Consultant,senior consultant,187766,"$187,766",YEARLY,8,https://www.indeed.com/cmp/Dell-Technologies/salaries/Senior-Consultant,Dell Technologies
+Dell Technologies,Dell-Technologies,Management,Business Advisor,business advisor,46998,"$46,998",YEARLY,26,https://www.indeed.com/cmp/Dell-Technologies/salaries/Business-Advisor,Dell Technologies
+Dell Technologies,Dell-Technologies,Management,Senior Manager,senior manager,159992,"$159,992",YEARLY,15,https://www.indeed.com/cmp/Dell-Technologies/salaries/Senior-Manager,Dell Technologies
+Dell Technologies,Dell-Technologies,Management,Manager,manager,94517,"$94,517",YEARLY,14,https://www.indeed.com/cmp/Dell-Technologies/salaries/Manager,Dell Technologies
+Dell Technologies,Dell-Technologies,Management,Vice President,vice president,261472,"$261,472",YEARLY,9,https://www.indeed.com/cmp/Dell-Technologies/salaries/Vice-President,Dell Technologies
+Dell Technologies,Dell-Technologies,Management,Business Development Manager,business development manager,129746,"$129,746",YEARLY,5,,Dell Technologies
+Dell Technologies,Dell-Technologies,Management,Product Line Manager,product line manager,109782,"$109,782",YEARLY,10,https://www.indeed.com/cmp/Dell-Technologies/salaries/Product-Line-Manager,Dell Technologies
+Delta Air Lines,Delta-Air-Lines,Software Development,Software Engineer,software engineer,93155,"$93,155",YEARLY,13,https://www.indeed.com/cmp/Delta-Air-Lines/salaries/Software-Engineer,Delta Air Lines
+Delta Air Lines,Delta-Air-Lines,Software Development,Data Engineer,data engineer,128260,"$128,260",YEARLY,8,https://www.indeed.com/cmp/Delta-Air-Lines/salaries/Data-Engineer,Delta Air Lines
+Delta Air Lines,Delta-Air-Lines,Software Development,Senior Software Engineer,senior software engineer,125702,"$125,702",YEARLY,6,https://www.indeed.com/cmp/Delta-Air-Lines/salaries/Senior-Software-Engineer,Delta Air Lines
+Delta Air Lines,Delta-Air-Lines,Software Development,Principal Software Engineer,principal software engineer,140463,"$140,463",YEARLY,5,,Delta Air Lines
+Delta Air Lines,Delta-Air-Lines,Software Development,Developer,developer,108279,"$108,279",YEARLY,6,https://www.indeed.com/cmp/Delta-Air-Lines/salaries/Developer,Delta Air Lines
+Delta Air Lines,Delta-Air-Lines,Software Development,Senior Product Manager,senior product manager,139866,"$139,866",YEARLY,5,,Delta Air Lines
+Delta Air Lines,Delta-Air-Lines,Software Development,Senior Developer,senior developer,128003,"$128,003",YEARLY,6,https://www.indeed.com/cmp/Delta-Air-Lines/salaries/Senior-Developer,Delta Air Lines
+Delta Air Lines,Delta-Air-Lines,Software Development,Product Owner,product owner,103358,"$103,358",YEARLY,8,https://www.indeed.com/cmp/Delta-Air-Lines/salaries/Product-Owner,Delta Air Lines
+Delta Air Lines,Delta-Air-Lines,Software Development,Product Manager,product manager,108975,"$108,975",YEARLY,8,https://www.indeed.com/cmp/Delta-Air-Lines/salaries/Product-Manager,Delta Air Lines
+Delta Air Lines,Delta-Air-Lines,Software Development,DevOps Engineer,devops engineer,124503,"$124,503",YEARLY,4,,Delta Air Lines
+United Airlines,United-Airlines,Mathematics,Senior Analyst,senior analyst,94005,"$94,005",YEARLY,14,https://www.indeed.com/cmp/United-Airlines/salaries/Senior-Analyst,United Airlines
+United Airlines,United-Airlines,Mathematics,Analyst,analyst,73215,"$73,215",YEARLY,16,https://www.indeed.com/cmp/United-Airlines/salaries/Analyst,United Airlines
+United Airlines,United-Airlines,Mathematics,Associate Analyst,associate analyst,65138,"$65,138",YEARLY,6,https://www.indeed.com/cmp/United-Airlines/salaries/Associate-Analyst,United Airlines
+United Airlines,United-Airlines,Mathematics,Business Analyst,business analyst,113705,"$113,705",YEARLY,7,https://www.indeed.com/cmp/United-Airlines/salaries/Business-Analyst,United Airlines
+United Airlines,United-Airlines,Mathematics,Senior Business Analyst,senior business analyst,104837,"$104,837",YEARLY,7,https://www.indeed.com/cmp/United-Airlines/salaries/Senior-Business-Analyst,United Airlines
+United Airlines,United-Airlines,Mathematics,Data Scientist,data scientist,110419,"$110,419",YEARLY,8,https://www.indeed.com/cmp/United-Airlines/salaries/Data-Scientist,United Airlines
+United Airlines,United-Airlines,Mathematics,Pricing Analyst,pricing analyst,62831,"$62,831",YEARLY,5,,United Airlines
+United Airlines,United-Airlines,Mathematics,Senior Data Scientist,senior data scientist,135675,"$135,675",YEARLY,7,https://www.indeed.com/cmp/United-Airlines/salaries/Senior-Data-Scientist,United Airlines
+United Airlines,United-Airlines,Mathematics,Senior Data Analyst,senior data analyst,99371,"$99,371",YEARLY,7,https://www.indeed.com/cmp/United-Airlines/salaries/Senior-Data-Analyst,United Airlines
+United Airlines,United-Airlines,Mathematics,Data Analyst,data analyst,79557,"$79,557",YEARLY,7,https://www.indeed.com/cmp/United-Airlines/salaries/Data-Analyst,United Airlines
+American Airlines,American-Airlines,Management,Manager,manager,106548,"$106,548",YEARLY,17,https://www.indeed.com/cmp/American-Airlines/salaries/Manager,American Airlines
+American Airlines,American-Airlines,Management,Senior Manager,senior manager,162004,"$162,004",YEARLY,10,https://www.indeed.com/cmp/American-Airlines/salaries/Senior-Manager,American Airlines
+American Airlines,American-Airlines,Management,Director,director,185688,"$185,688",YEARLY,6,https://www.indeed.com/cmp/American-Airlines/salaries/Director,American Airlines
+American Airlines,American-Airlines,Management,Captain,captain,224079,"$224,079",YEARLY,9,https://www.indeed.com/cmp/American-Airlines/salaries/Captain,American Airlines
+American Airlines,American-Airlines,Management,Revenue Manager,revenue manager,122131,"$122,131",YEARLY,7,https://www.indeed.com/cmp/American-Airlines/salaries/Revenue-Manager,American Airlines
+American Airlines,American-Airlines,Management,Supervisor,supervisor,67646,"$67,646",YEARLY,4,,American Airlines
+American Airlines,American-Airlines,Management,Senior Operations Manager,senior operations manager,166162,"$166,162",YEARLY,4,,American Airlines
+American Airlines,American-Airlines,Management,Duty Manager,duty manager,64874,"$64,874",YEARLY,4,,American Airlines
+American Airlines,American-Airlines,Management,Service Manager,service manager,64003,"$64,003",YEARLY,3,,American Airlines
+American Airlines,American-Airlines,Management,Crew Supervisor,crew supervisor,35.74,$35.74,HOURLY,3,,American Airlines
+The Coca-Cola Company,The-Coca-Cola-Company,Loading and Stocking,Order Picker,order picker,18.46,$18.46,HOURLY,15,https://www.indeed.com/cmp/The-Coca--cola-Company/salaries/Order-Picker,The Coca-Cola Company
+The Coca-Cola Company,The-Coca-Cola-Company,Loading and Stocking,Stocker,stocker,18.05,$18.05,HOURLY,16,https://www.indeed.com/cmp/The-Coca--cola-Company/salaries/Stocker,The Coca-Cola Company
+The Coca-Cola Company,The-Coca-Cola-Company,Loading and Stocking,Driver Merchandiser,driver merchandiser,26.08,$26.08,HOURLY,12,https://www.indeed.com/cmp/The-Coca--cola-Company/salaries/Driver-Merchandiser,The Coca-Cola Company
+The Coca-Cola Company,The-Coca-Cola-Company,Loading and Stocking,Material Handler,material handler,16.45,$16.45,HOURLY,18,https://www.indeed.com/cmp/The-Coca--cola-Company/salaries/Material-Handler,The Coca-Cola Company
+The Coca-Cola Company,The-Coca-Cola-Company,Loading and Stocking,Forklift Operator,forklift operator,19.66,$19.66,HOURLY,5,,The Coca-Cola Company
+The Coca-Cola Company,The-Coca-Cola-Company,Loading and Stocking,Warehouse Worker,warehouse worker,20.18,$20.18,HOURLY,5,,The Coca-Cola Company
+The Coca-Cola Company,The-Coca-Cola-Company,Loading and Stocking,Warehouse Supervisor,warehouse supervisor,51.47,$51.47,HOURLY,4,,The Coca-Cola Company
+The Coca-Cola Company,The-Coca-Cola-Company,Loading and Stocking,Driver Assistant,driver assistant,20.98,$20.98,HOURLY,4,,The Coca-Cola Company
+The Coca-Cola Company,The-Coca-Cola-Company,Loading and Stocking,Mover/Driver,mover/driver,22.45,$22.45,HOURLY,3,,The Coca-Cola Company
+The Coca-Cola Company,The-Coca-Cola-Company,Loading and Stocking,Warehouse Clerk,warehouse clerk,18.25,$18.25,HOURLY,1,,The Coca-Cola Company
+Johnson & Johnson,Johnson-&-Johnson,Sales,Sales Representative,sales representative,98207,"$98,207",YEARLY,7,https://www.indeed.com/cmp/Johnson-&-Johnson/salaries/Sales-Representative,Johnson & Johnson
+Johnson & Johnson,Johnson-&-Johnson,Sales,Sales Specialist,sales specialist,117872,"$117,872",YEARLY,14,https://www.indeed.com/cmp/Johnson-&-Johnson/salaries/Sales-Specialist,Johnson & Johnson
+Johnson & Johnson,Johnson-&-Johnson,Sales,Account Specialist,account specialist,110276,"$110,276",YEARLY,9,https://www.indeed.com/cmp/Johnson-&-Johnson/salaries/Account-Specialist,Johnson & Johnson
+Johnson & Johnson,Johnson-&-Johnson,Sales,Account Executive,account executive,74035,"$74,035",YEARLY,6,https://www.indeed.com/cmp/Johnson-&-Johnson/salaries/Account-Executive,Johnson & Johnson
+Johnson & Johnson,Johnson-&-Johnson,Sales,Key Account Manager,key account manager,171170,"$171,170",YEARLY,7,https://www.indeed.com/cmp/Johnson-&-Johnson/salaries/Key-Account-Manager,Johnson & Johnson
+Johnson & Johnson,Johnson-&-Johnson,Sales,Territory Manager,territory manager,113699,"$113,699",YEARLY,6,https://www.indeed.com/cmp/Johnson-&-Johnson/salaries/Territory-Manager,Johnson & Johnson
+Johnson & Johnson,Johnson-&-Johnson,Sales,Senior Account Specialist,senior account specialist,105109,"$105,109",YEARLY,6,https://www.indeed.com/cmp/Johnson-&-Johnson/salaries/Senior-Account-Specialist,Johnson & Johnson
+Johnson & Johnson,Johnson-&-Johnson,Sales,Sales Associate,sales associate,70274,"$70,274",YEARLY,6,https://www.indeed.com/cmp/Johnson-&-Johnson/salaries/Sales-Associate,Johnson & Johnson
+Johnson & Johnson,Johnson-&-Johnson,Sales,Sales Consultant,sales consultant,115917,"$115,917",YEARLY,5,,Johnson & Johnson
+Johnson & Johnson,Johnson-&-Johnson,Sales,Regional Sales Manager,regional sales manager,156448,"$156,448",YEARLY,5,,Johnson & Johnson
+Pfizer,Pfizer,Software Development,Principal Software Engineer,principal software engineer,192602,"$192,602",YEARLY,9,https://www.indeed.com/cmp/Pfizer/salaries/Principal-Software-Engineer,Pfizer
+Pfizer,Pfizer,Software Development,Machine Learning Engineer,machine learning engineer,129502,"$129,502",YEARLY,9,https://www.indeed.com/cmp/Pfizer/salaries/Machine-Learning-Engineer,Pfizer
+Pfizer,Pfizer,Software Development,Product Owner,product owner,182872,"$182,872",YEARLY,8,https://www.indeed.com/cmp/Pfizer/salaries/Product-Owner,Pfizer
+Pfizer,Pfizer,Software Development,Software Engineer,software engineer,119836,"$119,836",YEARLY,7,https://www.indeed.com/cmp/Pfizer/salaries/Software-Engineer,Pfizer
+Pfizer,Pfizer,Software Development,Engineering Lead,engineering lead,125382,"$125,382",YEARLY,7,https://www.indeed.com/cmp/Pfizer/salaries/Engineering-Lead,Pfizer
+Pfizer,Pfizer,Software Development,Data Engineer,data engineer,129646,"$129,646",YEARLY,6,https://www.indeed.com/cmp/Pfizer/salaries/Data-Engineer,Pfizer
+Pfizer,Pfizer,Software Development,Director of Product Management,director of product management,209548,"$209,548",YEARLY,5,,Pfizer
+Pfizer,Pfizer,Software Development,Platform Engineer,platform engineer,117439,"$117,439",YEARLY,4,,Pfizer
+Pfizer,Pfizer,Software Development,Site Reliability Engineer,site reliability engineer,130101,"$130,101",YEARLY,3,,Pfizer
+Pfizer,Pfizer,Software Development,Automation Engineer,automation engineer,81354,"$81,354",YEARLY,3,,Pfizer
+Taco Bell,Taco-Bell,Retail,Cashier,cashier,14.39,$14.39,HOURLY,4141,https://www.indeed.com/cmp/Taco-Bell/salaries/Cashier,Taco Bell
+Taco Bell,Taco-Bell,Retail,Customer Service Associate / Cashier,customer service associate / cashier,12.46,$12.46,HOURLY,97,https://www.indeed.com/cmp/Taco-Bell/salaries/Customer-Service-Associate---Cashier,Taco Bell
+Taco Bell,Taco-Bell,Retail,QSR Manager,qsr manager,60122,"$60,122",YEARLY,5,,Taco Bell
+Taco Bell,Taco-Bell,Retail,Lead Cashier,lead cashier,14.21,$14.21,HOURLY,6,https://www.indeed.com/cmp/Taco-Bell/salaries/Lead-Cashier,Taco Bell
+Taco Bell,Taco-Bell,Retail,Opener,opener,15.42,$15.42,HOURLY,5,,Taco Bell
+Taco Bell,Taco-Bell,Retail,Assistant Store Manager,assistant store manager,16,$16.00,HOURLY,16,https://www.indeed.com/cmp/Taco-Bell/salaries/Assistant-Store-Manager,Taco Bell
+Taco Bell,Taco-Bell,Retail,Member Team Lead,member team lead,12.7,$12.70,HOURLY,5,,Taco Bell
+Taco Bell,Taco-Bell,Retail,Lead Team Member,lead team member,13.17,$13.17,HOURLY,6,https://www.indeed.com/cmp/Taco-Bell/salaries/Lead-Team-Member,Taco Bell
+Taco Bell,Taco-Bell,Retail,Store Manager,store manager,50847,"$50,847",YEARLY,5,,Taco Bell
+Taco Bell,Taco-Bell,Customer Service,Customer Service Representative,customer service representative,12.04,$12.04,HOURLY,123,https://www.indeed.com/cmp/Taco-Bell/salaries/Customer-Service-Representative,Taco Bell
+Dollar General,Dollar-General,Loading and Stocking,Warehouse Worker,warehouse worker,19.4,$19.40,HOURLY,70,https://www.indeed.com/cmp/Dollar-General/salaries/Warehouse-Worker,Dollar General
+Dollar General,Dollar-General,Loading and Stocking,Order Picker,order picker,19.44,$19.44,HOURLY,20,https://www.indeed.com/cmp/Dollar-General/salaries/Order-Picker,Dollar General
+Dollar General,Dollar-General,Loading and Stocking,Warehouse Supervisor,warehouse supervisor,28.8,$28.80,HOURLY,2,,Dollar General
+Dollar General,Dollar-General,Loading and Stocking,Distribution Center Supervisor,distribution center supervisor,20.27,$20.27,HOURLY,13,https://www.indeed.com/cmp/Dollar-General/salaries/Distribution-Center-Supervisor,Dollar General
+Dollar General,Dollar-General,Loading and Stocking,Warehouse Supervisor II,warehouse supervisor ii,71894,"$71,894",YEARLY,11,https://www.indeed.com/cmp/Dollar-General/salaries/Warehouse-Supervisor-II,Dollar General
+Dollar General,Dollar-General,Loading and Stocking,Order Filler,order filler,21.43,$21.43,HOURLY,6,https://www.indeed.com/cmp/Dollar-General/salaries/Order-Filler,Dollar General
+Dollar General,Dollar-General,Loading and Stocking,Stocker,stocker,15.28,$15.28,HOURLY,8,https://www.indeed.com/cmp/Dollar-General/salaries/Stocker,Dollar General
+Dollar General,Dollar-General,Loading and Stocking,Forklift Operator,forklift operator,18.17,$18.17,HOURLY,6,https://www.indeed.com/cmp/Dollar-General/salaries/Forklift-Operator,Dollar General
+Dollar General,Dollar-General,Loading and Stocking,Distribution Center Operations Manager,distribution center operations manager,82641,"$82,641",YEARLY,9,https://www.indeed.com/cmp/Dollar-General/salaries/Distribution-Center-Operations-Manager,Dollar General
+Dollar General,Dollar-General,Loading and Stocking,Distribution Center Manager,distribution center manager,96172,"$96,172",YEARLY,8,https://www.indeed.com/cmp/Dollar-General/salaries/Distribution-Center-Manager,Dollar General
+ALDI,Aldi,Management,District Manager,district manager,27.95,$27.95,HOURLY,61,https://www.indeed.com/cmp/Aldi/salaries/District-Manager,Aldi
+ALDI,Aldi,Management,Management Trainee,management trainee,31.62,$31.62,HOURLY,273,https://www.indeed.com/cmp/Aldi/salaries/Management-Trainee,Aldi
+ALDI,Aldi,Management,Shift Manager,shift manager,35.01,$35.01,HOURLY,9,https://www.indeed.com/cmp/Aldi/salaries/Shift-Manager,Aldi
+ALDI,Aldi,Management,Shift Leader,shift leader,28.52,$28.52,HOURLY,35,https://www.indeed.com/cmp/Aldi/salaries/Shift-Leader,Aldi
+ALDI,Aldi,Management,Assistant Manager,assistant manager,24.79,$24.79,HOURLY,16,https://www.indeed.com/cmp/Aldi/salaries/Assistant-Manager,Aldi
+ALDI,Aldi,Management,Facilities Manager,facilities manager,109050,"$109,050",YEARLY,10,https://www.indeed.com/cmp/Aldi/salaries/Facilities-Manager,Aldi
+ALDI,Aldi,Management,Director,director,228609,"$228,609",YEARLY,7,https://www.indeed.com/cmp/Aldi/salaries/Director,Aldi
+ALDI,Aldi,Management,Manager,manager,122871,"$122,871",YEARLY,6,https://www.indeed.com/cmp/Aldi/salaries/Manager,Aldi
+ALDI,Aldi,Management,Quality Assurance Coordinator,quality assurance coordinator,28.21,$28.21,HOURLY,4,,Aldi
+ALDI,Aldi,Management,Buying Manager,buying manager,150747,"$150,747",YEARLY,4,,Aldi
+Safeway,Safeway,Pharmacy,Pharmacy Technician,pharmacy technician,20.09,$20.09,HOURLY,90,https://www.indeed.com/cmp/Safeway/salaries/Pharmacy-Technician,Safeway
+Safeway,Safeway,Pharmacy,Certified Pharmacy Technician,certified pharmacy technician,22.29,$22.29,HOURLY,7,https://www.indeed.com/cmp/Safeway/salaries/Certified-Pharmacy-Technician,Safeway
+Safeway,Safeway,Pharmacy,Pharmacy Assistant,pharmacy assistant,19.72,$19.72,HOURLY,18,https://www.indeed.com/cmp/Safeway/salaries/Pharmacy-Assistant,Safeway
+Safeway,Safeway,Pharmacy,Staff Pharmacist,staff pharmacist,68,$68.00,HOURLY,9,https://www.indeed.com/cmp/Safeway/salaries/Staff-Pharmacist,Safeway
+Safeway,Safeway,Pharmacy,Pharmacy Clerk,pharmacy clerk,21.02,$21.02,HOURLY,46,https://www.indeed.com/cmp/Safeway/salaries/Pharmacy-Clerk,Safeway
+Safeway,Safeway,Pharmacy,Pharmacist,pharmacist,67.21,$67.21,HOURLY,6,https://www.indeed.com/cmp/Safeway/salaries/Pharmacist,Safeway
+Safeway,Safeway,Pharmacy,Pharmacy Manager,pharmacy manager,71.84,$71.84,HOURLY,9,https://www.indeed.com/cmp/Safeway/salaries/Pharmacy-Manager,Safeway
+Safeway,Safeway,Pharmacy,Pharmacy Intern,pharmacy intern,19.52,$19.52,HOURLY,10,https://www.indeed.com/cmp/Safeway/salaries/Pharmacy-Intern,Safeway
+Safeway,Safeway,Pharmacy,Senior Certified Pharmacy Technician,senior certified pharmacy technician,18.72,$18.72,HOURLY,2,,Safeway
+Safeway,Safeway,Pharmacy,Pharmacy Technician II,pharmacy technician ii,18.07,$18.07,HOURLY,1,,Safeway
+Albertsons,Albertsons,Pharmacy,Pharmacy Technician,pharmacy technician,19.22,$19.22,HOURLY,276,https://www.indeed.com/cmp/Albertsons/salaries/Pharmacy-Technician,Albertsons
+Albertsons,Albertsons,Pharmacy,Certified Pharmacy Technician,certified pharmacy technician,17.57,$17.57,HOURLY,11,https://www.indeed.com/cmp/Albertsons/salaries/Certified-Pharmacy-Technician,Albertsons
+Albertsons,Albertsons,Pharmacy,Pharmacy Clerk,pharmacy clerk,19.52,$19.52,HOURLY,10,https://www.indeed.com/cmp/Albertsons/salaries/Pharmacy-Clerk,Albertsons
+Albertsons,Albertsons,Pharmacy,Staff Pharmacist,staff pharmacist,67.09,$67.09,HOURLY,5,,Albertsons
+Albertsons,Albertsons,Pharmacy,Pharmacy Manager,pharmacy manager,74.39,$74.39,HOURLY,6,https://www.indeed.com/cmp/Albertsons/salaries/Pharmacy-Manager,Albertsons
+Albertsons,Albertsons,Pharmacy,Pharmacist,pharmacist,68.09,$68.09,HOURLY,6,https://www.indeed.com/cmp/Albertsons/salaries/Pharmacist,Albertsons
+Albertsons,Albertsons,Pharmacy,Pharmacy Intern,pharmacy intern,21.05,$21.05,HOURLY,8,https://www.indeed.com/cmp/Albertsons/salaries/Pharmacy-Intern,Albertsons
+Albertsons,Albertsons,Pharmacy,Pharmacy Assistant,pharmacy assistant,20.65,$20.65,HOURLY,7,https://www.indeed.com/cmp/Albertsons/salaries/Pharmacy-Assistant,Albertsons
+Albertsons,Albertsons,Management,Manager,manager,17.37,$17.37,HOURLY,11,https://www.indeed.com/cmp/Albertsons/salaries/Manager,Albertsons
+Albertsons,Albertsons,Management,Closing Manager,closing manager,16.55,$16.55,HOURLY,10,https://www.indeed.com/cmp/Albertsons/salaries/Closing-Manager,Albertsons
+Instacart,Instacart,Management,Shift Leader,shift leader,17.38,$17.38,HOURLY,5,,Instacart
+Instacart,Instacart,Management,Senior Manager,senior manager,201610,"$201,610",YEARLY,4,,Instacart
+Instacart,Instacart,Management,Site Manager,site manager,48872,"$48,872",YEARLY,3,,Instacart
+Instacart,Instacart,Management,Operations Manager,operations manager,111433,"$111,433",YEARLY,3,,Instacart
+Instacart,Instacart,Management,Director,director,267642,"$267,642",YEARLY,3,,Instacart
+Instacart,Instacart,Mathematics,Senior Data Scientist,senior data scientist,192690,"$192,690",YEARLY,6,https://www.indeed.com/cmp/Instacart/salaries/Senior-Data-Scientist,Instacart
+Instacart,Instacart,Mathematics,Data Scientist,data scientist,183723,"$183,723",YEARLY,7,https://www.indeed.com/cmp/Instacart/salaries/Data-Scientist,Instacart
+Instacart,Instacart,Mathematics,Analyst,analyst,64333,"$64,333",YEARLY,3,,Instacart
+Instacart,Instacart,Human Resources,Safety Specialist,safety specialist,24.11,$24.11,HOURLY,6,https://www.indeed.com/cmp/Instacart/salaries/Safety-Specialist,Instacart
+Instacart,Instacart,Human Resources,Technical Recruiter,technical recruiter,128818,"$128,818",YEARLY,4,,Instacart
+Salesforce,Salesforce,Management,Director,director,240039,"$240,039",YEARLY,8,https://www.indeed.com/cmp/Salesforce/salaries/Director,Salesforce
+Salesforce,Salesforce,Management,Manager,manager,145846,"$145,846",YEARLY,20,https://www.indeed.com/cmp/Salesforce/salaries/Manager,Salesforce
+Salesforce,Salesforce,Management,Senior Manager,senior manager,202594,"$202,594",YEARLY,12,https://www.indeed.com/cmp/Salesforce/salaries/Senior-Manager,Salesforce
+Salesforce,Salesforce,Management,Regional Vice President,regional vice president,231430,"$231,430",YEARLY,14,https://www.indeed.com/cmp/Salesforce/salaries/Regional-Vice-President,Salesforce
+Salesforce,Salesforce,Management,Vice President,vice president,293832,"$293,832",YEARLY,11,https://www.indeed.com/cmp/Salesforce/salaries/Vice-President,Salesforce
+Salesforce,Salesforce,Management,Senior Director,senior director,304715,"$304,715",YEARLY,5,,Salesforce
+Salesforce,Salesforce,Management,Business Development Manager,business development manager,81060,"$81,060",YEARLY,7,https://www.indeed.com/cmp/Salesforce/salaries/Business-Development-Manager,Salesforce
+Salesforce,Salesforce,Management,Strategy Manager,strategy manager,161839,"$161,839",YEARLY,9,https://www.indeed.com/cmp/Salesforce/salaries/Strategy-Manager,Salesforce
+Salesforce,Salesforce,Management,Senior Operations Manager,senior operations manager,184002,"$184,002",YEARLY,8,https://www.indeed.com/cmp/Salesforce/salaries/Senior-Operations-Manager,Salesforce
+Salesforce,Salesforce,Management,Senior Vice President of Customer Success,senior vice president of customer success,113507,"$113,507",YEARLY,6,https://www.indeed.com/cmp/Salesforce/salaries/Senior-Vice-President-of-Customer-Success,Salesforce
+Adobe,Adobe,Management,Director,director,212563,"$212,563",YEARLY,8,https://www.indeed.com/cmp/Adobe/salaries/Director,Adobe
+Adobe,Adobe,Management,Manager,manager,176864,"$176,864",YEARLY,6,https://www.indeed.com/cmp/Adobe/salaries/Manager,Adobe
+Adobe,Adobe,Management,Group Manager,group manager,211084,"$211,084",YEARLY,5,,Adobe
+Adobe,Adobe,Management,Director of Engineering,director of engineering,290689,"$290,689",YEARLY,4,,Adobe
+Adobe,Adobe,Management,Design Manager,design manager,207226,"$207,226",YEARLY,4,,Adobe
+Adobe,Adobe,Management,Vice President,vice president,370098,"$370,098",YEARLY,3,,Adobe
+Adobe,Adobe,Management,Shift Leader,shift leader,131445,"$131,445",YEARLY,3,,Adobe
+Adobe,Adobe,Management,Senior Manager,senior manager,178567,"$178,567",YEARLY,3,,Adobe
+Adobe,Adobe,Management,Senior Director,senior director,294992,"$294,992",YEARLY,3,,Adobe
+Adobe,Adobe,Management,Associate Consultant,associate consultant,31.58,$31.58,HOURLY,3,,Adobe
+Deloitte,Deloitte,Mathematics,Analyst,analyst,83796,"$83,796",YEARLY,99,https://www.indeed.com/cmp/Deloitte/salaries/Analyst,Deloitte
+Deloitte,Deloitte,Mathematics,Business Analyst,business analyst,82552,"$82,552",YEARLY,16,https://www.indeed.com/cmp/Deloitte/salaries/Business-Analyst,Deloitte
+Deloitte,Deloitte,Mathematics,Data Scientist,data scientist,118918,"$118,918",YEARLY,7,https://www.indeed.com/cmp/Deloitte/salaries/Data-Scientist,Deloitte
+Deloitte,Deloitte,Mathematics,Senior Analyst,senior analyst,86269,"$86,269",YEARLY,12,https://www.indeed.com/cmp/Deloitte/salaries/Senior-Analyst,Deloitte
+Deloitte,Deloitte,Mathematics,Analytics Consultant,analytics consultant,93651,"$93,651",YEARLY,6,https://www.indeed.com/cmp/Deloitte/salaries/Analytics-Consultant,Deloitte
+Deloitte,Deloitte,Mathematics,Junior Analyst,junior analyst,62919,"$62,919",YEARLY,3,,Deloitte
+Deloitte,Deloitte,Mathematics,Data Analyst,data analyst,89313,"$89,313",YEARLY,3,,Deloitte
+Deloitte,Deloitte,Mathematics,Analytics Manager,analytics manager,187127,"$187,127",YEARLY,2,,Deloitte
+Deloitte,Deloitte,Mathematics,Lead Data Scientist,lead data scientist,139689,"$139,689",YEARLY,1,,Deloitte
+Deloitte,Deloitte,Information Design & Documentation,Technology Analyst,technology analyst,89870,"$89,870",YEARLY,25,https://www.indeed.com/cmp/Deloitte/salaries/Technology-Analyst,Deloitte
+Intel Corporation,Intel,Management,Director,director,243858,"$243,858",YEARLY,20,https://www.indeed.com/cmp/Intel-Corporation/salaries/Director,Intel
+Intel Corporation,Intel,Management,Operations Manager,operations manager,112541,"$112,541",YEARLY,15,https://www.indeed.com/cmp/Intel-Corporation/salaries/Operations-Manager,Intel
+Intel Corporation,Intel,Management,Manager,manager,153509,"$153,509",YEARLY,12,https://www.indeed.com/cmp/Intel-Corporation/salaries/Manager,Intel
+Intel Corporation,Intel,Management,Group Leader,group leader,144288,"$144,288",YEARLY,7,https://www.indeed.com/cmp/Intel-Corporation/salaries/Group-Leader,Intel
+Intel Corporation,Intel,Management,Capacity Manager,capacity manager,68804,"$68,804",YEARLY,6,https://www.indeed.com/cmp/Intel-Corporation/salaries/Capacity-Manager,Intel
+Intel Corporation,Intel,Management,Business Operations Manager,business operations manager,126378,"$126,378",YEARLY,6,https://www.indeed.com/cmp/Intel-Corporation/salaries/Business-Operations-Manager,Intel
+Intel Corporation,Intel,Management,Senior Director,senior director,269645,"$269,645",YEARLY,6,https://www.indeed.com/cmp/Intel-Corporation/salaries/Senior-Director,Intel
+Intel Corporation,Intel,Management,Business Development Manager,business development manager,153855,"$153,855",YEARLY,7,https://www.indeed.com/cmp/Intel-Corporation/salaries/Business-Development-Manager,Intel
+Intel Corporation,Intel,Management,Supply Manager,supply manager,89080,"$89,080",YEARLY,6,https://www.indeed.com/cmp/Intel-Corporation/salaries/Supply-Manager,Intel
+Intel Corporation,Intel,Management,Senior Manager,senior manager,203640,"$203,640",YEARLY,6,https://www.indeed.com/cmp/Intel-Corporation/salaries/Senior-Manager,Intel
+Cisco,Cisco,Sales,Account Manager,account manager,105219,"$105,219",YEARLY,14,https://www.indeed.com/cmp/Cisco/salaries/Account-Manager,Cisco
+Cisco,Cisco,Sales,Account Executive,account executive,113140,"$113,140",YEARLY,21,https://www.indeed.com/cmp/Cisco/salaries/Account-Executive,Cisco
+Cisco,Cisco,Sales,Partnership Manager,partnership manager,94322,"$94,322",YEARLY,12,https://www.indeed.com/cmp/Cisco/salaries/Partnership-Manager,Cisco
+Cisco,Cisco,Sales,Sales,sales,150378,"$150,378",YEARLY,9,https://www.indeed.com/cmp/Cisco/salaries/Sales,Cisco
+Cisco,Cisco,Sales,Sales Specialist,sales specialist,108048,"$108,048",YEARLY,9,https://www.indeed.com/cmp/Cisco/salaries/Sales-Specialist,Cisco
+Cisco,Cisco,Sales,Sales Account Manager,sales account manager,68594,"$68,594",YEARLY,7,https://www.indeed.com/cmp/Cisco/salaries/Sales-Account-Manager,Cisco
+Cisco,Cisco,Sales,Sales Representative,sales representative,62337,"$62,337",YEARLY,6,https://www.indeed.com/cmp/Cisco/salaries/Sales-Representative,Cisco
+Cisco,Cisco,Sales,Solutions Engineer,solutions engineer,143611,"$143,611",YEARLY,10,https://www.indeed.com/cmp/Cisco/salaries/Solutions-Engineer,Cisco
+Cisco,Cisco,Sales,Product Specialist,product specialist,118714,"$118,714",YEARLY,9,https://www.indeed.com/cmp/Cisco/salaries/Product-Specialist,Cisco
+Cisco,Cisco,Sales,Plan Manager,plan manager,162688,"$162,688",YEARLY,6,https://www.indeed.com/cmp/Cisco/salaries/Plan-Manager,Cisco
+KFC,KFC,Customer Service,Customer Service Representative,customer service representative,12.27,$12.27,HOURLY,196,https://www.indeed.com/cmp/KFC/salaries/Customer-Service-Representative,KFC
+KFC,KFC,Customer Service,Lobby Attendant,lobby attendant,7.25,$7.25,HOURLY,1,,KFC
+KFC,KFC,Customer Service,Customer Experience Coordinator,customer experience coordinator,19.49,$19.49,HOURLY,1,,KFC
+KFC,KFC,Retail,Cashier,cashier,12.39,$12.39,HOURLY,46,https://www.indeed.com/cmp/KFC/salaries/Cashier,KFC
+KFC,KFC,Retail,Customer Service Associate / Cashier,customer service associate / cashier,11.5,$11.50,HOURLY,12,https://www.indeed.com/cmp/KFC/salaries/Customer-Service-Associate---Cashier,KFC
+KFC,KFC,Retail,Store Manager,store manager,48727,"$48,727",YEARLY,11,https://www.indeed.com/cmp/KFC/salaries/Store-Manager,KFC
+KFC,KFC,Retail,Assistant Store Manager,assistant store manager,15.97,$15.97,HOURLY,4,,KFC
+KFC,KFC,Retail,Lead Team Member,lead team member,12.6,$12.60,HOURLY,2,,KFC
+KFC,KFC,Installation & Maintenance,Utility Worker,utility worker,13.73,$13.73,HOURLY,40,https://www.indeed.com/cmp/KFC/salaries/Utility-Worker,KFC
+KFC,KFC,Installation & Maintenance,Maintenance Technician,maintenance technician,25.54,$25.54,HOURLY,6,https://www.indeed.com/cmp/KFC/salaries/Maintenance-Technician,KFC
+TJ Maxx,TJ-Maxx,Security & Public Safety,Loss Prevention Director,loss prevention director,20.29,$20.29,HOURLY,18,https://www.indeed.com/cmp/Tj-Maxx-b309bf65/salaries/Loss-Prevention-Director,TJ Maxx
+TJ Maxx,TJ-Maxx,Security & Public Safety,Security Guard,security guard,16.57,$16.57,HOURLY,5,,TJ Maxx
+TJ Maxx,TJ-Maxx,Security & Public Safety,Marshal,marshal,15.17,$15.17,HOURLY,7,https://www.indeed.com/cmp/Tj-Maxx-b309bf65/salaries/Marshal,TJ Maxx
+TJ Maxx,TJ-Maxx,Security & Public Safety,Loss Prevention Officer,loss prevention officer,17.51,$17.51,HOURLY,6,https://www.indeed.com/cmp/Tj-Maxx-b309bf65/salaries/Loss-Prevention-Officer,TJ Maxx
+TJ Maxx,TJ-Maxx,Sales,Sales Associate,sales associate,12.62,$12.62,HOURLY,26,https://www.indeed.com/cmp/Tj-Maxx-b309bf65/salaries/Sales-Associate,TJ Maxx
+TJ Maxx,TJ-Maxx,Sales,Sales Manager,sales manager,37839,"$37,839",YEARLY,2,,TJ Maxx
+TJ Maxx,TJ-Maxx,Sales,Promoter,promoter,12,$12.00,HOURLY,1,,TJ Maxx
+TJ Maxx,TJ-Maxx,Loading and Stocking,Warehouse Worker,warehouse worker,16.72,$16.72,HOURLY,9,https://www.indeed.com/cmp/Tj-Maxx-b309bf65/salaries/Warehouse-Worker,TJ Maxx
+TJ Maxx,TJ-Maxx,Loading and Stocking,Stocker,stocker,12,$12.00,HOURLY,6,https://www.indeed.com/cmp/Tj-Maxx-b309bf65/salaries/Stocker,TJ Maxx
+TJ Maxx,TJ-Maxx,Loading and Stocking,Shipping and Receiving Clerk,shipping and receiving clerk,31938,"$31,938",YEARLY,1,,TJ Maxx
+Ross Dress For Less,Ross-Stores,Security & Public Safety,Loss Prevention Director,loss prevention director,15.12,$15.12,HOURLY,21,https://www.indeed.com/cmp/Ross-Dress-For-Less/salaries/Loss-Prevention-Director,Ross Stores
+Ross Dress For Less,Ross-Stores,Security & Public Safety,Loss Prevention Officer,loss prevention officer,16.04,$16.04,HOURLY,26,https://www.indeed.com/cmp/Ross-Dress-For-Less/salaries/Loss-Prevention-Officer,Ross Stores
+Ross Dress For Less,Ross-Stores,Security & Public Safety,Asset Protection Specialist,asset protection specialist,18.31,$18.31,HOURLY,6,https://www.indeed.com/cmp/Ross-Dress-For-Less/salaries/Asset-Protection-Specialist,Ross Stores
+Ross Dress For Less,Ross-Stores,Security & Public Safety,Protection Specialist,protection specialist,11.64,$11.64,HOURLY,10,https://www.indeed.com/cmp/Ross-Dress-For-Less/salaries/Protection-Specialist,Ross Stores
+Ross Dress For Less,Ross-Stores,Security & Public Safety,Security Specialist,security specialist,15.8,$15.80,HOURLY,20,https://www.indeed.com/cmp/Ross-Dress-For-Less/salaries/Security-Specialist,Ross Stores
+Ross Dress For Less,Ross-Stores,Security & Public Safety,Security Guard,security guard,17.96,$17.96,HOURLY,5,,Ross Stores
+Ross Dress For Less,Ross-Stores,Security & Public Safety,Night Watch Staff,night watch staff,13.39,$13.39,HOURLY,8,https://www.indeed.com/cmp/Ross-Dress-For-Less/salaries/Night-Watch-Staff,Ross Stores
+Ross Dress For Less,Ross-Stores,Security & Public Safety,Security Officer,security officer,14.85,$14.85,HOURLY,5,,Ross Stores
+Ross Dress For Less,Ross-Stores,Security & Public Safety,Loss Prevention Manager,loss prevention manager,72768,"$72,768",YEARLY,2,,Ross Stores
+Ross Dress For Less,Ross-Stores,Loading and Stocking,Stocker,stocker,12.3,$12.30,HOURLY,30,https://www.indeed.com/cmp/Ross-Dress-For-Less/salaries/Stocker,Ross Stores
