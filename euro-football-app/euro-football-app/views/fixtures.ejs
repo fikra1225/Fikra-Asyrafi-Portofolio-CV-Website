@@ -1,0 +1,65 @@
+<%- include("partials/header", { title: "Fixtures — One On One Football", active: "fixtures" }) %>
+
+<main>
+  <h2><%= showLive ? "Live Matches" : "Upcoming Fixtures" %></h2>
+
+  <form class="controls" method="GET" action="/fixtures">
+    <div class="field">
+      <label for="league">Competition</label>
+      <select name="league" id="league" onchange="this.form.submit()">
+        <option value="all" <%= selectedLeague === null ? "selected" : "" %>>
+          All competitions
+        </option>
+        <% leagues.forEach(function(l) { %>
+          <option value="<%= l.id %>" <%= l.id === selectedLeague ? "selected" : "" %>>
+            <%= l.name %> (<%= l.country %>)
+          </option>
+        <% }) %>
+      </select>
+    </div>
+    <input type="hidden" name="live" value="<%= showLive ? 'true' : 'false' %>" />
+    <button type="submit">Update</button>
+    <a class="btn" href="/fixtures?league=<%= selectedLeague === null ? 'all' : selectedLeague %>&live=<%= showLive ? 'false' : 'true' %>">
+      <%= showLive ? "Show upcoming instead" : "Show live matches instead" %>
+    </a>
+  </form>
+
+  <% if (error) { %>
+    <div class="notice"><%= error %></div>
+  <% } %>
+
+  <% if (fixtures.length > 0) { %>
+    <div class="fixture-list">
+      <% fixtures.forEach(function(f) { %>
+        <div class="fixture">
+          <div class="side home">
+            <img src="<%= (f.teams && f.teams.home && f.teams.home.logo) || '' %>" alt="" />
+            <span><%= (f.teams && f.teams.home && f.teams.home.name) || '' %></span>
+          </div>
+          <div class="mid">
+            <% if (f.goals && f.goals.home !== null && f.goals.away !== null) { %>
+              <div class="score"><%= f.goals.home %> &ndash; <%= f.goals.away %></div>
+            <% } else { %>
+              <div class="score">
+                <%= (f.fixture && f.fixture.date) ? new Date(f.fixture.date).toLocaleDateString(undefined, { month: "short", day: "numeric" }) : "TBD" %>
+              </div>
+            <% } %>
+            <div class="status <%= f.fixture && f.fixture.status && (f.fixture.status.short === '1H' || f.fixture.status.short === '2H') ? 'live' : '' %>">
+              <% if (f.fixture && f.fixture.status && f.fixture.status.short === 'NS') { %>
+                <%= new Date(f.fixture.date).toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" }) %>
+              <% } else if (f.fixture && f.fixture.status) { %>
+                <%= f.fixture.status.long || "" %><% if (f.fixture.status.elapsed) { %> &middot; <%= f.fixture.status.elapsed %>'<% } %>
+              <% } %>
+            </div>
+          </div>
+          <div class="side away">
+            <span><%= (f.teams && f.teams.away && f.teams.away.name) || '' %></span>
+            <img src="<%= (f.teams && f.teams.away && f.teams.away.logo) || '' %>" alt="" />
+          </div>
+        </div>
+      <% }) %>
+    </div>
+  <% } %>
+</main>
+
+<%- include("partials/footer") %>

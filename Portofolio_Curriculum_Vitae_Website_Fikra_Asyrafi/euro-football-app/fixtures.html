@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fixtures — One On One Football</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="scoreboard-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">One On One<span> Football</span></a>
+      <nav>
+        <a href="standings.html">Standings</a>
+        <a href="fixtures.html" class="active">Fixtures</a>
+        <a href="teams.html">Teams</a>
+        <a href="players.html">Players</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2 id="fixtures-title">Upcoming Fixtures</h2>
+
+    <form class="controls" id="fixtures-form">
+      <div class="field">
+        <label for="league">Competition</label>
+        <select name="league" id="league"></select>
+      </div>
+      <button type="submit">Update</button>
+      <a class="btn" id="toggle-live" href="#">Show live matches instead</a>
+    </form>
+
+    <div id="notice"></div>
+    <div id="fixture-list" class="fixture-list"></div>
+  </main>
+
+  <footer>
+    One On One Football &middot; Data via API-Football &middot; Static build (HTML/CSS/JS)
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/leagues.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/fixtures.js"></script>
+</body>
+</html>

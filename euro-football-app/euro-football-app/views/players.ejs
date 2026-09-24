@@ -1,0 +1,55 @@
+<%- include("partials/header", { title: "Player Search — One On One Football", active: "players" }) %>
+
+<main>
+  <h2>Player Search</h2>
+
+  <form class="controls" method="GET" action="/players">
+    <div class="field">
+      <label for="name">Player name</label>
+      <input type="text" name="name" id="name" placeholder="e.g. Haaland" value="<%= query %>" />
+    </div>
+    <div class="field">
+      <label for="league">Competition</label>
+      <select name="league" id="league">
+        <% leagues.forEach(function(l) { %>
+          <option value="<%= l.id %>" <%= l.id === selectedLeague ? "selected" : "" %>>
+            <%= l.name %>
+          </option>
+        <% }) %>
+      </select>
+    </div>
+    <button type="submit">Search</button>
+  </form>
+
+  <% if (error) { %>
+    <div class="notice"><%= error %></div>
+  <% } %>
+
+  <% if (players.length > 0) { %>
+    <div class="result-list">
+      <% players.forEach(function(p) { %>
+        <% const stats = p.statistics && p.statistics[0]; %>
+        <div class="result">
+          <img src="<%= (p.player && p.player.photo) || '' %>" alt="" />
+          <div class="details">
+            <h3><%= (p.player && p.player.name) || '' %></h3>
+            <p>
+              <%= (p.player && p.player.nationality) || '' %><% if (p.player && p.player.age) { %> &middot; Age <%= p.player.age %><% } %>
+              <% if (stats && stats.team) { %> &middot; <%= stats.team.name %><% } %>
+              <% if (stats && stats.games && stats.games.position) { %> &middot; <%= stats.games.position %><% } %>
+            </p>
+            <% if (stats) { %>
+              <p>
+                <%= (stats.games && (stats.games.appearences || stats.games.appearances)) || 0 %> apps &middot;
+                <%= (stats.goals && stats.goals.total) || 0 %> goals &middot;
+                <%= (stats.goals && stats.goals.assists) || 0 %> assists
+              </p>
+            <% } %>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+  <% } %>
+</main>
+
+<%- include("partials/footer") %>
